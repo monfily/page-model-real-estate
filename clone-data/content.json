@@ -1,0 +1,524 @@
+{
+  "header": {
+    "height": 74,
+    "bgColor": "rgb(255, 255, 255)",
+    "position": "sticky",
+    "borderBottom": "1px solid rgb(221, 221, 221)",
+    "boxShadow": "none",
+    "logo": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"180\" height=\"39\" fill=\"none\" viewBox=\"0 0 478 70\"><path fill=\"#2a2a2f\" d=\"M426.614 15.67c2.938 0 4.134 2.317 6.314 2.317 1.196 0 2.125-.683 2.339-2.214h3.483c-.598 4.159-2.991 6.165-6.144 6.165-2.938 0-4.135-2.37-6.314-2.37-1.197 0-2.126.735-2.34 2.266h-3.483c.599-4.159 2.992-6.164 6.145-6.164zM312.438 38.171v19.807h-7.647V40.177c0-1.233-.303-2.35-.909-3.353a6.61 6.61 0 00-2.444-2.413c-1.003-.606-2.121-.91-3.354-.91-1.232 0-2.361.304-3.384.91a6.679 6.679 0 00-2.413 2.413c-.585 1.003-.878 2.12-.878 3.353v17.8h-7.647l-.031-31.339h7.647l.031 2.79a11.55 11.55 0 013.824-2.664c1.483-.669 3.081-1.003 4.794-1.003 2.278 0 4.357.564 6.237 1.692a12.452 12.452 0 014.481 4.482c1.129 1.86 1.693 3.938 1.693 6.236zM339.819 26.638h7.647v31.34h-7.647l-.345-3.886a10.262 10.262 0 01-3.416 3.416c-1.399.856-3.06 1.284-4.983 1.284-2.319 0-4.492-.438-6.518-1.316a17.132 17.132 0 01-5.359-3.635 17.401 17.401 0 01-3.604-5.36c-.857-2.026-1.285-4.199-1.285-6.518 0-2.235.407-4.335 1.222-6.299a16.313 16.313 0 018.618-8.65c1.943-.835 4.033-1.253 6.268-1.253 2.069 0 3.918.46 5.547 1.379 1.651.92 3.051 2.09 4.2 3.51l-.345-4.012zm-8.932 24.79c1.63 0 3.072-.408 4.325-1.222 1.254-.815 2.236-1.912 2.946-3.291.71-1.4 1.066-2.935 1.066-4.607 0-1.692-.356-3.228-1.066-4.607-.71-1.4-1.703-2.507-2.977-3.322-1.254-.815-2.685-1.222-4.294-1.222-1.608 0-3.081.418-4.418 1.254a9.194 9.194 0 00-3.166 3.29c-.773 1.38-1.159 2.915-1.159 4.607 0 1.692.397 3.228 1.191 4.607a9.199 9.199 0 003.165 3.29 8.271 8.271 0 004.387 1.223zM360.224 57.978v-31.34h7.647v2.79a11.555 11.555 0 013.823-2.664c1.484-.669 3.082-1.003 4.795-1.003 2.173 0 4.168.512 5.986 1.536 1.839 1.023 3.301 2.392 4.388 4.105 1.107-1.713 2.569-3.082 4.387-4.105 1.818-1.024 3.813-1.536 5.986-1.536 2.298 0 4.377.564 6.236 1.692a12.447 12.447 0 014.482 4.482c1.128 1.86 1.692 3.938 1.692 6.236v19.807H402v-17.77a6.3 6.3 0 00-.909-3.322 6.681 6.681 0 00-2.382-2.444c-.982-.627-2.089-.94-3.322-.94s-2.351.303-3.353.909a",
+    "navLinks": [
+      {
+        "text": "Imóveis",
+        "href": "/imoveis/brasil/"
+      },
+      {
+        "text": "Aluguel",
+        "href": "/imoveis-para-alugar/brasil/"
+      },
+      {
+        "text": "Apartamentos",
+        "href": "/apartamentos-para-alugar/brasil/"
+      },
+      {
+        "text": "Casas",
+        "href": "/casas-para-alugar/brasil/"
+      },
+      {
+        "text": "Kitnets",
+        "href": "/kitnet-para-alugar/brasil/"
+      },
+      {
+        "text": "Imóveis Comerciais",
+        "href": "/imoveis-comerciais-para-alugar/brasil/"
+      },
+      {
+        "text": "Ver todos",
+        "href": "/imoveis-para-alugar/brasil/"
+      },
+      {
+        "text": "Venda",
+        "href": "/imoveis-a-venda/brasil/"
+      },
+      {
+        "text": "Apartamentos",
+        "href": "/apartamentos-a-venda/brasil/"
+      },
+      {
+        "text": "Casas",
+        "href": "/casas-a-venda/brasil/"
+      },
+      {
+        "text": "Lançamentos",
+        "href": "/lancamentos-imoveis/brasil/"
+      },
+      {
+        "text": "Imóveis Comerciais",
+        "href": "/imoveis-comerciais-a-venda/brasil/"
+      },
+      {
+        "text": "Ver todos",
+        "href": "/imoveis-a-venda/brasil/"
+      },
+      {
+        "text": "Anuncie seu imóvel",
+        "href": "/anunciar-gratis-imoveis-casas-apartamentos/"
+      },
+      {
+        "text": "Blog Imobiliário",
+        "href": "/blog-imobiliario/"
+      },
+      {
+        "text": "Veículos",
+        "href": "/carros-usados/brasil/"
+      },
+      {
+        "text": "Carros",
+        "href": "/carros-usados/brasil/"
+      },
+      {
+        "text": "Sedã",
+        "href": "/carros-sedas/brasil/"
+      },
+      {
+        "text": "Hatch",
+        "href": "/carros-hatchback/brasil/"
+      },
+      {
+        "text": "SUV",
+        "href": "/carros-suv-crossover/brasil/"
+      },
+      {
+        "text": "Picape",
+        "href": "/carros-picapes/brasil/"
+      },
+      {
+        "text": "Ver todos",
+        "href": "/carros-usados/brasil/"
+      },
+      {
+        "text": "Motos",
+        "href": "/motos-usadas/brasil/"
+      },
+      {
+        "text": "Utilitária",
+        "href": "/motos-utilitarias/brasil/"
+      },
+      {
+        "text": "Custom",
+        "href": "/motos-custom/brasil/"
+      },
+      {
+        "text": "Esportiva",
+        "href": "/motos-esportivas/brasil/"
+      },
+      {
+        "text": "Off-Road",
+        "href": "/motos-off-road/brasil/"
+      },
+      {
+        "text": "Ver todos",
+        "href": "/motos-usadas/brasil/"
+      },
+      {
+        "text": "Tabela Fipe",
+        "href": "/tabela-fipe/"
+      },
+      {
+        "text": "Anuncie seu carro/moto",
+        "href": "/anunciar-gratis-carros-e-motos/"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "index": 0,
+      "tag": "article",
+      "id": null,
+      "classes": "layout_homeArticle__bmLW7",
+      "top": 74,
+      "height": 5434,
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "bgImage": null,
+      "padding": "0px",
+      "maxWidth": "none",
+      "display": "block",
+      "text": "Encontre milhões de imóveis, carros e motos\nImóveis\nVeículos\nO que você deseja?\nSelecionar\nTipo de Imóvel\nTodos\nLocalização\nBuscar\nEncontre seu próximo imóvel com quem lidera o mercado\n\nO Chaves na Mão é o portal imobiliário que conecta você ao imóvel ideal com rapidez, transparência e a maior quantidade de ofertas do Brasil.\n\nResidenciais\n\nComerciais\n\nProcure por tipo de imóvel\nApartamento\nCasas e sobrados\nCasa em condomínio\nKitnets e studios\nFlat\nLoft\nCobertura\nSítios e chácaras\nEscolha pela comodidade que mais importa\nCasas com piscina\n\nEncontre casas com piscina para comprar e aproveite lazer e conforto no dia a dia.\n\nMobiliados\n\nCasas e apartamentos mobiliados para alugar, prontos para morar com praticidade e economia na mudança.\n\nApartamentos na planta\n\nGaranta seu imóvel novo, moderno e personalizável, aproveitando condições exclusivas de compra.\n\nApartamento com varanda\n\nCompre casas e apartamentos com varanda aconchegantes para aproveitar luz natural e ar livre.\n\nCasas com quintal\n\nCasas com quintal para comprar, perfeitas para momentos especiais ao ar livre.\n\nDireto com o proprietário\n\nAlugue seu imóvel direto com o proprietário, com negociação simples e sem burocracia.\n\nConfira o que podemos fazer por você\nAnuncie seu imóvel\n\nDivulgue casas, apartamentos, terrenos e mais. Ideal para quem deseja vender ou alugar com rapidez e visibilidade.\n\nAnunciar imóvel\nBlog imobiliário\n\nDicas de decoração, guias para comprar ou vender imóveis e as últimas notícias do mercado imobiliário brasileiro.\n\nLer o blog\nPublicidade\nNo Chaves na Mão, você encontra mais de 4 milhões de imóveis e 100 mil veículos.\n\nUse o aplicativo para encontrar o imóvel ou o carro ideal, com praticidade e segurança.\n\nFaça o download do aplicativo\n\nInstale o app e descubra ofertas de imóveis e veículos perto de você.\n\nAnuncie agora no portal líder na geração de resultados\nMais visibilidade\n\nContamos com milhões de acessos todos os meses\n\nCredibilidade\n\nSomos o portal líder na geração de resultados\n\nDestaque\n\nAnuncie em um dos portais mais acessados do Brasil\n\nSelecione seu perfil\nAnunciar\nLinks de carros mais populares e por cidade\nCarros mais populares\nHb20\nGol\nHonda Fit\nSandero\nSaveiro\nSão Paulo\nCarros usados em São Paulo\nHRV à venda em SP\nCorolla à venda em SP\nCreta à venda em SP\nHb20 à venda em SP\nCuritiba\nCarros usados em Curitiba\nVolvo Curitiba\nChevrolet Curitiba\nRenault Curitiba\nHyundai Curitiba\nBelo Horizonte\nCarros usados em Belo Horizonte\nPalio à venda em BH\nGol à venda em BH\nCorolla à venda em BH\nHRV à venda em BH\nRio de Janeiro\nCarros usados no Rio de Janeiro\nCorolla RJ\nHonda RJ\nGol à venda RJ\nHyundai RJ\nPorto Alegre\nCarros Usados Porto Alegre\nPolo em Porto Alegre\nOnix em Porto Alegre\nHB20 em Porto Alegre\nKwid em Porto Alegre\nJoinville\nCarros usados em Joinville\nJeep Joinville\nHyundai Joinville\nFiat Joinville\nFord Joinville\nCampinas\nCarros usados em Campinas\nVolkswagen Polo\nOnix em Campinas\nHb20 em Campinas\nMobi em Campinas\nLondrina\nCarros usados Londrina\nChevrolet ",
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Encontre milhões de imóveis, carros e motos"
+        },
+        {
+          "level": "h2",
+          "text": "Encontre seu próximo imóvel com quem lidera o mercado"
+        },
+        {
+          "level": "h3",
+          "text": "Procure por tipo de imóvel"
+        },
+        {
+          "level": "h3",
+          "text": "Escolha pela comodidade que mais importa"
+        },
+        {
+          "level": "h3",
+          "text": "Confira o que podemos fazer por você"
+        },
+        {
+          "level": "h2",
+          "text": ""
+        },
+        {
+          "level": "h3",
+          "text": ""
+        },
+        {
+          "level": "h3",
+          "text": ""
+        },
+        {
+          "level": "h3",
+          "text": ""
+        },
+        {
+          "level": "h2",
+          "text": "No Chaves na Mão, você encontra mais de 4 milhões de imóveis e 100 mil veículos."
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.chavesnamao.com.br/imn/1440x0578/D/100/cdn/portal/imagens/home/hero-desktop.jpg",
+          "alt": "Família brincando com cachorro na garagem",
+          "w": 1440,
+          "h": 702
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/realty/apartamento.jpg",
+          "alt": "Apartamento",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/realty/casas-e-sobrados.jpg",
+          "alt": "Casas e sobrados",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/realty/casa-em-condominio.jpg",
+          "alt": "Casa em condomínio",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/realty/kitnets-e-studios.jpg",
+          "alt": "Kitnets e studios",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/realty/flat.jpg",
+          "alt": "Flat",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/realty/loft.jpg",
+          "alt": "Loft",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/realty/cobertura.jpg",
+          "alt": "Cobertura",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/realty/sitios-e-chacaras.jpg",
+          "alt": "Sítios e chácaras",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/realty/casas-com-piscina.jpg",
+          "alt": "Casas com piscina",
+          "w": 300,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/realty/mobiliados-residencial.jpg",
+          "alt": "Mobiliados",
+          "w": 300,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/realty/apartamentos-na-planta.jpg",
+          "alt": "Apartamentos na planta",
+          "w": 300,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/realty/casas-com-varanda.jpg",
+          "alt": "Apartamento com varanda",
+          "w": 300,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/realty/casas-com-quintal.jpg",
+          "alt": "Casas com quintal",
+          "w": 300,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/realty/direto-com-o-proprietario-residencial.jpg",
+          "alt": "Direto com o proprietário",
+          "w": 300,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/category/seda.jpg",
+          "alt": "Sedã",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/category/hatchback.jpg",
+          "alt": "Hatchback",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/category/suv-crossover.jpg",
+          "alt": "SUV/Crossover",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/category/picape.jpg",
+          "alt": "Picape",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/category/sw-perua.jpg",
+          "alt": "SW/Perua",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/category/van-mini-van.jpg",
+          "alt": "Van/Minivan",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/category/conversivel.jpg",
+          "alt": "Conversível",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/category/cupe.jpg",
+          "alt": "Cupê",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/category/buggy.jpg",
+          "alt": "Buggy",
+          "w": 193,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/models/toyota-corolla.jpg",
+          "alt": "Toyota Corolla",
+          "w": 300,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/models/fiat-strada.jpg",
+          "alt": "Fiat Strada",
+          "w": 300,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/models/honda-civic.jpg",
+          "alt": "Honda Civic",
+          "w": 300,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/models/jeep-compass.jpg",
+          "alt": "Jeep Compass",
+          "w": 300,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/models/renault-kwid.jpg",
+          "alt": "Renault Kwid",
+          "w": 300,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0302x0180/D/80/cdn/portal/imagens/home/vehicle/models/fiat-uno.jpg",
+          "alt": "Fiat Uno",
+          "w": 300,
+          "h": 180
+        }
+      ],
+      "links": [
+        {
+          "text": "Imóveis",
+          "href": "/?segment=realty"
+        },
+        {
+          "text": "Veículos",
+          "href": "/?segment=vehicle"
+        },
+        {
+          "text": "Buscar",
+          "href": "/imoveis/brasil/"
+        },
+        {
+          "text": "Residenciais",
+          "href": ""
+        },
+        {
+          "text": "Comerciais",
+          "href": ""
+        },
+        {
+          "text": "Apartamento",
+          "href": "/apartamentos/brasil/"
+        },
+        {
+          "text": "Casas e sobrados",
+          "href": "/casas/brasil/"
+        },
+        {
+          "text": "Casa em condomínio",
+          "href": "/casas-em-condominio/brasil/"
+        },
+        {
+          "text": "Kitnets e studios",
+          "href": "/kitnet/brasil/"
+        },
+        {
+          "text": "Flat",
+          "href": "/flat/brasil/"
+        },
+        {
+          "text": "Loft",
+          "href": "/loft/brasil/"
+        },
+        {
+          "text": "Cobertura",
+          "href": "/coberturas/brasil/"
+        },
+        {
+          "text": "Sítios e chácaras",
+          "href": "/chacaras/brasil/"
+        },
+        {
+          "text": "Casas com piscina\n\nEncontre casas com piscina para comprar e aproveite lazer e conforto no dia a dia.",
+          "href": "/casas-com-piscina-a-venda/brasil/"
+        },
+        {
+          "text": "Mobiliados\n\nCasas e apartamentos mobiliados para alugar, prontos para morar com praticidade e economia na mudança.",
+          "href": "/apartamentos-mobiliados-para-alugar/brasil/?filtro=tim:[4],are:[17] "
+        },
+        {
+          "text": "Apartamentos na planta\n\nGaranta seu imóvel novo, moderno e personalizável, aproveitando condições exclusivas de compra.",
+          "href": "/lancamentos-imoveis-residencial/brasil/"
+        },
+        {
+          "text": "Apartamento com varanda\n\nCompre casas e apartamentos com varanda aconchegantes para aproveitar luz natural e ar livre.",
+          "href": "/apartamentos-com-varanda-a-venda/brasil/?filtro=tim:[4],are:[13]"
+        },
+        {
+          "text": "Casas com quintal\n\nCasas com quintal para comprar, perfeitas para momentos especiais ao ar livre.",
+          "href": "/casas-com-quintal-a-venda/brasil/"
+        },
+        {
+          "text": "Direto com o proprietário\n\nAlugue seu imóvel direto com o proprietário, com negociação simples e sem burocracia.",
+          "href": "/imoveis-para-alugar-direto-com-o-proprietario/brasil/"
+        },
+        {
+          "text": "Anuncie seu imóvel\n\nDivulgue casas, apartamentos, terrenos e mais. Ideal para quem deseja vender ou alugar com rapidez e visibilidade.\n\nAnunciar imóvel",
+          "href": "/anunciar-gratis-imoveis-casas-apartamentos/"
+        },
+        {
+          "text": "Blog imobiliário\n\nDicas de decoração, guias para comprar ou vender imóveis e as últimas notícias do mercado imobiliário brasileiro.\n\nLer o blog",
+          "href": "/blog-imobiliario/"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "O que você deseja?\nSelecionar",
+          "classes": "style_LabelButton__sXl6w "
+        },
+        {
+          "text": "Tipo de Imóvel\nTodos",
+          "classes": "style_LabelButton__sXl6w "
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "bgColor": "rgb(25, 27, 39)",
+    "text": "",
+    "columns": [
+      {
+        "heading": "",
+        "links": []
+      },
+      {
+        "heading": "",
+        "links": []
+      },
+      {
+        "heading": "",
+        "links": []
+      },
+      {
+        "heading": "",
+        "links": []
+      },
+      {
+        "heading": "",
+        "links": []
+      },
+      {
+        "heading": "",
+        "links": []
+      },
+      {
+        "heading": "",
+        "links": []
+      }
+    ],
+    "socialLinks": [
+      {
+        "href": "http://www.facebook.com/ChavesNaMao",
+        "platform": "facebook"
+      },
+      {
+        "href": "https://www.youtube.com/ChavesNaMao",
+        "platform": "youtube"
+      },
+      {
+        "href": "https://www.tiktok.com/@portalchavesnamao",
+        "platform": "tiktok"
+      },
+      {
+        "href": "https://instagram.com/chavesnamao/",
+        "platform": "instagram"
+      },
+      {
+        "href": "https://www.linkedin.com/company/chavesnamao/",
+        "platform": "linkedin"
+      }
+    ]
+  }
+}

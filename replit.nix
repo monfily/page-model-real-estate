@@ -1,0 +1,32 @@
+{pkgs}: {
+  deps = [
+    pkgs.xorg.libxshmfence
+    pkgs.gtk3
+    pkgs.glib
+    pkgs.xorg.libXinerama
+    pkgs.xorg.libXxf86vm
+    pkgs.libgbm
+    pkgs.mesa
+    pkgs.libdrm
+    pkgs.xorg.libXdmcp
+    pkgs.at-spi2-core
+    pkgs.at-spi2-atk
+    pkgs.libxkbcommon
+    pkgs.alsa-lib
+    pkgs.cairo
+    pkgs.pango
+    pkgs.xorg.libxcb
+    pkgs.xorg.libXrandr
+    pkgs.xorg.libXfixes
+    pkgs.xorg.libXext
+    pkgs.xorg.libXdamage
+    pkgs.xorg.libXcomposite
+    pkgs.xorg.libX11
+    pkgs.expat
+    pkgs.dbus
+    pkgs.cups
+    pkgs.atk
+    pkgs.nspr
+    pkgs.nss
+  ];
+}
