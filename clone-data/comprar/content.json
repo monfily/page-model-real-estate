@@ -1,0 +1,507 @@
+{
+  "header": {
+    "height": 74,
+    "bgColor": "rgb(255, 255, 255)",
+    "position": "sticky",
+    "borderBottom": "1px solid rgb(221, 221, 221)",
+    "boxShadow": "none",
+    "logo": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"180\" height=\"39\" fill=\"none\" viewBox=\"0 0 478 70\"><path fill=\"#2a2a2f\" d=\"M426.614 15.67c2.938 0 4.134 2.317 6.314 2.317 1.196 0 2.125-.683 2.339-2.214h3.483c-.598 4.159-2.991 6.165-6.144 6.165-2.938 0-4.135-2.37-6.314-2.37-1.197 0-2.126.735-2.34 2.266h-3.483c.599-4.159 2.992-6.164 6.145-6.164zM312.438 38.171v19.807h-7.647V40.177c0-1.233-.303-2.35-.909-3.353a6.61 6.61 0 00-2.444-2.413c-1.003-.606-2.121-.91-3.354-.91-1.232 0-2.361.304-3.384.91a6.679 6.679 0 00-2.413 2.413c-.585 1.003-.878 2.12-.878 3.353v17.8h-7.647l-.031-31.339h7.647l.031 2.79a11.55 11.55 0 013.824-2.664c1.483-.669 3.081-1.003 4.794-1.003 2.278 0 4.357.564 6.237 1.692a12.452 12.452 0 014.481 4.482c1.129 1.86 1.693 3.938 1.693 6.236zM339.819 26.638h7.647v31.34h-7.647l-.345-3.886a10.262 10.262 0 01-3.416 3.416c-1.399.856-3.06 1.284-4.983 1.284-2.319 0-4.492-.438-6.518-1.316a17.132 17.132 0 01-5.359-3.635 17.401 17.401 0 01-3.604-5.36c-.857-2.026-1.285-4.199-1.285-6.518 0-2.235.407-4.335 1.222-6.299a16.313 16.313 0 018.618-8.65c1.943-.835 4.033-1.253 6.268-1.253 2.069 0 3.918.46 5.547 1.379 1.651.92 3.051 2.09 4.2 3.51l-.345-4.012zm-8.932 24.79c1.63 0 3.072-.408 4.325-1.222 1.254-.815 2.236-1.912 2.946-3.291.71-1.4 1.066-2.935 1.066-4.607 0-1.692-.356-3.228-1.066-4.607-.71-1.4-1.703-2.507-2.977-3.322-1.254-.815-2.685-1.222-4.294-1.222-1.608 0-3.081.418-4.418 1.254a9.194 9.194 0 00-3.166 3.29c-.773 1.38-1.159 2.915-1.159 4.607 0 1.692.397 3.228 1.191 4.607a9.199 9.199 0 003.165 3.29 8.271 8.271 0 004.387 1.223zM360.224 57.978v-31.34h7.647v2.79a11.555 11.555 0 013.823-2.664c1.484-.669 3.082-1.003 4.795-1.003 2.173 0 4.168.512 5.986 1.536 1.839 1.023 3.301 2.392 4.388 4.105 1.107-1.713 2.569-3.082 4.387-4.105 1.818-1.024 3.813-1.536 5.986-1.536 2.298 0 4.377.564 6.236 1.692a12.447 12.447 0 014.482 4.482c1.128 1.86 1.692 3.938 1.692 6.236v19.807H402v-17.77a6.3 6.3 0 00-.909-3.322 6.681 6.681 0 00-2.382-2.444c-.982-.627-2.089-.94-3.322-.94s-2.351.303-3.353.909a",
+    "navLinks": [
+      {
+        "text": "Imóveis",
+        "href": "/imoveis/brasil/"
+      },
+      {
+        "text": "Aluguel",
+        "href": "/imoveis-para-alugar/brasil/"
+      },
+      {
+        "text": "Apartamentos",
+        "href": "/apartamentos-para-alugar/brasil/"
+      },
+      {
+        "text": "Casas",
+        "href": "/casas-para-alugar/brasil/"
+      },
+      {
+        "text": "Kitnets",
+        "href": "/kitnet-para-alugar/brasil/"
+      },
+      {
+        "text": "Imóveis Comerciais",
+        "href": "/imoveis-comerciais-para-alugar/brasil/"
+      },
+      {
+        "text": "Ver todos",
+        "href": "/imoveis-para-alugar/brasil/"
+      },
+      {
+        "text": "Venda",
+        "href": "/imoveis-a-venda/brasil/"
+      },
+      {
+        "text": "Apartamentos",
+        "href": "/apartamentos-a-venda/brasil/"
+      },
+      {
+        "text": "Casas",
+        "href": "/casas-a-venda/brasil/"
+      },
+      {
+        "text": "Lançamentos",
+        "href": "/lancamentos-imoveis/brasil/"
+      },
+      {
+        "text": "Imóveis Comerciais",
+        "href": "/imoveis-comerciais-a-venda/brasil/"
+      },
+      {
+        "text": "Ver todos",
+        "href": "/imoveis-a-venda/brasil/"
+      },
+      {
+        "text": "Anuncie seu imóvel",
+        "href": "/anunciar-gratis-imoveis-casas-apartamentos/"
+      },
+      {
+        "text": "Blog Imobiliário",
+        "href": "/blog-imobiliario/"
+      },
+      {
+        "text": "Veículos",
+        "href": "/carros-usados/brasil/"
+      },
+      {
+        "text": "Carros",
+        "href": "/carros-usados/brasil/"
+      },
+      {
+        "text": "Sedã",
+        "href": "/carros-sedas/brasil/"
+      },
+      {
+        "text": "Hatch",
+        "href": "/carros-hatchback/brasil/"
+      },
+      {
+        "text": "SUV",
+        "href": "/carros-suv-crossover/brasil/"
+      },
+      {
+        "text": "Picape",
+        "href": "/carros-picapes/brasil/"
+      },
+      {
+        "text": "Ver todos",
+        "href": "/carros-usados/brasil/"
+      },
+      {
+        "text": "Motos",
+        "href": "/motos-usadas/brasil/"
+      },
+      {
+        "text": "Utilitária",
+        "href": "/motos-utilitarias/brasil/"
+      },
+      {
+        "text": "Custom",
+        "href": "/motos-custom/brasil/"
+      },
+      {
+        "text": "Esportiva",
+        "href": "/motos-esportivas/brasil/"
+      },
+      {
+        "text": "Off-Road",
+        "href": "/motos-off-road/brasil/"
+      },
+      {
+        "text": "Ver todos",
+        "href": "/motos-usadas/brasil/"
+      },
+      {
+        "text": "Tabela Fipe",
+        "href": "/tabela-fipe/"
+      },
+      {
+        "text": "Anuncie seu carro/moto",
+        "href": "/anunciar-gratis-carros-e-motos/"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "index": 0,
+      "tag": "aside",
+      "id": "filterContainer",
+      "classes": "filters_filterContainer__zRGql ",
+      "top": 74,
+      "height": 19276,
+      "bgColor": "rgb(255, 255, 255)",
+      "bgImage": null,
+      "padding": "0px",
+      "maxWidth": "none",
+      "display": "flex",
+      "text": "Filtros\n\nLimpar tudo\n\nSeleção atual\nNenhum filtro\n\nComprar\nAlugar\nLançamentos\n\nLocalização\n\nPerto de mim\n\nTipos de imóveis\n\nApartamento\nCasas & Sobrados\nKitnets & Stúdios\nMais tipos de imóveis\n\nPreço à partir de\n\nAté\n\nQuantidade de quartos\n\n+ 1\n+ 2\n+ 3\n+ 4\n\nBanheiros\n\n+ 1\n+ 2\n+ 3\n+ 4\n\nGaragens\n\n+ 1\n+ 2\n+ 3\n+ 4\n\nÁrea útil (m²) de\n\nAté\n\nÁrea de Lazer\n\nBrinquedoteca\nChurrasqueira\nEspaço gourmet\nPiscina\nPlayground\nSalão de festas\nSalão de jogos\n\nConveniências\n\nAr-condicionado\nArmários Planejados\nElevador\nHidromassagem\nJardim\nLareira\nMobiliado\nQuintal\nSauna\nVaranda\n\nFuncional\n\nÁrea de serviço\nÁtico\nCloset\nDependência de Empregada\nEdícula\nEscritório\nLavabo\nLavanderia\n\nSegurança\n\nCircuito de segurança\nGuarita\nInterfone\nPortaria\n\nTipo de Vendedor\n\nDireto com proprietário\nSomente Imobiliárias",
+      "headings": [],
+      "images": [],
+      "links": [],
+      "buttons": [
+        {
+          "text": "Limpar tudo",
+          "classes": "style_LabelButton__sXl6w styles_clearButton__tMAjC style_sm__N6Dl7"
+        },
+        {
+          "text": "Comprar",
+          "classes": "style_LabelButton__sXl6w column space-between align-center"
+        },
+        {
+          "text": "Alugar",
+          "classes": "style_LabelButton__sXl6w column space-between align-center"
+        },
+        {
+          "text": "Lançamentos",
+          "classes": "style_LabelButton__sXl6w column space-between align-center"
+        },
+        {
+          "text": "Perto de mim",
+          "classes": "style_LabelButton__sXl6w spacing style_asLink__1WO9j styles_requestBt__HMLSu"
+        },
+        {
+          "text": "Apartamento",
+          "classes": "style_LabelButton__sXl6w column align-center"
+        },
+        {
+          "text": "Casas & Sobrados",
+          "classes": "style_LabelButton__sXl6w column align-center"
+        },
+        {
+          "text": "Kitnets & Stúdios",
+          "classes": "style_LabelButton__sXl6w column align-center"
+        },
+        {
+          "text": "Mais tipos de imóveis",
+          "classes": "style_LabelButton__sXl6w style_sm__N6Dl7 styles_rightButton__L8Vg0"
+        },
+        {
+          "text": "+ 1",
+          "classes": "style_LabelButton__sXl6w row centering style_ghost__MfvDQ styles_qtdButton__X_d9I"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "tag": "article",
+      "id": null,
+      "classes": "column spacing-2x listing_article__PdZqd",
+      "top": 74,
+      "height": 19276,
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "bgImage": null,
+      "padding": "18px 0px 0px",
+      "maxWidth": "none",
+      "display": "flex",
+      "text": "Imóveis\nEm todo Brasil\n4.530.289 Imóveis em todo Brasil\nOrdernar por\nMais relevantes\nCasa comercial com 2 salas à venda na Rua da Emílio Ferdinando Schroeder, 48, Agronômica, Florianópolis por R$ 2.350.000\n\nRua Da Emílio Ferdinando Schroeder, 48\n\nAgronômica, Florianópolis/SC\n\n281m²\n\n2\n\n1\n\n2\n\nR$ 2.350.000\nIptu:\nR$ 2.645\n\nContatar\nLoja Comercial para Locação no Bairro Santo Agostinho – 154m²\n\nEndereço indisponível\n\nSanto Agostinho, Belo Horizonte/MG\n\n154m²\n\n2\n\nR$ 11.000\nIptu:\nR$ 232\n\nContatar\nLançamento a 100 metros do mar com financiamento direto com a construtora sem burocracia\n\nRua Fernão Dias, 33\n\nAviação, Praia Grande/SP\n\n74.592m²\n\n2\n\n1\n\n1\n\nR$ 589.193\nA partir de\n\nContatar\nEm Obras\nSala Comercial para Locação em São Paulo, República, 2 banheiros\n\nAvenida Ipiranga, 1071\n\nRepública, São Paulo/SP\n\n93m²\n\n2\n\nR$ 4.000\nCondomínio\nR$ 2.336\n\nContatar\nApartamento para Venda em Ribeirão Preto, Vila do Golf, 2 dormitórios, 1 suíte, 2 banheiros, 2 vagas\n\nEndereço indisponível\n\nVila do Golf, Ribeirão Preto/SP\n\n81m²\n\n2\n\n2\n\n2\n\nR$ 530.000\nCondomínio\nR$ 700\n\nContatar\nImobiliárias no Brasil\nSobrado com 134m² 3 quartos, para aluguel, no bairro Jardim Cruzeiro em São José dos Pinhais\n\nRua Margarida Pianaro Moro\n\nJardim Cruzeiro, São José dos Pinhais/PR\n\n134m²\n\n3\n\n3\n\n3\n\nR$ 4.300\nIptu:\nR$ 1.200\n\nContatar\nDestaque\nApartamento com 2 quartos à venda na Rua Marechal Hermes, 220, Glória, Joinville\n\nRua Marechal Hermes, 220\n\nGlória, Joinville/SC\n\n78m²\n\n2\n\n2\n\n3\n\nR$ 650.000\nCondomínio\nR$ 409\n\nContatar\nSobrado 120m² no Bairro Osvaldo Cruz – Espaço, Conforto e Excelente Localização\n\nRua Bom Pastor, 9999\n\nOsvaldo Cruz, São Caetano do Sul/SP\n\n120m²\n\n3\n\n2\n\n2\n\nR$ 3.300\nIptu:\nR$ 115\n\nContatar\nLote em Condomínio Fechado para Venda em Teresópolis, Prata\n\nEndereço indisponível\n\nPrata, Teresópolis/RJ\n\n966m²\n\nR$ 300.000\n\nContatar\nPrédio à venda ou alugar no Bairro Vila Marina - Santo André/SP\n\nRua Coronel Seabra\n\nVila Marina, Santo André/SP\n\n1.100m²\n\n6\n\nR$ 20.000\nIptu:\nR$ 3.076\n\nContatar\nImóveis nos estados do Brasil\nImóveis em SP\nImóveis no RS\nImóveis no RJ\nImóveis em SC\nImóveis no PR\nImóveis em MG\nImóveis na BA\nImóveis em GO\nImóveis em PE\nImóveis na PB\nImóveis no CE\nImóveis no MT\nImóveis no ES\nImóveis no RN\nImóveis em SE\nImóveis no MS\nImóveis em AL\nImóveis no PA\nImóveis no AM\nImóveis no DF\nPágina 2\nPublicidade\nLindo sobrado para chamar de seu! Com 3 quartos, no bairro Itacolomi em Balneario picarras.\n\nEndereço indisponível\n\nItacolomi, Balneário Piçarras/SC\n\n111m²\n\n3\n\n2\n\nR$ 650.000\n\nContatar\nSala para alugar, 20 m² por R$ 1.200/mês - Alto - Piracicaba/SP\n\nRua Gomes Carneiro\n\nAlto, Piracicaba/SP\n\n20m²\n\nR$ 1.200\n\nContatar\nApartamento com 2 quartos à venda na Rua Serra de Bragança, 825, Tatuapé, São Paulo\n\nRua Serra De Bragança, 825\n\nTatuapé, São Paulo/SP\n\n57m²\n\n2\n\n2\n\n2\n\nR$ 730.000\nCondomínio\nR$ 750\n\nContatar\nCasa com 2 quartos para alugar na Rua Manoel Pires Pereira, 300, Costeira, São José dos Pinhais\n\nRua Manoel Pires Pereira, 300\n\nCosteira, São José dos Pinhais/PR\n\n45m²\n\n2\n\nR$ 2.000\n",
+      "headings": [
+        {
+          "level": "h1",
+          "text": "4.530.289 Imóveis em todo Brasil"
+        },
+        {
+          "level": "h2",
+          "text": "Casa comercial com 2 salas à venda na Rua da Emílio Ferdinando Schroeder, 48, Agronômica, Florianópolis por R$ 2.350.000"
+        },
+        {
+          "level": "h2",
+          "text": "Loja Comercial para Locação no Bairro Santo Agostinho – 154m²"
+        },
+        {
+          "level": "h2",
+          "text": "Lançamento a 100 metros do mar com financiamento direto com a construtora sem burocracia"
+        },
+        {
+          "level": "h2",
+          "text": "Sala Comercial para Locação em São Paulo, República, 2 banheiros"
+        },
+        {
+          "level": "h2",
+          "text": "Apartamento para Venda em Ribeirão Preto, Vila do Golf, 2 dormitórios, 1 suíte, 2 banheiros, 2 vagas"
+        },
+        {
+          "level": "h3",
+          "text": "Imobiliárias no Brasil"
+        },
+        {
+          "level": "h2",
+          "text": "Sobrado com 134m² 3 quartos, para aluguel, no bairro Jardim Cruzeiro em São José dos Pinhais"
+        },
+        {
+          "level": "h2",
+          "text": "Apartamento com 2 quartos à venda na Rua Marechal Hermes, 220, Glória, Joinville"
+        },
+        {
+          "level": "h2",
+          "text": "Sobrado 120m² no Bairro Osvaldo Cruz – Espaço, Conforto e Excelente Localização"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400X0262/N/60/imoveis/42262/23890098/sc-florianopolis-agronomica-rua-da-emilio-ferdinando-schroeder-casa-sobrado-comercial-a-venda-4-salas-66b33836-1.jpg",
+          "alt": "Casa comercial com 2 salas à venda na Rua da Emílio Ferdinando Schroeder, 48, Agronômica, Florianópolis por R$ 2.350.000",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/42262/23890098/sc-florianopolis-agronomica-rua-da-emilio-ferdinando-schroeder-casa-sobrado-comercial-a-venda-4-salas-66b33836-2.jpg",
+          "alt": "Casa comercial com 2 salas à venda na Rua da Emílio Ferdinando Schroeder, 48, Agronômica, Florianópolis por R$ 2.350.000",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400X0262/N/60/imoveis/987116/34807819/mg-belo-horizonte-santo-agostinho-nao-encontrado-loja-comercio-para-alugar-69c7f25d-1.jpg",
+          "alt": "Loja Comercial para Locação no Bairro Santo Agostinho – 154m²",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/987116/34807819/mg-belo-horizonte-santo-agostinho-nao-encontrado-loja-comercio-para-alugar-69c7f25d-2.jpg",
+          "alt": "Loja Comercial para Locação no Bairro Santo Agostinho – 154m²",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400X0262/N/60/imoveis/854459/30858982/sp-praia-grande-aviacao-rua-fernao-dias-apartamento-a-venda-2-quartos-6877af9d-00.jpg",
+          "alt": "Lançamento a 100 metros do mar com financiamento direto com a construtora sem burocracia",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/854459/30858982/sp-praia-grande-aviacao-rua-fernao-dias-apartamento-a-venda-2-quartos-6877af9d-01.jpg",
+          "alt": "Lançamento a 100 metros do mar com financiamento direto com a construtora sem burocracia",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400X0262/N/60/imoveis/259055/37110442/sp-sao-paulo-republica-avenida-ipiranga-conj-comercial-sala-para-alugar-6924c097-1.jpg",
+          "alt": "Sala Comercial para Locação em São Paulo, República, 2 banheiros",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/259055/37110442/sp-sao-paulo-republica-avenida-ipiranga-conj-comercial-sala-para-alugar-6924c097-2.jpg",
+          "alt": "Sala Comercial para Locação em São Paulo, República, 2 banheiros",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/232124/38865768/sp-ribeirao-preto-vila-do-golf-nao-encontrado-apartamento-a-venda-2-quartos-6977710f-1.jpg",
+          "alt": "Apartamento para Venda em Ribeirão Preto, Vila do Golf, 2 dormitórios, 1 suíte, 2 banheiros, 2 vagas",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/232124/38865768/sp-ribeirao-preto-vila-do-golf-nao-encontrado-apartamento-a-venda-2-quartos-6977710f-2.jpg",
+          "alt": "Apartamento para Venda em Ribeirão Preto, Vila do Golf, 2 dormitórios, 1 suíte, 2 banheiros, 2 vagas",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/148/38957215/pr-curitiba-vista-alegre-rua-ingles-de-souza-casa-sobrado-para-alugar-3-quartos-69bdda6b-1.jpg",
+          "alt": "Casa com 3 quartos para alugar na Rua Inglês de Souza, 260, Vista Alegre, Curitiba",
+          "w": 190,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/293/37198921/pr-curitiba-vila-izabel-rua-professor-dario-veloso-apartamento-a-venda-1-quarto-6949c424-8.jpg",
+          "alt": "Apartamento com 1 quarto à venda na Rua Professor Dario Veloso, 36, Vila Izabel, Curitiba",
+          "w": 190,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/370/16523481/pr-curitiba-campo-comprido-rua-luiz-tramontin-casa-sobrado-em-condominio-a-venda-4-quartos-6968ba15-1.jpg",
+          "alt": "Casa em condomínio fechado com 4 quartos à venda na Rua Luiz Tramontin, 1220, Campo Comprido, Curitiba",
+          "w": 190,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/202/40486268/pr-sao-jose-dos-pinhais-tres-marias-avenida-senador-souza-naves-apartamento-a-venda-2-quartos-69c79960-1.jpg",
+          "alt": "Apartamento com 67,11m² 2 quartos, à venda, no bairro Três Marias em São José dos Pinhais",
+          "w": 190,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/1373/16234437/sp-itanhaem-guarda-civil-nao-encontrado-casa-sobrado-a-venda-2-quartos-69cd0026-1.jpg",
+          "alt": "Casa com 2 quartos à venda na Rua Vereador Edson Bello, Guarda Civil, Itanhaém",
+          "w": 190,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/4072/34887917/pr-curitiba-cidade-industrial-rua-joao-alves-da-rocha-loures-casa-sobrado-a-venda-3-quartos-697274c2-1.jpg",
+          "alt": "Casa com 3 quartos à venda na Rua João Alves da Rocha Loures, 313, Cidade Industrial, Curitiba",
+          "w": 190,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/4478/26287205/pr-curitiba-barreirinha-avenida-anita-garibaldi-apartamento-para-alugar-2-quartos-69c309b8-1.jpg",
+          "alt": "Excelente oportunidade para quem busca conforto, espaço e ótima localização no bairro Barreirinha!",
+          "w": 190,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/5911/34229859/pr-colombo-roca-grande-avenida-santos-dumont-terreno-a-venda-68b109c0-1.jpg",
+          "alt": "Terreno à venda, 360 m² por R$ 600.000,00 - Roça Grande - Colombo/PR",
+          "w": 190,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/4523/39242967/pr-curitiba-santa-felicidade-nao-encontrado-casa-sobrado-em-condominio-para-alugar-3-quartos-698e5452-4.jpg",
+          "alt": "Casa em condomínio fechado com 3 quartos para alugar em Santa Felicidade, Curitiba ",
+          "w": 190,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/6044/18198677/pr-curitiba-cidade-industrial-rua-antonio-reinaldo-zanon-terreno-a-venda-65713f20-1.jpg",
+          "alt": "Terreno à venda, 810 m² por R$ 1.398.000,00 - Cidade Industrial - Curitiba/PR",
+          "w": 190,
+          "h": 180
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/202/17190575/pr-sao-jose-dos-pinhais-jardim-cruzeiro-rua-margarida-pianaro-moro-casa-sobrado-para-alugar-3-quartos-69c79a06-1.jpg",
+          "alt": "Sobrado com 134m² 3 quartos, para aluguel, no bairro Jardim Cruzeiro em São José dos Pinhais",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/202/17190575/pr-sao-jose-dos-pinhais-jardim-cruzeiro-rua-margarida-pianaro-moro-casa-sobrado-para-alugar-3-quartos-69c79a06-2.jpg",
+          "alt": "Sobrado com 134m² 3 quartos, para aluguel, no bairro Jardim Cruzeiro em São José dos Pinhais",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/1104501/39310266/sc-joinville-gloria-rua-marechal-hermes-apartamento-a-venda-2-quartos-6986007c-1.jpg",
+          "alt": "Apartamento com 2 quartos à venda na Rua Marechal Hermes, 220, Glória, Joinville",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/1104501/39310266/sc-joinville-gloria-rua-marechal-hermes-apartamento-a-venda-2-quartos-6986007c-2.jpg",
+          "alt": "Apartamento com 2 quartos à venda na Rua Marechal Hermes, 220, Glória, Joinville",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/727618/37701279/sp-sao-caetano-do-sul-osvaldo-cruz-rua-bom-pastor-casa-para-alugar-3-quartos-6939cd79-00.jpg",
+          "alt": "Sobrado 120m² no Bairro Osvaldo Cruz – Espaço, Conforto e Excelente Localização",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/727618/37701279/sp-sao-caetano-do-sul-osvaldo-cruz-rua-bom-pastor-casa-para-alugar-3-quartos-6939cd79-01.jpg",
+          "alt": "Sobrado 120m² no Bairro Osvaldo Cruz – Espaço, Conforto e Excelente Localização",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/204336/38243418/rj-teresopolis-prata-nao-encontrado-terreno-em-condominio-a-venda-695d3da5-1.jpg",
+          "alt": "Lote em Condomínio Fechado para Venda em Teresópolis, Prata",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/204336/38243418/rj-teresopolis-prata-nao-encontrado-terreno-em-condominio-a-venda-695d3da5-2.jpg",
+          "alt": "Lote em Condomínio Fechado para Venda em Teresópolis, Prata",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/1042831/36274916/sp-santo-andre-vila-marina-rua-coronel-seabra-edificio-para-alugar-6902206b-1.jpg",
+          "alt": "Prédio à venda ou alugar no Bairro Vila Marina - Santo André/SP",
+          "w": 400,
+          "h": 262
+        },
+        {
+          "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/1042831/36274916/sp-santo-andre-vila-marina-rua-coronel-seabra-edificio-para-alugar-6902206b-2.jpg",
+          "alt": "Prédio à venda ou alugar no Bairro Vila Marina - Santo André/SP",
+          "w": 400,
+          "h": 262
+        }
+      ],
+      "links": [
+        {
+          "text": "Imóveis",
+          "href": "/imoveis/brasil/"
+        },
+        {
+          "text": "Casa comercial com 2 salas à venda na Rua da Emílio Ferdinando Schroeder, 48, Agronômica, Florianópolis por R$ 2.350.000\n\nRua Da Emílio Ferdinando Schroeder, 48\n\nAgronômica, Florianópolis/SC\n\n281m²\n\n2\n\n1\n\n2\n\nR$ 2.350.000\nIptu:\nR$ 2.645",
+          "href": "/imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098/"
+        },
+        {
+          "text": "Loja Comercial para Locação no Bairro Santo Agostinho – 154m²\n\nEndereço indisponível\n\nSanto Agostinho, Belo Horizonte/MG\n\n154m²\n\n2\n\nR$ 11.000\nIptu:\nR$ 232",
+          "href": "/imovel/ponto-comercial-para-alugar-com-garagem-mg-belo-horizonte-santo-agostinho-154m2-RS11000/id-34807819/"
+        },
+        {
+          "text": "Lançamento a 100 metros do mar com financiamento direto com a construtora sem burocracia\n\nRua Fernão Dias, 33\n\nAviação, Praia Grande/SP\n\n74.592m²\n\n2\n\n1\n\n1\n\nR$ 589.193\nA partir de",
+          "href": "/lancamento/lancamento-a-100-metros-do-mar-com-financiamento-direto-com-a-construtora-sem-burocracia/id-30858982/"
+        },
+        {
+          "text": "Sala Comercial para Locação em São Paulo, República, 2 banheiros\n\nAvenida Ipiranga, 1071\n\nRepública, São Paulo/SP\n\n93m²\n\n2\n\nR$ 4.000\nCondomínio\nR$ 2.336",
+          "href": "/imovel/sala-comercial-para-alugar-sp-sao-paulo-republica-93m2-RS4000/id-37110442/"
+        },
+        {
+          "text": "Apartamento para Venda em Ribeirão Preto, Vila do Golf, 2 dormitórios, 1 suíte, 2 banheiros, 2 vagas\n\nEndereço indisponível\n\nVila do Golf, Ribeirão Preto/SP\n\n81m²\n\n2\n\n2\n\n2\n\nR$ 530.000\nCondomínio\nR$ 700",
+          "href": "/imovel/apartamento-a-venda-2-quartos-com-garagem-sp-ribeirao-preto-vila-do-golf-RS530000/id-38865768/"
+        },
+        {
+          "text": "Sobrado com 134m² 3 quartos, para aluguel, no bairro Jardim Cruzeiro em São José dos Pinhais\n\nRua Margarida Pianaro Moro\n\nJardim Cruzeiro, São José dos Pinhais/PR\n\n134m²\n\n3\n\n3\n\n3\n\nR$ 4.300\nIptu:\nR$ 1.200",
+          "href": "/imovel/casa-para-alugar-3-quartos-com-garagem-pr-sao-jose-dos-pinhais-jardim-cruzeiro-187m2-RS4300/id-17190575/"
+        },
+        {
+          "text": "Apartamento com 2 quartos à venda na Rua Marechal Hermes, 220, Glória, Joinville\n\nRua Marechal Hermes, 220\n\nGlória, Joinville/SC\n\n78m²\n\n2\n\n2\n\n3\n\nR$ 650.000\nCondomínio\nR$ 409",
+          "href": "/imovel/apartamento-a-venda-2-quartos-com-garagem-sc-joinville-gloria-115m2-RS650000/id-39310266/"
+        },
+        {
+          "text": "Sobrado 120m² no Bairro Osvaldo Cruz – Espaço, Conforto e Excelente Localização\n\nRua Bom Pastor, 9999\n\nOsvaldo Cruz, São Caetano do Sul/SP\n\n120m²\n\n3\n\n2\n\n2\n\nR$ 3.300\nIptu:\nR$ 115",
+          "href": "/imovel/casa-para-alugar-3-quartos-com-garagem-sp-sao-caetano-do-sul-osvaldo-cruz-RS3300/id-37701279/"
+        },
+        {
+          "text": "Lote em Condomínio Fechado para Venda em Teresópolis, Prata\n\nEndereço indisponível\n\nPrata, Teresópolis/RJ\n\n966m²\n\nR$ 300.000",
+          "href": "/imovel/terreno-em-condominio-a-venda-rj-teresopolis-prata-966m2-RS300000/id-38243418/"
+        },
+        {
+          "text": "Prédio à venda ou alugar no Bairro Vila Marina - Santo André/SP\n\nRua Coronel Seabra\n\nVila Marina, Santo André/SP\n\n1.100m²\n\n6\n\nR$ 20.000\nIptu:\nR$ 3.076",
+          "href": "/imovel/predio-para-alugar-sp-santo-andre-vila-marina-400m2-RS20000/id-36274916/"
+        },
+        {
+          "text": "Imóveis em SP",
+          "href": "/imoveis/sp/"
+        },
+        {
+          "text": "Imóveis no RS",
+          "href": "/imoveis/rs/"
+        },
+        {
+          "text": "Imóveis no RJ",
+          "href": "/imoveis/rj/"
+        },
+        {
+          "text": "Imóveis em SC",
+          "href": "/imoveis/sc/"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Ordernar por\nMais relevantes",
+          "classes": "style_LabelButton__sXl6w "
+        },
+        {
+          "text": "Contatar",
+          "classes": "style_LabelButton__sXl6w style_sm__N6Dl7 style_filled__iyL_k style_primary__Q5nqD card_cta___34_S"
+        },
+        {
+          "text": "Contatar",
+          "classes": "style_LabelButton__sXl6w style_sm__N6Dl7 style_filled__iyL_k style_primary__Q5nqD card_cta___34_S"
+        }
+      ]
+    }
+  ]
+}

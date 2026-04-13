@@ -6,7 +6,11 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
-export function Header() {
+type HeaderProps = {
+  hideVehicles?: boolean;
+};
+
+export function Header({ hideVehicles = false }: HeaderProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -47,12 +51,14 @@ export function Header() {
           </div>
         </div>
 
-        <div className="group relative">
-          <button className="flex items-center space-x-1 text-brand-default font-semibold text-[15px] hover:text-brand-primary h-[74px]">
-            <span>Veículos</span>
-            <ChevronDown className="h-4 w-4" />
-          </button>
-        </div>
+        {!hideVehicles && (
+          <div className="group relative">
+            <button className="flex items-center space-x-1 text-brand-default font-semibold text-[15px] hover:text-brand-primary h-[74px]">
+              <span>Veículos</span>
+              <ChevronDown className="h-4 w-4" />
+            </button>
+          </div>
+        )}
 
         <Link href="/anunciar-imoveis-carros-e-motos/" className="text-brand-default font-semibold text-[15px] hover:text-brand-primary">
           Anuncie
@@ -102,13 +108,15 @@ export function Header() {
                 </ul>
               </div>
               
-              <div className="space-y-4">
-                <h3 className="font-bold text-brand-primary text-lg">Veículos</h3>
-                <ul className="space-y-3 pl-4 border-l-2 border-brand-surface">
-                  <li><Link href="/carros-usados/brasil/" className="text-brand-txt-secondary block py-1">Carros</Link></li>
-                  <li><Link href="/motos-usadas/brasil/" className="text-brand-txt-secondary block py-1">Motos</Link></li>
-                </ul>
-              </div>
+              {!hideVehicles && (
+                <div className="space-y-4">
+                  <h3 className="font-bold text-brand-primary text-lg">Veículos</h3>
+                  <ul className="space-y-3 pl-4 border-l-2 border-brand-surface">
+                    <li><Link href="/carros-usados/brasil/" className="text-brand-txt-secondary block py-1">Carros</Link></li>
+                    <li><Link href="/motos-usadas/brasil/" className="text-brand-txt-secondary block py-1">Motos</Link></li>
+                  </ul>
+                </div>
+              )}
               
               <Link href="/anunciar-imoveis-carros-e-motos/" className="block font-bold text-brand-default text-lg pt-4 border-t border-brand-surface">
                 Anuncie grátis

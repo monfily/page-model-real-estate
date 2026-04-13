@@ -1,8 +1,8 @@
 from playwright.sync_api import sync_playwright
 import json, os, re, hashlib, urllib.request, urllib.error
 
-TARGET_URL = "https://www.chavesnamao.com.br/"
-OUT_DIR = "clone-data"
+TARGET_URL = os.environ.get("TARGET_URL", "https://www.chavesnamao.com.br/")
+OUT_DIR = os.environ.get("OUT_DIR", "clone-data")
 os.makedirs(f"{OUT_DIR}/screenshots", exist_ok=True)
 os.makedirs(f"{OUT_DIR}/components", exist_ok=True)
 os.makedirs("public/images", exist_ok=True)

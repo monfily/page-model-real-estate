@@ -1,0 +1,924 @@
+{
+  "images": [
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400X0262/N/60/imoveis/42262/23890098/sc-florianopolis-agronomica-rua-da-emilio-ferdinando-schroeder-casa-sobrado-comercial-a-venda-4-salas-66b33836-1.jpg",
+      "srcset": "",
+      "alt": "Casa comercial com 2 salas à venda na Rua da Emílio Ferdinando Schroeder, 48, Agronômica, Florianópolis por R$ 2.350.000",
+      "w": 400,
+      "h": 262,
+      "parentClasses": "card_cardGallery__ep1mJ"
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/42262/23890098/sc-florianopolis-agronomica-rua-da-emilio-ferdinando-schroeder-casa-sobrado-comercial-a-venda-4-salas-66b33836-2.jpg",
+      "srcset": "",
+      "alt": "Casa comercial com 2 salas à venda na Rua da Emílio Ferdinando Schroeder, 48, Agronômica, Florianópolis por R$ 2.350.000",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400X0262/N/60/imoveis/987116/34807819/mg-belo-horizonte-santo-agostinho-nao-encontrado-loja-comercio-para-alugar-69c7f25d-1.jpg",
+      "srcset": "",
+      "alt": "Loja Comercial para Locação no Bairro Santo Agostinho – 154m²",
+      "w": 400,
+      "h": 262,
+      "parentClasses": "card_cardGallery__ep1mJ"
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/987116/34807819/mg-belo-horizonte-santo-agostinho-nao-encontrado-loja-comercio-para-alugar-69c7f25d-2.jpg",
+      "srcset": "",
+      "alt": "Loja Comercial para Locação no Bairro Santo Agostinho – 154m²",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400X0262/N/60/imoveis/854459/30858982/sp-praia-grande-aviacao-rua-fernao-dias-apartamento-a-venda-2-quartos-6877af9d-00.jpg",
+      "srcset": "",
+      "alt": "Lançamento a 100 metros do mar com financiamento direto com a construtora sem burocracia",
+      "w": 400,
+      "h": 262,
+      "parentClasses": "card_cardGallery__ep1mJ"
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/854459/30858982/sp-praia-grande-aviacao-rua-fernao-dias-apartamento-a-venda-2-quartos-6877af9d-01.jpg",
+      "srcset": "",
+      "alt": "Lançamento a 100 metros do mar com financiamento direto com a construtora sem burocracia",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400X0262/N/60/imoveis/259055/37110442/sp-sao-paulo-republica-avenida-ipiranga-conj-comercial-sala-para-alugar-6924c097-1.jpg",
+      "srcset": "",
+      "alt": "Sala Comercial para Locação em São Paulo, República, 2 banheiros",
+      "w": 400,
+      "h": 262,
+      "parentClasses": "card_cardGallery__ep1mJ"
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/259055/37110442/sp-sao-paulo-republica-avenida-ipiranga-conj-comercial-sala-para-alugar-6924c097-2.jpg",
+      "srcset": "",
+      "alt": "Sala Comercial para Locação em São Paulo, República, 2 banheiros",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/232124/38865768/sp-ribeirao-preto-vila-do-golf-nao-encontrado-apartamento-a-venda-2-quartos-6977710f-1.jpg",
+      "srcset": "",
+      "alt": "Apartamento para Venda em Ribeirão Preto, Vila do Golf, 2 dormitórios, 1 suíte, 2 banheiros, 2 vagas",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/232124/38865768/sp-ribeirao-preto-vila-do-golf-nao-encontrado-apartamento-a-venda-2-quartos-6977710f-2.jpg",
+      "srcset": "",
+      "alt": "Apartamento para Venda em Ribeirão Preto, Vila do Golf, 2 dormitórios, 1 suíte, 2 banheiros, 2 vagas",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/148/38957215/pr-curitiba-vista-alegre-rua-ingles-de-souza-casa-sobrado-para-alugar-3-quartos-69bdda6b-1.jpg",
+      "srcset": "",
+      "alt": "Casa com 3 quartos para alugar na Rua Inglês de Souza, 260, Vista Alegre, Curitiba",
+      "w": 190,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/293/37198921/pr-curitiba-vila-izabel-rua-professor-dario-veloso-apartamento-a-venda-1-quarto-6949c424-8.jpg",
+      "srcset": "",
+      "alt": "Apartamento com 1 quarto à venda na Rua Professor Dario Veloso, 36, Vila Izabel, Curitiba",
+      "w": 190,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/370/16523481/pr-curitiba-campo-comprido-rua-luiz-tramontin-casa-sobrado-em-condominio-a-venda-4-quartos-6968ba15-1.jpg",
+      "srcset": "",
+      "alt": "Casa em condomínio fechado com 4 quartos à venda na Rua Luiz Tramontin, 1220, Campo Comprido, Curitiba",
+      "w": 190,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/202/40486268/pr-sao-jose-dos-pinhais-tres-marias-avenida-senador-souza-naves-apartamento-a-venda-2-quartos-69c79960-1.jpg",
+      "srcset": "",
+      "alt": "Apartamento com 67,11m² 2 quartos, à venda, no bairro Três Marias em São José dos Pinhais",
+      "w": 190,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/1373/16234437/sp-itanhaem-guarda-civil-nao-encontrado-casa-sobrado-a-venda-2-quartos-69cd0026-1.jpg",
+      "srcset": "",
+      "alt": "Casa com 2 quartos à venda na Rua Vereador Edson Bello, Guarda Civil, Itanhaém",
+      "w": 190,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/4072/34887917/pr-curitiba-cidade-industrial-rua-joao-alves-da-rocha-loures-casa-sobrado-a-venda-3-quartos-697274c2-1.jpg",
+      "srcset": "",
+      "alt": "Casa com 3 quartos à venda na Rua João Alves da Rocha Loures, 313, Cidade Industrial, Curitiba",
+      "w": 190,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/4478/26287205/pr-curitiba-barreirinha-avenida-anita-garibaldi-apartamento-para-alugar-2-quartos-69c309b8-1.jpg",
+      "srcset": "",
+      "alt": "Excelente oportunidade para quem busca conforto, espaço e ótima localização no bairro Barreirinha!",
+      "w": 190,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/5911/34229859/pr-colombo-roca-grande-avenida-santos-dumont-terreno-a-venda-68b109c0-1.jpg",
+      "srcset": "",
+      "alt": "Terreno à venda, 360 m² por R$ 600.000,00 - Roça Grande - Colombo/PR",
+      "w": 190,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/4523/39242967/pr-curitiba-santa-felicidade-nao-encontrado-casa-sobrado-em-condominio-para-alugar-3-quartos-698e5452-4.jpg",
+      "srcset": "",
+      "alt": "Casa em condomínio fechado com 3 quartos para alugar em Santa Felicidade, Curitiba ",
+      "w": 190,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/6044/18198677/pr-curitiba-cidade-industrial-rua-antonio-reinaldo-zanon-terreno-a-venda-65713f20-1.jpg",
+      "srcset": "",
+      "alt": "Terreno à venda, 810 m² por R$ 1.398.000,00 - Cidade Industrial - Curitiba/PR",
+      "w": 190,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/202/17190575/pr-sao-jose-dos-pinhais-jardim-cruzeiro-rua-margarida-pianaro-moro-casa-sobrado-para-alugar-3-quartos-69c79a06-1.jpg",
+      "srcset": "",
+      "alt": "Sobrado com 134m² 3 quartos, para aluguel, no bairro Jardim Cruzeiro em São José dos Pinhais",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/202/17190575/pr-sao-jose-dos-pinhais-jardim-cruzeiro-rua-margarida-pianaro-moro-casa-sobrado-para-alugar-3-quartos-69c79a06-2.jpg",
+      "srcset": "",
+      "alt": "Sobrado com 134m² 3 quartos, para aluguel, no bairro Jardim Cruzeiro em São José dos Pinhais",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/1104501/39310266/sc-joinville-gloria-rua-marechal-hermes-apartamento-a-venda-2-quartos-6986007c-1.jpg",
+      "srcset": "",
+      "alt": "Apartamento com 2 quartos à venda na Rua Marechal Hermes, 220, Glória, Joinville",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/1104501/39310266/sc-joinville-gloria-rua-marechal-hermes-apartamento-a-venda-2-quartos-6986007c-2.jpg",
+      "srcset": "",
+      "alt": "Apartamento com 2 quartos à venda na Rua Marechal Hermes, 220, Glória, Joinville",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/727618/37701279/sp-sao-caetano-do-sul-osvaldo-cruz-rua-bom-pastor-casa-para-alugar-3-quartos-6939cd79-00.jpg",
+      "srcset": "",
+      "alt": "Sobrado 120m² no Bairro Osvaldo Cruz – Espaço, Conforto e Excelente Localização",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/727618/37701279/sp-sao-caetano-do-sul-osvaldo-cruz-rua-bom-pastor-casa-para-alugar-3-quartos-6939cd79-01.jpg",
+      "srcset": "",
+      "alt": "Sobrado 120m² no Bairro Osvaldo Cruz – Espaço, Conforto e Excelente Localização",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/204336/38243418/rj-teresopolis-prata-nao-encontrado-terreno-em-condominio-a-venda-695d3da5-1.jpg",
+      "srcset": "",
+      "alt": "Lote em Condomínio Fechado para Venda em Teresópolis, Prata",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/204336/38243418/rj-teresopolis-prata-nao-encontrado-terreno-em-condominio-a-venda-695d3da5-2.jpg",
+      "srcset": "",
+      "alt": "Lote em Condomínio Fechado para Venda em Teresópolis, Prata",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/1042831/36274916/sp-santo-andre-vila-marina-rua-coronel-seabra-edificio-para-alugar-6902206b-1.jpg",
+      "srcset": "",
+      "alt": "Prédio à venda ou alugar no Bairro Vila Marina - Santo André/SP",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/1042831/36274916/sp-santo-andre-vila-marina-rua-coronel-seabra-edificio-para-alugar-6902206b-2.jpg",
+      "srcset": "",
+      "alt": "Prédio à venda ou alugar no Bairro Vila Marina - Santo André/SP",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/1004757/37461621/sp-jarinu-caiocara-avenida-dinhah-de-barros-terreno-a-venda-69308fb2-14.jpg",
+      "srcset": "",
+      "alt": "Seu Refúgio Particular em Jarinu: 24.000m² de Natureza Pura e Águas Cristalinas",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/1004757/37461621/sp-jarinu-caiocara-avenida-dinhah-de-barros-terreno-a-venda-69308fb2-00.jpg",
+      "srcset": "",
+      "alt": "Seu Refúgio Particular em Jarinu: 24.000m² de Natureza Pura e Águas Cristalinas",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/571091/22297825/rs-gravatai-salgado-filho-rua-alfredo-emilio-allen-conj-comercial-sala-para-alugar-69c69855-1.jpg",
+      "srcset": "",
+      "alt": "Sala Edifício União - para aluguel, com 40,05m², - Salgado Filho - Gravataí / RS por R$ 1.000,00",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/571091/22297825/rs-gravatai-salgado-filho-rua-alfredo-emilio-allen-conj-comercial-sala-para-alugar-69c69855-2.jpg",
+      "srcset": "",
+      "alt": "Sala Edifício União - para aluguel, com 40,05m², - Salgado Filho - Gravataí / RS por R$ 1.000,00",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/143515/40167085/sp-ribeirao-preto-nao-encontrado-apartamento-a-venda-2-quartos-69a99f2e-1.jpg",
+      "srcset": "",
+      "alt": "Apartamento Com Excelente Oportunidade! Unidade com Garden, 2 dormitórios e 60 m².",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/143515/40167085/sp-ribeirao-preto-nao-encontrado-apartamento-a-venda-2-quartos-69a99f2e-2.jpg",
+      "srcset": "",
+      "alt": "Apartamento Com Excelente Oportunidade! Unidade com Garden, 2 dormitórios e 60 m².",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/629754/25083306/rs-cachoeirinha-vila-vista-alegre-nao-encontrado-apartamento-para-alugar-2-quartos-68e678bf-2.jpg",
+      "srcset": "",
+      "alt": "Apartamento com 2 dormitórios para alugar, 58 m² por R$ 1.970,00/mês - Vila Vista Alegre - Cachoeirinha/RS",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/629754/25083306/rs-cachoeirinha-vila-vista-alegre-nao-encontrado-apartamento-para-alugar-2-quartos-68e678bf-8.jpg",
+      "srcset": "",
+      "alt": "Apartamento com 2 dormitórios para alugar, 58 m² por R$ 1.970,00/mês - Vila Vista Alegre - Cachoeirinha/RS",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/538535/35007379/go-goiania-setor-candida-de-morais-rua-cm1-apartamento-para-alugar-3-quartos-68cc53ef-1.jpg",
+      "srcset": "",
+      "alt": "Apartamento para locação, Borges Landeiro Tropicale, Setor Cândida de Morais, Goiânia, GO",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0262/N/75/imoveis/538535/35007379/go-goiania-setor-candida-de-morais-rua-cm1-apartamento-para-alugar-3-quartos-68cc53ef-2.jpg",
+      "srcset": "",
+      "alt": "Apartamento para locação, Borges Landeiro Tropicale, Setor Cândida de Morais, Goiânia, GO",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/332004/26192896/sp-sao-paulo-vila-sofia-rua-dom-aguirre-apartamento-a-venda-2-quartos-6726ca81-00.jpg",
+      "srcset": "",
+      "alt": "Vibra Jardim Marajoara - 2 Dorm 37 à 39m2 c/Sacada e opção de vaga",
+      "w": 196,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/509378/24185604/pb-joao-pessoa-jardim-oceania-rua-antonio-carlos-araujo-flat-a-venda-1-quarto-69271ad5-00.jpg",
+      "srcset": "",
+      "alt": "AMAN BESSA  o seu melhor investimento no Bairro Jardim Oceania ao lado do MAG SHOPPING Tudo Próximo",
+      "w": 196,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/406520/20496124/sp-piracicaba-loteamento-santa-rosa-rua-diacono-jair-de-oliveira-casa-em-condominio-fechado-a-venda-3-quartos-66463909-00.jpg",
+      "srcset": "",
+      "alt": "Residencial Authoria - Reserva Jequitibá",
+      "w": 196,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/456479/18571278/sp-santos-vila-belmiro-rua-guararapes-apartamento-a-venda-1-quarto-659d7c8d-00.jpg",
+      "srcset": "",
+      "alt": "01 e 02 Dormitórios - PRONTO PARA MORAR. Melhor preço da região!!!",
+      "w": 196,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/501884/19616211/pr-curitiba-merces-alameda-princesa-izabel-apartamento-a-venda-1-quarto-65e871ee-00.jpg",
+      "srcset": "",
+      "alt": "Apto - mercês - perfeito para você morar bem, na medida certa",
+      "w": 196,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/424151/17850878/sp-sao-paulo-vila-parque-jabaquara-rua-dos-buritis-apartamento-a-venda-2-quartos-6553a61f-00.jpg",
+      "srcset": "",
+      "alt": "Apartamentos de 2 dormitórios a 3 minutos do Metrô Jabaquara. Lazer completo, varanda em todas as unidades. Menor valor por metro quadrado da região.",
+      "w": 196,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/464145/18756024/sc-sao-jose-forquilhas-rua-vidal-vicente-andrade-casa-a-venda-2-quartos-69c19279-00.jpg",
+      "srcset": "",
+      "alt": "Sobrado Geminado 2 Quartos com 2 Suítes e 88m² - Forquilhas",
+      "w": 196,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/513179/22080645/rj-niteroi-centro-rua-desiderio-de-oliveira-apartamento-a-venda-1-quarto-68152fd9-00.jpg",
+      "srcset": "",
+      "alt": "Excelente Apartamento de 1 e 2 quartos com varanda,suíte , vaga e lazer de clube no Centro - Niterói - RJ",
+      "w": 196,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/559629/22122670/sp-itanhaem-centro-praca-angelo-guerra-apartamento-a-venda-1-quarto-6676ec0a-00.jpg",
+      "srcset": "",
+      "alt": "Residencial Dante Frizon, Satélite, 1 ou 2 Dormitórios - Lazer de Clube",
+      "w": 196,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0480x0400/A/75/imoveis/910146/32600212/rj-rio-de-janeiro-vila-isabel-rua-heber-de-boscoli-apartamento-a-venda-2-quartos-68700e2e-00.jpg",
+      "srcset": "",
+      "alt": "Sweet Home Residences | Lançamento em Vila Isabel | 3 quartos | Entrega Março 2026",
+      "w": 196,
+      "h": 180,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/438452/31364766/sc-balneario-picarras-itacolomi-nao-encontrado-casa-sobrado-a-venda-3-quartos-6841ed8b-1.jpg",
+      "srcset": "",
+      "alt": "Lindo sobrado para chamar de seu! Com 3 quartos, no bairro Itacolomi em Balneario picarras.",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/438452/31364766/sc-balneario-picarras-itacolomi-nao-encontrado-casa-sobrado-a-venda-3-quartos-6841ed8b-2.jpg",
+      "srcset": "",
+      "alt": "Lindo sobrado para chamar de seu! Com 3 quartos, no bairro Itacolomi em Balneario picarras.",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/39263/37142390/sp-piracicaba-alto-rua-gomes-carneiro-conj-comercial-sala-para-alugar-6925f868-1.jpg",
+      "srcset": "",
+      "alt": "Sala para alugar, 20 m² por R$ 1.200/mês - Alto - Piracicaba/SP",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/39263/37142390/sp-piracicaba-alto-rua-gomes-carneiro-conj-comercial-sala-para-alugar-6925f868-2.jpg",
+      "srcset": "",
+      "alt": "Sala para alugar, 20 m² por R$ 1.200/mês - Alto - Piracicaba/SP",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/320638/35085322/sp-sao-paulo-tatuape-rua-serra-de-braganca-apartamento-a-venda-2-quartos-68ceab17-1.jpg",
+      "srcset": "",
+      "alt": "Apartamento com 2 quartos à venda na Rua Serra de Bragança, 825, Tatuapé, São Paulo",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/320638/35085322/sp-sao-paulo-tatuape-rua-serra-de-braganca-apartamento-a-venda-2-quartos-68ceab17-2.jpg",
+      "srcset": "",
+      "alt": "Apartamento com 2 quartos à venda na Rua Serra de Bragança, 825, Tatuapé, São Paulo",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/1183302/39579507/pr-sao-jose-dos-pinhais-costeira-rua-manoel-pires-pereira-casa-sobrado-para-alugar-2-quartos-699f94f4-1.jpg",
+      "srcset": "",
+      "alt": "Casa com 2 quartos para alugar na Rua Manoel Pires Pereira, 300, Costeira, São José dos Pinhais",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/1183302/39579507/pr-sao-jose-dos-pinhais-costeira-rua-manoel-pires-pereira-casa-sobrado-para-alugar-2-quartos-699f94f4-2.jpg",
+      "srcset": "",
+      "alt": "Casa com 2 quartos para alugar na Rua Manoel Pires Pereira, 300, Costeira, São José dos Pinhais",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/815365/39919882/pr-sao-jose-dos-pinhais-sao-pedro-rua-coronel-luiz-victorino-ordine-apartamento-a-venda-3-quartos-69a073b5-00.jpg",
+      "srcset": "",
+      "alt": "Apartamento com 3 quartos à venda na Rua Coronel Luiz Victorino Ordine, 1598, São Pedro, São José dos Pinhais",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/815365/39919882/pr-sao-jose-dos-pinhais-sao-pedro-rua-coronel-luiz-victorino-ordine-apartamento-a-venda-3-quartos-69a073b5-01.jpg",
+      "srcset": "",
+      "alt": "Apartamento com 3 quartos à venda na Rua Coronel Luiz Victorino Ordine, 1598, São Pedro, São José dos Pinhais",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/840607/40286037/sp-mogi-das-cruzes-arua-avenida-presidente-general-dutra-casa-em-condominio-fechado-para-alugar-69af0562-00.jpg",
+      "srcset": "",
+      "alt": "Modernidade e Amplitude: Casa de Alto Padrão com 3 Suítes e Lazer Completo",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/840607/40286037/sp-mogi-das-cruzes-arua-avenida-presidente-general-dutra-casa-em-condominio-fechado-para-alugar-69af0562-01.jpg",
+      "srcset": "",
+      "alt": "Modernidade e Amplitude: Casa de Alto Padrão com 3 Suítes e Lazer Completo",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/105057/33570875/mg-belo-horizonte-venda-nova-nao-encontrado-loja-comercio-a-venda-6893e073-1.jpg",
+      "srcset": "",
+      "alt": "Ponto comercial à venda na Venda Nova, Belo Horizonte ",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/105057/33570875/mg-belo-horizonte-venda-nova-nao-encontrado-loja-comercio-a-venda-6893e073-2.jpg",
+      "srcset": "",
+      "alt": "Ponto comercial à venda na Venda Nova, Belo Horizonte ",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/902478/32490127/pr-londrina-vila-ipiranga-nao-encontrado-casa-sobrado-comercial-para-alugar-686bfe69-1.jpg",
+      "srcset": "",
+      "alt": "Casa comercial para alugar na Avenida Bandeirantes, 180, Vila Ipiranga, Londrina por R$ 12.000",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/902478/32490127/pr-londrina-vila-ipiranga-nao-encontrado-casa-sobrado-comercial-para-alugar-686bfe69-2.jpg",
+      "srcset": "",
+      "alt": "Casa comercial para alugar na Avenida Bandeirantes, 180, Vila Ipiranga, Londrina por R$ 12.000",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/202181/18365577/sc-bombinhas-bombas-casa-em-condominio-fechado-a-venda-3-quartos-657f19e5-00.jpg",
+      "srcset": "",
+      "alt": "Casa em condomínio fechado com 3 quartos à venda em Bombas, Bombinhas ",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/202181/18365577/sc-bombinhas-bombas-casa-em-condominio-fechado-a-venda-3-quartos-657f19e5-01.jpg",
+      "srcset": "",
+      "alt": "Casa em condomínio fechado com 3 quartos à venda em Bombas, Bombinhas ",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/749013/40057099/sc-florianopolis-agronomica-rua-frei-caneca-apartamento-para-alugar-3-quartos-69a6136f-6.jpg",
+      "srcset": "",
+      "alt": "Apartamento com 3 quartos para alugar na Rua Frei Caneca, 506, Agronômica, Florianópolis, 140 m2 por R$ 5.500",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/749013/40057099/sc-florianopolis-agronomica-rua-frei-caneca-apartamento-para-alugar-3-quartos-69a6136f-1.jpg",
+      "srcset": "",
+      "alt": "Apartamento com 3 quartos para alugar na Rua Frei Caneca, 506, Agronômica, Florianópolis, 140 m2 por R$ 5.500",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/955030/36623932/sp-sao-paulo-imirim-avenida-direitos-humanos-apartamento-a-venda-3-quartos-690eb9da-1.jpg",
+      "srcset": "",
+      "alt": "Apartamento com 3 dormitórios, 110 m² - venda por R$ 1.278.000,00 ou aluguel por R$ 8.882,45/mês - Imirim - São Paulo/SP",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/955030/36623932/sp-sao-paulo-imirim-avenida-direitos-humanos-apartamento-a-venda-3-quartos-690eb9da-2.jpg",
+      "srcset": "",
+      "alt": "Apartamento com 3 dormitórios, 110 m² - venda por R$ 1.278.000,00 ou aluguel por R$ 8.882,45/mês - Imirim - São Paulo/SP",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/30426/25073376/sc-camboriu-centro-nao-encontrado-barracao-galpao-para-alugar-69ca6d09-1.jpg",
+      "srcset": "",
+      "alt": "Barracão / Galpão / Depósito com 1 sala para alugar no Centro, Camboriú ",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/30426/25073376/sc-camboriu-centro-nao-encontrado-barracao-galpao-para-alugar-69ca6d09-2.jpg",
+      "srcset": "",
+      "alt": "Barracão / Galpão / Depósito com 1 sala para alugar no Centro, Camboriú ",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/484242/29864854/pr-guarapuava-santana-rua-pedro-siqueira-apartamento-a-venda-2-quartos-681dc61e-1.jpg",
+      "srcset": "",
+      "alt": "Apartamento para Venda em Guarapuava, Santana, 2 dormitórios, 1 suíte, 1 banheiro, 2 vagas",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/484242/29864854/pr-guarapuava-santana-rua-pedro-siqueira-apartamento-a-venda-2-quartos-681dc61e-2.jpg",
+      "srcset": "",
+      "alt": "Apartamento para Venda em Guarapuava, Santana, 2 dormitórios, 1 suíte, 1 banheiro, 2 vagas",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/130294/35452762/sp-sao-paulo-americanopolis-rua-professor-paulo-mangabeira-albernaz-loja-comercio-para-alugar-68dfa7ad-1.jpg",
+      "srcset": "",
+      "alt": "Excelente casa térrea ara locação! Com 47m², fácil acesso da Av Cupecê!",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/130294/35452762/sp-sao-paulo-americanopolis-rua-professor-paulo-mangabeira-albernaz-loja-comercio-para-alugar-68dfa7ad-2.jpg",
+      "srcset": "",
+      "alt": "Excelente casa térrea ara locação! Com 47m², fácil acesso da Av Cupecê!",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/654119/39575306/pr-colombo-maracana-nao-encontrado-loja-comercio-para-alugar-698f1ea4-1.jpg",
+      "srcset": "",
+      "alt": "Oportunidade Imperdível! Sala Comercial em Localização Privilegiada no Alto Maracanã*",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    },
+    {
+      "src": "https://www.chavesnamao.com.br/imn/0400x0250/N/75/imoveis/654119/39575306/pr-colombo-maracana-nao-encontrado-loja-comercio-para-alugar-698f1ea4-2.jpg",
+      "srcset": "",
+      "alt": "Oportunidade Imperdível! Sala Comercial em Localização Privilegiada no Alto Maracanã*",
+      "w": 400,
+      "h": 262,
+      "parentClasses": ""
+    }
+  ],
+  "videos": [],
+  "backgroundImages": [],
+  "svgs": [
+    {
+      "index": 0,
+      "viewBox": "0 0 478 70",
+      "width": "180",
+      "height": "39",
+      "html": "[TOO_LARGE]",
+      "parentText": "",
+      "ariaLabel": ""
+    },
+    {
+      "index": 1,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display:inline-block;stroke:currentColor;fill:currentColor;width:18px;height:18px\"><path d=\"M203.488 877.952c-17.998 0-33.301-6.302-45.909-18.91-12.608-12.617-18.912-27.921-18.912-45.909v-446.369c0-17.991 6.304-33.291 18.912-45.899s27.911-18.912 45.909-18.912h105.845v-105.856c0-17.991 6.304-33.291 18.912-45.899s27.911-18.912 45.909-18.912h275.693c17.997 0 33.301 6.304 45.909 18.912s18.91 27.907 18.91 45.899v276.521h105.847c17.997 0 33.301 6.306 45.909 18.914s18.91 27.908 18.91 45.897v275.703c0 17.988-6.302 33.293-18.91 45.909-12.608 12.608-27.913 18.91-45.909 18.91h-255.181v-170.667h-106.667v170.667h-255.179zM202.667 813.952h106.667v-106.667h-106.667v106.667zM202.667 643.285h106.667v-106.667h-106.667v106.667zM202.667 472.619h106.667v-106.665h-106.667v106.665zM373.333 643.285h106.667v-106.667h-106.667v106.667zM373.333 472.619h106.667v-106.665h-106.667v106.665zM373.333 301.953h106.667v-106.667h-106.667v106.667zM544 643.285h106.667v-106.667h-106.667v106.667zM544 472.619h106.667v-106.665h-106.667v106.665zM544 301.953h106.667v-106.667h-106.667v106.667zM714.667 813.952h106.667v-106.667h-106.667v106.667zM714.667 643.285h106.667v-106.667h-106.667v106.667z\"></path></svg>",
+      "parentText": "Imóveis",
+      "ariaLabel": ""
+    },
+    {
+      "index": 2,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"desktop_car__BitiJ undefined\" viewBox=\"0 0 1024 1024\" style=\"display:inline-block;stroke:currentColor;fill:currentColor;width:18px;height:18px\"><path d=\"M239.584 789.333v40.205c0 12.535-4.391 23.189-13.173 31.966s-19.449 13.163-32 13.163c-12.544 0-23.193-4.386-31.947-13.163s-13.131-19.43-13.131-31.966v-300.962c0-4.429 0.288-8.862 0.864-13.291s1.543-8.674 2.901-12.736l76.405-216.021c5.113-15.367 14.379-27.851 27.797-37.451 13.419-9.607 28.437-14.411 45.056-14.411h419.285c16.619 0 31.637 4.803 45.056 14.411 13.419 9.6 22.686 22.083 27.797 37.451l76.403 216.021c1.361 4.062 2.325 8.307 2.901 12.736s0.866 8.862 0.866 13.291v300.962c0 12.535-4.39 23.189-13.171 31.966-8.789 8.777-19.456 13.163-32 13.163-12.553 0-23.206-4.386-31.957-13.163-8.747-8.777-13.12-19.43-13.12-31.966v-40.205h-544.834zM239.264 451.285h545.474l-50.539-144c-1.097-2.738-2.739-4.857-4.932-6.357-2.189-1.507-4.787-2.261-7.795-2.261h-418.944c-3.008 0-5.607 0.754-7.797 2.261-2.19 1.501-3.833 3.619-4.928 6.357l-50.539 144zM318.453 676.109c15.523 0 28.69-5.44 39.499-16.311 10.802-10.867 16.203-24.060 16.203-39.582 0-15.526-5.433-28.693-16.299-39.501-10.873-10.803-24.071-16.201-39.595-16.201s-28.686 5.431-39.488 16.299c-10.809 10.871-16.213 24.068-16.213 39.595 0 15.522 5.437 28.685 16.309 39.488 10.866 10.807 24.061 16.213 39.584 16.213zM705.741 676.109c15.522 0 28.685-5.44 39.488-16.311 10.807-10.867 16.209-24.060 16.209-39.582 0-15.526-5.436-28.693-16.307-39.501-10.867-10.803-24.060-16.201-39.582-16.201-15.526 0-28.693 5.431-39.501 16.299-10.803 10.871-16.201 24.068-16.201 39.595 0 15.522 5.431 28.685 16.299 39.488 10.871 10.807 24.068 16.213 39.595 16.213zM213.333 725.333h597.333v-210.048h-597.333v210.048z\"></path></svg>",
+      "parentText": "Veículos",
+      "ariaLabel": ""
+    },
+    {
+      "index": 3,
+      "viewBox": "0 0 983 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 983 1024\" style=\"display:inline-block;stroke:currentColor;fill:currentColor;width:18px;height:18px\"><path d=\"M860.16 551.596h-81.92c-11.604 0-21.332-3.928-29.184-11.776-7.852-7.852-11.776-17.58-11.776-29.184 0-11.608 3.924-21.336 11.776-29.184 7.852-7.852 17.58-11.776 29.184-11.776h81.92c11.604 0 21.332 3.924 29.184 11.776 7.852 7.848 11.776 17.576 11.776 29.184 0 11.604-3.924 21.332-11.776 29.184-7.852 7.848-17.58 11.776-29.184 11.776zM679.936 707.244c6.828-9.56 15.7-15.020 26.624-16.384 10.924-1.368 21.164 1.364 30.72 8.192l65.536 49.152c9.556 6.824 15.020 15.7 16.384 26.624 1.364 10.92-1.364 21.16-8.192 30.72-6.828 9.556-15.7 15.016-26.624 16.384-10.924 1.364-21.164-1.368-30.72-8.192l-65.536-49.152c-9.556-6.828-15.020-15.704-16.384-26.624-1.364-10.924 1.364-21.164 8.192-30.72zM802.816 273.067l-65.536 49.152c-9.556 6.827-19.796 9.557-30.72 8.192s-19.796-6.827-26.624-16.384c-6.828-9.557-9.556-19.797-8.192-30.72s6.828-19.797 16.384-26.624l65.536-49.152c9.556-6.827 19.796-9.557 30.72-8.192s19.796 6.827 26.624 16.384c6.828 9.557 9.556 19.797 8.192 30.72s-6.828 19.797-16.384 26.624zM204.8 633.516h-40.96c-22.528 0-41.813-8.024-57.856-24.064-16.043-16.044-24.064-35.328-24.064-57.856v-81.92c0-22.528 8.021-41.816 24.064-57.856 16.043-16.044 35.328-24.065 57.856-24.065h163.84l142.336-86.016c13.652-8.192 27.476-8.192 41.472 0s20.992 20.139 20.992 35.84v346.113c0 15.7-6.996 27.648-20.992 35.84s-27.82 8.192-41.472 0l-142.336-86.016h-40.96v122.88c0 11.604-3.925 21.332-11.776 29.184-7.851 7.848-17.579 11.776-29.184 11.776s-21.333-3.928-29.184-11.776c-7.851-7.852-11.776-17.58-11.776-29.184v-122.88zM450.56 610.988v-200.704l-100.352 59.392h-186.368v81.92h186.368l100.352 59.392zM573.44 647.852v-274.433c18.432 16.384 33.28 36.353 44.544 59.905s16.896 49.32 16.896 77.312c0 27.988-5.632 53.76-16.896 77.312s-26.112 43.52-44.544 59.904z\"></path></svg>",
+      "parentText": "Anuncie",
+      "ariaLabel": ""
+    },
+    {
+      "index": 4,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 18px; height: 18px; color: rgb(113, 113, 105);\"><path d=\"M525.804 859.82c-9.556 0-19.284-1.708-29.184-5.12-9.896-3.416-18.6-8.876-26.112-16.384l-70.654-64.512c-72.363-66.22-137.728-131.928-196.096-197.12-58.368-65.196-87.552-137.048-87.552-215.553 0-64.171 21.504-117.76 64.512-160.768s96.597-64.512 160.768-64.512c36.181 0 70.314 7.68 102.398 23.040 32.088 15.36 59.392 36.352 81.92 62.976 22.528-26.624 49.836-47.616 81.92-62.976 32.088-15.36 66.22-23.040 102.4-23.040 64.172 0 117.76 21.504 160.768 64.512s64.512 96.597 64.512 160.768c0 78.505-29.012 150.529-87.040 216.065-58.024 65.536-123.904 131.412-197.632 197.632l-69.632 63.488c-7.508 7.508-16.212 12.968-26.112 16.384-9.896 3.412-19.624 5.12-29.184 5.12zM486.892 303.787c-19.796-27.989-40.96-49.323-63.488-64-22.526-14.677-49.833-22.016-81.918-22.016-40.96 0-75.094 13.653-102.4 40.96s-40.96 61.44-40.96 102.4c0 35.499 12.629 73.217 37.888 113.153s55.466 78.676 90.624 116.224c35.157 37.544 71.338 72.704 108.542 105.472 37.208 32.768 67.416 59.732 90.624 80.896 23.212-21.164 53.42-48.128 90.624-80.896 37.208-32.768 73.388-67.928 108.544-105.472 35.16-37.548 65.368-76.288 90.624-116.224 25.26-39.936 37.888-77.654 37.888-113.153 0-40.96-13.652-75.093-40.96-102.4-27.304-27.307-61.44-40.96-102.4-40.96-32.084 0-59.392 7.339-81.92 22.016s-43.688 36.011-63.488 64c-4.776 6.827-10.58 11.947-17.408 15.36-6.824 3.413-13.992 5.12-21.504 5.12-7.508 0-14.676-1.707-21.504-5.12-6.824-3.413-12.628-8.533-17.408-15.36z\"></path></svg>",
+      "parentText": "Favoritos",
+      "ariaLabel": ""
+    },
+    {
+      "index": 5,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg color=\"#717171\" class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 22px; height: 22px;\"><path d=\"M529.142 516.096c-45.056 0-83.624-16.040-115.712-48.128-32.085-32.084-48.127-70.654-48.127-115.71s16.042-83.627 48.127-115.712c32.088-32.086 70.656-48.128 115.712-48.128s83.628 16.042 115.712 48.128c32.088 32.085 48.128 70.656 48.128 115.712s-16.040 83.626-48.128 115.71c-32.084 32.088-70.656 48.128-115.712 48.128zM201.463 761.856v-32.768c0-23.208 5.973-44.544 17.92-64s27.818-34.304 47.616-44.544c42.325-21.16 85.333-37.032 129.024-47.616 43.691-10.58 88.063-15.872 133.119-15.872s89.432 5.292 133.12 15.872c43.692 10.584 86.7 26.456 129.024 47.616 19.8 10.24 35.672 25.088 47.616 44.544 11.948 19.456 17.92 40.792 17.92 64v32.768c0 22.528-8.020 41.816-24.064 57.856-16.040 16.044-35.328 24.064-57.856 24.064h-491.519c-22.528 0-41.814-8.020-57.856-24.064-16.043-16.040-24.064-35.328-24.064-57.856zM283.383 761.856h491.519v-32.768c0-7.508-1.876-14.336-5.632-20.48-3.752-6.144-8.704-10.92-14.848-14.336-36.864-18.432-74.068-32.256-111.616-41.472-37.544-9.216-75.432-13.824-113.664-13.824-38.228 0-76.116 4.608-113.664 13.824-37.546 9.216-74.751 23.040-111.615 41.472-6.144 3.416-11.094 8.192-14.848 14.336s-5.632 12.972-5.632 20.48v32.768zM529.142 434.176c22.528 0 41.816-8.020 57.856-24.064 16.044-16.041 24.064-35.326 24.064-57.854s-8.020-41.814-24.064-57.856c-16.040-16.043-35.328-24.064-57.856-24.064s-41.812 8.021-57.856 24.064c-16.040 16.042-24.064 35.328-24.064 57.856s8.024 41.813 24.064 57.854c16.044 16.044 35.328 24.064 57.856 24.064z\"></path></svg>",
+      "parentText": "Entrar",
+      "ariaLabel": ""
+    },
+    {
+      "index": 6,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 18px; height: 18px;\"><path d=\"M276.707 835.584c-11.605 0-21.333-3.924-29.184-11.776-7.85-7.848-11.776-17.576-11.776-29.184v-245.76h-40.96c-11.605 0-21.333-3.924-29.184-11.776-7.85-7.848-11.776-17.576-11.776-29.184 0-11.604 3.926-21.332 11.776-29.184 7.851-7.848 17.579-11.776 29.184-11.776h163.84c11.606 0 21.334 3.928 29.184 11.776 7.851 7.852 11.776 17.58 11.776 29.184 0 11.608-3.925 21.336-11.776 29.184-7.85 7.852-17.578 11.776-29.184 11.776h-40.96v245.76c0 11.608-3.925 21.336-11.776 29.184-7.85 7.852-17.578 11.776-29.184 11.776zM276.707 385.025c-11.605 0-21.333-3.925-29.184-11.776s-11.776-17.578-11.776-29.184v-122.88c0-11.605 3.926-21.333 11.776-29.184s17.579-11.776 29.184-11.776c11.606 0 21.334 3.926 29.184 11.776s11.776 17.579 11.776 29.184v122.88c0 11.606-3.925 21.334-11.776 29.184s-17.578 11.776-29.184 11.776zM440.549 385.025c-11.608 0-21.336-3.925-29.184-11.776-7.852-7.85-11.778-17.578-11.778-29.184s3.926-21.333 11.778-29.184c7.848-7.85 17.576-11.776 29.184-11.776h40.96v-81.92c0-11.605 3.924-21.333 11.776-29.184 7.848-7.85 17.576-11.776 29.184-11.776 11.604 0 21.332 3.926 29.184 11.776 7.848 7.851 11.776 17.579 11.776 29.184v81.92h40.96c11.604 0 21.332 3.926 29.184 11.776 7.848 7.851 11.776 17.579 11.776 29.184s-3.928 21.334-11.776 29.184c-7.852 7.851-17.58 11.776-29.184 11.776h-163.84zM522.469 835.584c-11.608 0-21.336-3.924-29.184-11.776-7.852-7.848-11.776-17.576-11.776-29.184v-286.72c0-11.604 3.924-21.332 11.776-29.184 7.848-7.848 17.576-11.776 29.184-11.776 11.604 0 21.332 3.928 29.184 11.776 7.848 7.852 11.776 17.58 11.776 29.184v286.72c0 11.608-3.928 21.336-11.776 29.184-7.852 7.852-17.58 11.776-29.184 11.776zM768.229 835.584c-11.608 0-21.336-3.924-29.184-11.776-7.852-7.848-11.776-17.576-11.776-29.184v-81.92h-40.96c-11.608 0-21.336-3.924-29.184-11.776-7.852-7.848-11.776-17.576-11.776-29.184 0-11.604 3.924-21.332 11.776-29.184 7.848-7.848 17.576-11.776 29.184-11.776h163.84c11.604 0 21.332 3.928 29.184 11.776 7.848 7.852 11.776 17.58 11.776 29.184 0 11.608-3.928 21.336-11.776 29.184-7.852 7.852-17.58 11.776-29.184 11.776h-40.96v81.92c0 11.608-3.928 21.336-11.776 29.184-7.852 7.852-17.58 11.776-29.184 11.776zM768.229 548.864c-11.608 0-21.336-3.924-29.184-11.776-7.852-7.848-11.776-17.576-11.776-29.184v-286.719c0-11.605 3.924-21.333 11.776-29.184 7.848-7.85 17.576-11.776 29.184-11.776 11.604 0 21.332 3.926 29.184 11.776 7.848 7.851 11.776 17.579 11.776 29.184v286.719c0 11.608-3.928 21.336-11.776 29.184-7.852 7.852-17.58 11.776-29.184 11.776z\"></path></svg>",
+      "parentText": "Filtros",
+      "ariaLabel": ""
+    },
+    {
+      "index": 7,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 16px; height: 16px;\"><path d=\"M300.98 868.352c-22.528 0-41.813-8.020-57.856-24.064s-24.064-35.328-24.064-57.856v-532.48c-11.605 0-21.333-3.925-29.184-11.776s-11.776-17.578-11.776-29.184c0-11.605 3.926-21.333 11.776-29.184s17.579-11.776 29.184-11.776h163.84c0-11.605 3.926-21.333 11.776-29.184s17.578-11.776 29.182-11.776h163.84c11.608 0 21.336 3.926 29.184 11.776 7.852 7.851 11.776 17.579 11.776 29.184h163.84c11.608 0 21.336 3.926 29.184 11.776 7.852 7.851 11.776 17.579 11.776 29.184s-3.924 21.334-11.776 29.184c-7.848 7.851-17.576 11.776-29.184 11.776v532.48c0 22.528-8.020 41.812-24.064 57.856-16.040 16.044-35.328 24.064-57.856 24.064h-409.598zM710.578 253.952h-409.598v532.48h409.598v-532.48zM423.858 704.512c11.608 0 21.336-3.924 29.184-11.776 7.852-7.852 11.776-17.58 11.776-29.184v-286.72c0-11.605-3.924-21.333-11.776-29.184-7.848-7.85-17.576-11.776-29.184-11.776-11.604 0-21.332 3.926-29.182 11.776s-11.776 17.579-11.776 29.184v286.72c0 11.604 3.926 21.332 11.776 29.184s17.578 11.776 29.182 11.776zM587.698 704.512c11.608 0 21.336-3.924 29.184-11.776 7.852-7.852 11.776-17.58 11.776-29.184v-286.72c0-11.605-3.924-21.333-11.776-29.184-7.848-7.85-17.576-11.776-29.184-11.776-11.604 0-21.332 3.926-29.184 11.776-7.848 7.851-11.776 17.579-11.776 29.184v286.72c0 11.604 3.928 21.332 11.776 29.184 7.852 7.852 17.58 11.776 29.184 11.776z\"></path></svg>",
+      "parentText": "Limpar tudo",
+      "ariaLabel": ""
+    },
+    {
+      "index": 8,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 18px; height: 18px;\"><path d=\"M493.49 547.5l159.744-159.744c7.512-7.509 17.068-11.264 28.672-11.264 11.608 0 21.164 3.755 28.672 11.264 7.512 7.509 11.264 17.067 11.264 28.672s-3.752 21.164-11.264 28.672l-188.416 188.416c-4.096 4.096-8.532 6.996-13.312 8.704-4.776 1.708-9.896 2.56-15.36 2.56-5.46 0-10.58-0.852-15.36-2.56-4.776-1.708-9.216-4.608-13.312-8.704l-188.414-188.416c-7.509-7.508-11.264-17.068-11.264-28.672s3.755-21.162 11.264-28.672c7.509-7.509 17.067-11.264 28.672-11.264s21.162 3.755 28.672 11.264l159.742 159.744z\"></path></svg>",
+      "parentText": "Nenhum filtro",
+      "ariaLabel": ""
+    },
+    {
+      "index": 9,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 14px; height: 14px;\"><path d=\"M481.509 934.572v-40.96c-85.335-9.556-158.551-44.884-219.65-105.984s-96.427-134.316-105.984-219.648h-40.96c-11.606 0-21.334-3.924-29.184-11.776s-11.776-17.58-11.776-29.184c0-11.604 3.925-21.332 11.776-29.184s17.578-11.776 29.184-11.776h40.96c9.557-85.334 44.885-158.55 105.984-219.648s134.314-96.427 219.65-105.984v-40.96c0-11.606 3.924-21.334 11.776-29.184 7.848-7.851 17.576-11.776 29.184-11.776 11.604 0 21.332 3.925 29.184 11.776 7.848 7.85 11.776 17.578 11.776 29.184v40.96c85.332 9.557 158.548 44.885 219.648 105.984 61.096 61.098 96.424 134.314 105.984 219.648h40.96c11.604 0 21.332 3.924 29.184 11.776 7.848 7.852 11.776 17.58 11.776 29.184s-3.928 21.332-11.776 29.184c-7.852 7.852-17.58 11.776-29.184 11.776h-40.96c-9.56 85.332-44.888 158.548-105.984 219.648-61.1 61.1-134.316 96.428-219.648 105.984v40.96c0 11.604-3.928 21.332-11.776 29.184-7.852 7.852-17.58 11.776-29.184 11.776-11.608 0-21.336-3.924-29.184-11.776-7.852-7.852-11.776-17.58-11.776-29.184zM522.469 813.74c79.188 0 146.772-27.988 202.752-83.968 55.976-55.98 83.968-123.564 83.968-202.752s-27.992-146.774-83.968-202.752c-55.98-55.979-123.564-83.968-202.752-83.968-79.192 0-146.775 27.989-202.754 83.968s-83.968 123.564-83.968 202.752c0 79.188 27.989 146.772 83.968 202.752s123.562 83.968 202.754 83.968zM522.469 690.86c-45.056 0-83.628-16.044-115.714-48.128s-48.128-70.656-48.128-115.712c0-45.056 16.042-83.628 48.128-115.712 32.086-32.086 70.658-48.128 115.714-48.128s83.624 16.042 115.712 48.128c32.084 32.084 48.128 70.656 48.128 115.712s-16.044 83.628-48.128 115.712c-32.088 32.084-70.656 48.128-115.712 48.128zM522.469 608.94c22.528 0 41.812-8.020 57.856-24.064 16.040-16.044 24.064-35.328 24.064-57.856s-8.024-41.812-24.064-57.856c-16.044-16.044-35.328-24.064-57.856-24.064s-41.816 8.020-57.856 24.064c-16.044 16.044-24.064 35.328-24.064 57.856s8.020 41.812 24.064 57.856c16.040 16.044 35.328 24.064 57.856 24.064z\"></path></svg>",
+      "parentText": "Perto de mim",
+      "ariaLabel": ""
+    },
+    {
+      "index": 10,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 18px; height: 18px;\"><path d=\"M509.952 900.776c-9.556 0-19.116-1.704-28.672-5.12-9.556-3.412-18.092-8.532-25.6-15.36-44.372-40.96-83.626-80.896-117.76-119.808s-62.634-76.628-85.504-113.152c-22.869-36.52-40.277-71.68-52.224-105.472s-17.92-66.048-17.92-96.768c0-102.399 32.939-183.978 98.816-244.735s142.164-91.136 228.864-91.136c86.7 0 162.988 30.378 228.864 91.136s98.816 142.336 98.816 244.735c0 30.72-5.972 62.976-17.92 96.768s-29.356 68.952-52.224 105.472c-22.868 36.524-51.372 74.24-85.504 113.152s-73.388 78.848-117.76 119.808c-7.508 6.828-16.044 11.948-25.6 15.36-9.556 3.416-19.116 5.12-28.672 5.12zM509.952 518.824c22.528 0 41.812-8.020 57.856-24.064 16.044-16.040 24.064-35.328 24.064-57.856s-8.020-41.812-24.064-57.855c-16.044-16.043-35.328-24.064-57.856-24.064s-41.812 8.021-57.856 24.064c-16.044 16.042-24.064 35.327-24.064 57.855s8.020 41.816 24.064 57.856c16.044 16.044 35.328 24.064 57.856 24.064z\"></path></svg>",
+      "parentText": "",
+      "ariaLabel": ""
+    },
+    {
+      "index": 11,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 30px; height: 30px;\"><path d=\"M203.488 877.952c-17.998 0-33.301-6.302-45.909-18.91-12.608-12.617-18.912-27.921-18.912-45.909v-446.369c0-17.991 6.304-33.291 18.912-45.899s27.911-18.912 45.909-18.912h105.845v-105.856c0-17.991 6.304-33.291 18.912-45.899s27.911-18.912 45.909-18.912h275.693c17.997 0 33.301 6.304 45.909 18.912s18.91 27.907 18.91 45.899v276.521h105.847c17.997 0 33.301 6.306 45.909 18.914s18.91 27.908 18.91 45.897v275.703c0 17.988-6.302 33.293-18.91 45.909-12.608 12.608-27.913 18.91-45.909 18.91h-255.181v-170.667h-106.667v170.667h-255.179zM202.667 813.952h106.667v-106.667h-106.667v106.667zM202.667 643.285h106.667v-106.667h-106.667v106.667zM202.667 472.619h106.667v-106.665h-106.667v106.665zM373.333 643.285h106.667v-106.667h-106.667v106.667zM373.333 472.619h106.667v-106.665h-106.667v106.665zM373.333 301.953h106.667v-106.667h-106.667v106.667zM544 643.285h106.667v-106.667h-106.667v106.667zM544 472.619h106.667v-106.665h-106.667v106.665zM544 301.953h106.667v-106.667h-106.667v106.667zM714.667 813.952h106.667v-106.667h-106.667v106.667zM714.667 643.285h106.667v-106.667h-106.667v106.667z\"></path></svg>",
+      "parentText": "Apartamento",
+      "ariaLabel": ""
+    },
+    {
+      "index": 12,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 30px; height: 30px;\"><path d=\"M305.227 832c-21.277 0-39.449-7.535-54.517-22.605-15.069-15.074-22.603-33.25-22.603-54.528v-311.219l-100.107 75.328c-7.495 5.197-15.428 7.398-23.797 6.601-8.37-0.794-15.289-4.937-20.757-12.425-5.469-7.497-7.698-15.428-6.688-23.799 1.017-8.367 5.269-15.287 12.757-20.757l375.552-284.308c7.006-5.141 14.473-8.928 22.4-11.36 7.927-2.439 16.107-3.659 24.533-3.659s16.606 1.22 24.533 3.659c7.927 2.432 15.394 6.219 22.4 11.36l131.115 98.869v-39.051c0-14.499 5.060-26.809 15.181-36.928 10.116-10.119 22.426-15.179 36.924-15.179 14.494 0 26.799 5.060 36.919 15.179s15.177 22.429 15.177 36.928v118.315l140.642 106.175c7.053 5.47 11.196 12.39 12.425 20.757 1.233 8.371-0.887 16.303-6.353 23.799-5.47 7.488-12.39 11.631-20.757 12.425-8.371 0.798-16.303-1.404-23.799-6.601l-100.096-75.328v311.219c0 21.278-7.535 39.454-22.605 54.528-15.074 15.070-33.25 22.605-54.528 22.605h-82.462c-21.278 0-39.45-7.535-54.519-22.605-15.066-15.074-22.601-33.25-22.601-54.528v-149.333c0-3.823-1.233-6.967-3.699-9.429-2.462-2.466-5.606-3.699-9.434-3.699h-68.928c-3.823 0-6.967 1.233-9.429 3.699-2.466 2.462-3.699 5.606-3.699 9.429v149.333c0 21.278-7.535 39.454-22.605 54.528-15.066 15.070-33.239 22.605-54.515 22.605h-82.059zM305.227 768h82.059c3.826 0 6.969-1.233 9.429-3.691 2.467-2.462 3.701-5.606 3.701-9.442v-149.333c0-21.274 7.534-39.45 22.603-54.515 15.070-15.070 33.242-22.605 54.515-22.605h68.928c21.278 0 39.45 7.535 54.519 22.605 15.070 15.066 22.601 33.242 22.601 54.515v149.333c0 3.836 1.237 6.98 3.703 9.442 2.462 2.458 5.602 3.691 9.429 3.691h82.462c3.836 0 6.98-1.233 9.442-3.691 2.462-2.462 3.691-5.606 3.691-9.442v-359.466l-212.514-159.669c-2.189-1.643-4.787-2.464-7.795-2.464s-5.606 0.821-7.799 2.464l-212.094 159.669v359.466c0 3.836 1.23 6.98 3.691 9.442 2.461 2.458 5.603 3.691 9.429 3.691zM430.771 427.328h162.458c0-21.391-8.124-38.967-24.367-52.727-16.247-13.753-35.2-20.629-56.862-20.629s-40.614 6.877-56.866 20.629c-16.239 13.76-24.363 31.335-24.363 52.727z\"></path></svg>",
+      "parentText": "Casas & Sobrados",
+      "ariaLabel": ""
+    },
+    {
+      "index": 13,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 30px; height: 30px;\"><path d=\"M100.928 813.133v-617.036c0-17.991 6.304-33.291 18.912-45.899s27.908-18.912 45.899-18.912h275.7c17.993 0 33.293 6.304 45.901 18.912s18.91 27.907 18.91 45.899v105.856h352.013c17.993 0 33.289 6.304 45.897 18.912s18.914 27.907 18.914 45.899v446.369c0 17.988-6.306 33.293-18.914 45.909-12.608 12.608-27.904 18.91-45.897 18.91h-692.523c-17.991 0-33.291-6.302-45.899-18.91-12.608-12.617-18.912-27.921-18.912-45.909zM164.917 813.952h106.677v-106.667h-106.677v106.667zM164.917 643.285h106.677v-106.667h-106.677v106.667zM164.917 472.619h106.677v-106.665h-106.677v106.665zM164.917 301.953h106.677v-106.667h-106.677v106.667zM335.584 813.952h106.678v-106.667h-106.678v106.667zM335.584 643.285h106.678v-106.667h-106.678v106.667zM335.584 472.619h106.678v-106.665h-106.678v106.665zM335.584 301.953h106.678v-106.667h-106.678v106.667zM506.249 813.952h352.832v-447.999h-352.832v106.665h93.547v64h-93.547v106.667h93.547v64h-93.547v106.667zM693.333 536.619v-64h64v64h-64zM693.333 707.285v-64h64v64h-64z\"></path></svg>",
+      "parentText": "Kitnets & Stúdios",
+      "ariaLabel": ""
+    },
+    {
+      "index": 14,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 16px; height: 16px;\"><path d=\"M484.844 552.96h-204.798c-11.606 0-21.334-3.924-29.184-11.776s-11.776-17.58-11.776-29.184c0-11.604 3.925-21.332 11.776-29.184s17.578-11.776 29.184-11.776h204.798v-204.8c0-11.605 3.928-21.333 11.776-29.184 7.852-7.851 17.58-11.776 29.184-11.776 11.608 0 21.336 3.925 29.184 11.776 7.852 7.851 11.776 17.579 11.776 29.184v204.8h204.8c11.608 0 21.336 3.924 29.184 11.776 7.852 7.852 11.776 17.58 11.776 29.184s-3.924 21.332-11.776 29.184c-7.848 7.852-17.576 11.776-29.184 11.776h-204.8v204.8c0 11.604-3.924 21.332-11.776 29.184-7.848 7.852-17.576 11.776-29.184 11.776-11.604 0-21.332-3.924-29.184-11.776-7.848-7.852-11.776-17.58-11.776-29.184v-204.8z\"></path></svg>",
+      "parentText": "Mais tipos de imóveis",
+      "ariaLabel": ""
+    },
+    {
+      "index": 15,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 18px; height: 18px;\"><path d=\"M516.854 462.852l-159.743 159.744c-7.51 7.508-17.067 11.264-28.672 11.264s-21.163-3.756-28.672-11.264c-7.51-7.512-11.264-17.068-11.264-28.672 0-11.608 3.754-21.164 11.264-28.672l188.415-188.417c4.096-4.096 8.536-6.998 13.312-8.704 4.78-1.707 9.9-2.56 15.36-2.56 5.464 0 10.584 0.853 15.36 2.56 4.78 1.706 9.216 4.608 13.312 8.704l188.416 188.417c7.512 7.508 11.264 17.064 11.264 28.672 0 11.604-3.752 21.16-11.264 28.672-7.508 7.508-17.064 11.264-28.672 11.264-11.604 0-21.16-3.756-28.672-11.264l-159.744-159.744z\"></path></svg>",
+      "parentText": "",
+      "ariaLabel": ""
+    },
+    {
+      "index": 16,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 18px; height: 18px;\"><path d=\"M516.854 462.852l-159.743 159.744c-7.51 7.508-17.067 11.264-28.672 11.264s-21.163-3.756-28.672-11.264c-7.51-7.512-11.264-17.068-11.264-28.672 0-11.608 3.754-21.164 11.264-28.672l188.415-188.417c4.096-4.096 8.536-6.998 13.312-8.704 4.78-1.707 9.9-2.56 15.36-2.56 5.464 0 10.584 0.853 15.36 2.56 4.78 1.706 9.216 4.608 13.312 8.704l188.416 188.417c7.512 7.508 11.264 17.064 11.264 28.672 0 11.604-3.752 21.16-11.264 28.672-7.508 7.508-17.064 11.264-28.672 11.264-11.604 0-21.16-3.756-28.672-11.264l-159.744-159.744z\"></path></svg>",
+      "parentText": "",
+      "ariaLabel": ""
+    },
+    {
+      "index": 17,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 18px; height: 18px;\"><path d=\"M516.854 462.852l-159.743 159.744c-7.51 7.508-17.067 11.264-28.672 11.264s-21.163-3.756-28.672-11.264c-7.51-7.512-11.264-17.068-11.264-28.672 0-11.608 3.754-21.164 11.264-28.672l188.415-188.417c4.096-4.096 8.536-6.998 13.312-8.704 4.78-1.707 9.9-2.56 15.36-2.56 5.464 0 10.584 0.853 15.36 2.56 4.78 1.706 9.216 4.608 13.312 8.704l188.416 188.417c7.512 7.508 11.264 17.064 11.264 28.672 0 11.604-3.752 21.16-11.264 28.672-7.508 7.508-17.064 11.264-28.672 11.264-11.604 0-21.16-3.756-28.672-11.264l-159.744-159.744z\"></path></svg>",
+      "parentText": "",
+      "ariaLabel": ""
+    },
+    {
+      "index": 18,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 18px; height: 18px;\"><path d=\"M516.854 462.852l-159.743 159.744c-7.51 7.508-17.067 11.264-28.672 11.264s-21.163-3.756-28.672-11.264c-7.51-7.512-11.264-17.068-11.264-28.672 0-11.608 3.754-21.164 11.264-28.672l188.415-188.417c4.096-4.096 8.536-6.998 13.312-8.704 4.78-1.707 9.9-2.56 15.36-2.56 5.464 0 10.584 0.853 15.36 2.56 4.78 1.706 9.216 4.608 13.312 8.704l188.416 188.417c7.512 7.508 11.264 17.064 11.264 28.672 0 11.604-3.752 21.16-11.264 28.672-7.508 7.508-17.064 11.264-28.672 11.264-11.604 0-21.16-3.756-28.672-11.264l-159.744-159.744z\"></path></svg>",
+      "parentText": "",
+      "ariaLabel": ""
+    },
+    {
+      "index": 19,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 18px; height: 18px;\"><path d=\"M516.854 462.852l-159.743 159.744c-7.51 7.508-17.067 11.264-28.672 11.264s-21.163-3.756-28.672-11.264c-7.51-7.512-11.264-17.068-11.264-28.672 0-11.608 3.754-21.164 11.264-28.672l188.415-188.417c4.096-4.096 8.536-6.998 13.312-8.704 4.78-1.707 9.9-2.56 15.36-2.56 5.464 0 10.584 0.853 15.36 2.56 4.78 1.706 9.216 4.608 13.312 8.704l188.416 188.417c7.512 7.508 11.264 17.064 11.264 28.672 0 11.604-3.752 21.16-11.264 28.672-7.508 7.508-17.064 11.264-28.672 11.264-11.604 0-21.16-3.756-28.672-11.264l-159.744-159.744z\"></path></svg>",
+      "parentText": "",
+      "ariaLabel": ""
+    },
+    {
+      "index": 20,
+      "viewBox": "0 0 24 24",
+      "width": "16",
+      "height": "16",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"></path></svg>",
+      "parentText": "",
+      "ariaLabel": ""
+    },
+    {
+      "index": 21,
+      "viewBox": "0 0 983 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"styles_icon__41a77 undefined\" viewBox=\"0 0 983 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 16px; height: 16px;\"><path d=\"M491.52 763.224l95.232-95.232c8.192-8.192 18.092-12.288 29.696-12.288s21.504 4.096 29.696 12.288c8.192 8.192 12.288 18.092 12.288 29.696s-4.096 21.504-12.288 29.696l-125.952 125.952c-4.096 4.096-8.532 6.996-13.312 8.704s-9.9 2.56-15.36 2.56c-5.46 0-10.58-0.852-15.36-2.56s-9.216-4.608-13.312-8.704l-125.952-125.952c-8.192-8.192-12.288-18.092-12.288-29.696s4.096-21.504 12.288-29.696c8.192-8.192 18.091-12.288 29.696-12.288s21.504 4.096 29.696 12.288l95.232 95.232zM491.52 267.608l-95.232 95.232c-8.192 8.192-18.091 12.288-29.696 12.288s-21.504-4.096-29.696-12.288c-8.192-8.192-12.288-18.091-12.288-29.696s4.096-21.504 12.288-29.696l125.952-125.952c4.096-4.096 8.532-6.997 13.312-8.704s9.9-2.56 15.36-2.56c5.46 0 10.58 0.853 15.36 2.56s9.216 4.608 13.312 8.704l125.952 125.952c8.192 8.192 12.288 18.091 12.288 29.696s-4.096 21.504-12.288 29.696c-8.192 8.192-18.092 12.288-29.696 12.288s-21.504-4.096-29.696-12.288l-95.232-95.232z\"></path></svg>",
+      "parentText": "Ordernar por\nMais relevantes",
+      "ariaLabel": ""
+    },
+    {
+      "index": 22,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg color=\"#2A2A2F\" class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display:inline-block;stroke:currentColor;fill:currentColor;width:24px;height:24px\"><path d=\"M201.463 770.048c-22.528 0-41.814-8.020-57.856-24.064-16.043-16.040-24.064-35.328-24.064-57.856v-327.678c0-22.528 8.021-41.813 24.064-57.856s35.328-24.064 57.856-24.064h655.359c22.528 0 41.816 8.021 57.856 24.064 16.044 16.043 24.064 35.328 24.064 57.856v327.678c0 22.528-8.020 41.816-24.064 57.856-16.040 16.044-35.328 24.064-57.856 24.064h-655.359zM201.463 688.128h655.359v-327.678h-122.88v122.878c0 11.608-3.924 21.336-11.776 29.184-7.848 7.852-17.576 11.776-29.184 11.776-11.604 0-21.332-3.924-29.184-11.776-7.848-7.848-11.776-17.576-11.776-29.184v-122.878h-81.92v122.878c0 11.608-3.924 21.336-11.776 29.184-7.848 7.852-17.576 11.776-29.184 11.776-11.604 0-21.332-3.924-29.184-11.776-7.848-7.848-11.776-17.576-11.776-29.184v-122.878h-81.919v122.878c0 11.608-3.926 21.336-11.776 29.184-7.851 7.852-17.579 11.776-29.184 11.776s-21.334-3.924-29.184-11.776c-7.851-7.848-11.776-17.576-11.776-29.184v-122.878h-122.88v327.678z\"></path></svg>",
+      "parentText": "281m²",
+      "ariaLabel": ""
+    },
+    {
+      "index": 23,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg color=\"#2A2A2F\" class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display:inline-block;stroke:currentColor;fill:currentColor;width:24px;height:24px\"><path d=\"M178.1 865.624c-11.605 0-21.333-3.928-29.184-11.776-7.85-7.852-11.776-17.58-11.776-29.184 0-11.608 3.926-21.336 11.776-29.184 7.851-7.852 17.579-11.776 29.184-11.776h40.96v-614.402c0-11.605 3.926-21.333 11.776-29.184s17.579-11.776 29.184-11.776h327.678c11.608 0 21.336 3.926 29.184 11.776 7.852 7.851 11.776 17.579 11.776 29.184h122.88c11.608 0 21.336 3.926 29.184 11.776 7.852 7.851 11.776 17.579 11.776 29.184v573.442h40.96c11.608 0 21.336 3.924 29.184 11.776 7.852 7.848 11.776 17.576 11.776 29.184 0 11.604-3.924 21.332-11.776 29.184-7.848 7.848-17.576 11.776-29.184 11.776h-81.92c-11.604 0-21.332-3.928-29.184-11.776-7.848-7.852-11.776-17.58-11.776-29.184v-573.442h-81.92v573.442c0 11.604-3.924 21.332-11.776 29.184-7.848 7.848-17.576 11.776-29.184 11.776h-409.598zM505.778 496.984c0-11.608-3.924-21.336-11.776-29.184-7.848-7.852-17.576-11.776-29.184-11.776-11.604 0-21.332 3.924-29.184 11.776-7.848 7.848-11.776 17.576-11.776 29.184 0 11.604 3.928 21.332 11.776 29.184 7.852 7.848 17.58 11.776 29.184 11.776 11.608 0 21.336-3.928 29.184-11.776 7.852-7.852 11.776-17.58 11.776-29.184zM300.98 783.704h245.758v-573.442h-245.758v573.442z\"></path></svg>",
+      "parentText": "2",
+      "ariaLabel": ""
+    },
+    {
+      "index": 24,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg color=\"#2A2A2F\" class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display:inline-block;stroke:currentColor;fill:currentColor;width:24px;height:24px\"><path d=\"M348.615 740.012c-11.605 0-21.333-3.924-29.184-11.776s-11.776-17.58-11.776-29.184c0-11.604 3.925-21.332 11.776-29.184s17.579-11.776 29.184-11.776c11.605 0 21.333 3.924 29.184 11.776s11.776 17.58 11.776 29.184c0 11.604-3.925 21.332-11.776 29.184s-17.579 11.776-29.184 11.776zM512.455 740.012c-11.604 0-21.332-3.924-29.184-11.776s-11.776-17.58-11.776-29.184c0-11.604 3.924-21.332 11.776-29.184s17.58-11.776 29.184-11.776c11.604 0 21.332 3.924 29.184 11.776s11.776 17.58 11.776 29.184c0 11.604-3.924 21.332-11.776 29.184s-17.58 11.776-29.184 11.776zM676.295 740.012c-11.604 0-21.332-3.924-29.184-11.776s-11.776-17.58-11.776-29.184c0-11.604 3.924-21.332 11.776-29.184s17.58-11.776 29.184-11.776c11.604 0 21.332 3.924 29.184 11.776s11.776 17.58 11.776 29.184c0 11.604-3.924 21.332-11.776 29.184s-17.58 11.776-29.184 11.776zM266.695 576.172c-11.605 0-21.333-3.924-29.184-11.776s-11.776-17.58-11.776-29.184v-40.96c0-72.364 23.211-135.168 69.632-188.416s105.131-84.651 176.128-94.208v-45.056c0-11.605 3.924-21.333 11.776-29.184s17.58-11.776 29.184-11.776c11.604 0 21.332 3.925 29.184 11.776s11.776 17.579 11.776 29.184v45.056c70.996 9.557 129.708 40.96 176.128 94.208s69.632 116.052 69.632 188.416v40.96c0 11.604-3.924 21.332-11.776 29.184s-17.58 11.776-29.184 11.776h-491.52zM307.655 494.252h409.6c0-56.66-19.968-104.96-59.904-144.896s-88.236-59.904-144.896-59.904c-56.66 0-104.96 19.968-144.896 59.904s-59.904 88.236-59.904 144.896zM348.615 862.892c-11.605 0-21.333-3.924-29.184-11.776s-11.776-17.58-11.776-29.184c0-11.604 3.925-21.332 11.776-29.184s17.579-11.776 29.184-11.776c11.605 0 21.333 3.924 29.184 11.776s11.776 17.58 11.776 29.184c0 11.604-3.925 21.332-11.776 29.184s-17.579 11.776-29.184 11.776zM512.455 862.892c-11.604 0-21.332-3.924-29.184-11.776s-11.776-17.58-11.776-29.184c0-11.604 3.924-21.332 11.776-29.184s17.58-11.776 29.184-11.776c11.604 0 21.332 3.924 29.184 11.776s11.776 17.58 11.776 29.184c0 11.604-3.924 21.332-11.776 29.184s-17.58 11.776-29.184 11.776zM676.295 862.892c-11.604 0-21.332-3.924-29.184-11.776s-11.776-17.58-11.776-29.184c0-11.604 3.924-21.332 11.776-29.184s17.58-11.776 29.184-11.776c11.604 0 21.332 3.924 29.184 11.776s11.776 17.58 11.776 29.184c0 11.604-3.924 21.332-11.776 29.184s-17.58 11.776-29.184 11.776z\"></path></svg>",
+      "parentText": "1",
+      "ariaLabel": ""
+    },
+    {
+      "index": 25,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg color=\"#2A2A2F\" class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display:inline-block;stroke:currentColor;fill:currentColor;width:24px;height:24px\"><path d=\"M283.383 816.468v20.48c0 17.068-5.974 31.576-17.92 43.52-11.947 11.948-26.454 17.92-43.52 17.92s-31.574-5.972-43.52-17.92c-11.947-11.944-17.92-26.452-17.92-43.52v-292.864c0-4.776 0.341-9.556 1.024-14.336 0.682-4.776 1.706-9.216 3.072-13.312l76.8-218.11c5.461-16.384 15.36-29.696 29.696-39.936s30.378-15.36 48.128-15.36h419.839c17.752 0 33.792 5.12 48.128 15.36s24.236 23.552 29.696 39.936l76.8 218.11c1.368 4.096 2.392 8.536 3.072 13.312 0.684 4.78 1.024 9.56 1.024 14.336v292.864c0 17.068-5.972 31.576-17.92 43.52-11.944 11.948-26.452 17.92-43.52 17.92-17.064 0-31.572-5.972-43.52-17.92-11.944-11.944-17.92-26.452-17.92-43.52v-20.48h-491.519zM275.191 447.828h507.903l-43.008-122.878h-421.887l-43.008 122.878zM344.823 693.588c17.066 0 31.573-5.972 43.52-17.92 11.947-11.944 17.92-26.452 17.92-43.52 0-17.064-5.973-31.572-17.92-43.52-11.947-11.944-26.454-17.92-43.52-17.92s-31.574 5.976-43.52 17.92c-11.947 11.948-17.92 26.456-17.92 43.52 0 17.068 5.973 31.576 17.92 43.52 11.946 11.948 26.453 17.92 43.52 17.92zM713.462 693.588c17.068 0 31.576-5.972 43.52-17.92 11.948-11.944 17.92-26.452 17.92-43.52 0-17.064-5.972-31.572-17.92-43.52-11.944-11.944-26.452-17.92-43.52-17.92-17.064 0-31.572 5.976-43.52 17.92-11.944 11.948-17.92 26.456-17.92 43.52 0 17.068 5.976 31.576 17.92 43.52 11.948 11.948 26.456 17.92 43.52 17.92zM242.423 734.548h573.439v-204.8h-573.439v204.8z\"></path></svg>",
+      "parentText": "2",
+      "ariaLabel": ""
+    },
+    {
+      "index": 26,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 18px; height: 18px;\"><path d=\"M456.704 505.172l159.744 159.744c7.512 7.508 11.264 17.068 11.264 28.672s-3.752 21.164-11.264 28.672c-7.508 7.508-17.064 11.264-28.672 11.264-11.604 0-21.16-3.756-28.672-11.264l-188.415-188.416c-4.096-4.096-6.997-8.532-8.704-13.312s-2.56-9.9-2.56-15.36c0-5.46 0.854-10.58 2.56-15.36s4.608-9.216 8.704-13.312l188.415-188.416c7.512-7.509 17.068-11.264 28.672-11.264 11.608 0 21.164 3.755 28.672 11.264 7.512 7.509 11.264 17.067 11.264 28.672s-3.752 21.163-11.264 28.672l-159.744 159.744z\"></path></svg>",
+      "parentText": "",
+      "ariaLabel": ""
+    },
+    {
+      "index": 27,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 18px; height: 18px;\"><path d=\"M537.6 512l-166.4-166.4c-7.823-7.823-11.733-17.778-11.733-29.867s3.911-22.045 11.733-29.867c7.822-7.823 17.777-11.733 29.867-11.733s22.044 3.911 29.867 11.733l196.267 196.267c4.267 4.267 7.287 8.887 9.067 13.867s2.667 10.313 2.667 16c0 5.687-0.887 11.021-2.667 16s-4.8 9.6-9.067 13.867l-196.267 196.267c-7.823 7.821-17.778 11.733-29.867 11.733s-22.045-3.913-29.867-11.733c-7.823-7.821-11.733-17.779-11.733-29.867s3.911-22.046 11.733-29.867l166.4-166.4z\"></path></svg>",
+      "parentText": "",
+      "ariaLabel": ""
+    },
+    {
+      "index": 28,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display: inline-block; stroke: currentcolor; fill: currentcolor; width: 24px; height: 24px;\"><path d=\"M525.804 859.82c-9.556 0-19.284-1.708-29.184-5.12-9.896-3.416-18.6-8.876-26.112-16.384l-70.654-64.512c-72.363-66.22-137.728-131.928-196.096-197.12-58.368-65.196-87.552-137.048-87.552-215.553 0-64.171 21.504-117.76 64.512-160.768s96.597-64.512 160.768-64.512c36.181 0 70.314 7.68 102.398 23.040 32.088 15.36 59.392 36.352 81.92 62.976 22.528-26.624 49.836-47.616 81.92-62.976 32.088-15.36 66.22-23.040 102.4-23.040 64.172 0 117.76 21.504 160.768 64.512s64.512 96.597 64.512 160.768c0 78.505-29.012 150.529-87.040 216.065-58.024 65.536-123.904 131.412-197.632 197.632l-69.632 63.488c-7.508 7.508-16.212 12.968-26.112 16.384-9.896 3.412-19.624 5.12-29.184 5.12zM486.892 303.787c-19.796-27.989-40.96-49.323-63.488-64-22.526-14.677-49.833-22.016-81.918-22.016-40.96 0-75.094 13.653-102.4 40.96s-40.96 61.44-40.96 102.4c0 35.499 12.629 73.217 37.888 113.153s55.466 78.676 90.624 116.224c35.157 37.544 71.338 72.704 108.542 105.472 37.208 32.768 67.416 59.732 90.624 80.896 23.212-21.164 53.42-48.128 90.624-80.896 37.208-32.768 73.388-67.928 108.544-105.472 35.16-37.548 65.368-76.288 90.624-116.224 25.26-39.936 37.888-77.654 37.888-113.153 0-40.96-13.652-75.093-40.96-102.4-27.304-27.307-61.44-40.96-102.4-40.96-32.084 0-59.392 7.339-81.92 22.016s-43.688 36.011-63.488 64c-4.776 6.827-10.58 11.947-17.408 15.36-6.824 3.413-13.992 5.12-21.504 5.12-7.508 0-14.676-1.707-21.504-5.12-6.824-3.413-12.628-8.533-17.408-15.36z\"></path></svg>",
+      "parentText": "",
+      "ariaLabel": ""
+    },
+    {
+      "index": 29,
+      "viewBox": "0 0 1024 1024",
+      "width": null,
+      "height": null,
+      "html": "<svg color=\"#2A2A2F\" class=\"undefined undefined\" viewBox=\"0 0 1024 1024\" style=\"display:inline-block;stroke:currentColor;fill:currentColor;width:24px;height:24px\"><path d=\"M201.463 770.048c-22.528 0-41.814-8.020-57.856-24.064-16.043-16.040-24.064-35.328-24.064-57.856v-327.678c0-22.528 8.021-41.813 24.064-57.856s35.328-24.064 57.856-24.064h655.359c22.528 0 41.816 8.021 57.856 24.064 16.044 16.043 24.064 35.328 24.064 57.856v327.678c0 22.528-8.020 41.816-24.064 57.856-16.040 16.044-35.328 24.064-57.856 24.064h-655.359zM201.463 688.128h655.359v-327.678h-122.88v122.878c0 11.608-3.924 21.336-11.776 29.184-7.848 7.852-17.576 11.776-29.184 11.776-11.604 0-21.332-3.924-29.184-11.776-7.848-7.848-11.776-17.576-11.776-29.184v-122.878h-81.92v122.878c0 11.608-3.924 21.336-11.776 29.184-7.848 7.852-17.576 11.776-29.184 11.776-11.604 0-21.332-3.924-29.184-11.776-7.848-7.848-11.776-17.576-11.776-29.184v-122.878h-81.919v122.878c0 11.608-3.926 21.336-11.776 29.184-7.851 7.852-17.579 11.776-29.184 11.776s-21.334-3.924-29.184-11.776c-7.851-7.848-11.776-17.576-11.776-29.184v-122.878h-122.88v327.678z\"></path></svg>",
+      "parentText": "154m²",
+      "ariaLabel": ""
+    }
+  ],
+  "fonts": [
+    "\"Times New Roman\"",
+    "Urbanist, \"Urbanist Fallback\"",
+    "Arial, sans-serif"
+  ],
+  "fontLinks": []
+}

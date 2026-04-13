@@ -1,0 +1,74 @@
+
+> ai-website-clone-template@0.3.1 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 373ms
+
+[37m[1m○[22m[39m Compiling / ...
+[36m[browser][39m Encountered two children with the same key, `Casa comercial com 2 salas à venda na Rua da Emílio Ferdinando Schroeder, 48, Agronômica, Florianópolis por R$ 2.350.000-2`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[36m[browser][39m Encountered two children with the same key, `Lançamento a 100 metros do mar com financiamento direto com a construtora sem burocracia-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[36m[browser][39m Encountered two children with the same key, `Apartamento para Venda em Ribeirão Preto, Vila do Golf, 2 dormitórios, 1 suíte, 2 banheiros, 2 vagas-2`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[36m[browser][39m Encountered two children with the same key, `Apartamento para Venda em Ribeirão Preto, Vila do Golf, 2 dormitórios, 1 suíte, 2 banheiros, 2 vagas-2`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[36m[browser][39m Encountered two children with the same key, `Sobrado com 134m² 3 quartos, para aluguel, no bairro Jardim Cruzeiro em São José dos Pinhais-3`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[36m[browser][39m Encountered two children with the same key, `Sobrado com 134m² 3 quartos, para aluguel, no bairro Jardim Cruzeiro em São José dos Pinhais-3`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[36m[browser][39m Encountered two children with the same key, `Apartamento com 2 quartos à venda na Rua Marechal Hermes, 220, Glória, Joinville-2`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[36m[browser][39m Encountered two children with the same key, `Sobrado 120m² no Bairro Osvaldo Cruz – Espaço, Conforto e Excelente Localização-2`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[36m[browser][39m Encountered two children with the same key, `Lançamento a 100 metros do mar com financiamento direto com a construtora sem burocracia-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[36m[browser][39m Encountered two children with the same key, `Apartamento para Venda em Ribeirão Preto, Vila do Golf, 2 dormitórios, 1 suíte, 2 banheiros, 2 vagas-2`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+ GET / [32m200[39m in 7.9s[2m (next.js: 6.9s, application-code: 1019ms)[22m
+ GET /comprar [32m200[39m in 7.3s[2m (next.js: 6.1s, application-code: 1242ms)[22m
+[36m[browser][39m Encountered two children with the same key, `Apartamento para Venda em Ribeirão Preto, Vila do Golf, 2 dormitórios, 1 suíte, 2 banheiros, 2 vagas-2`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[36m[browser][39m Encountered two children with the same key, `Sobrado com 134m² 3 quartos, para aluguel, no bairro Jardim Cruzeiro em São José dos Pinhais-3`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[36m[browser][39m Encountered two children with the same key, `Sobrado com 134m² 3 quartos, para aluguel, no bairro Jardim Cruzeiro em São José dos Pinhais-3`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[36m[browser][39m Encountered two children with the same key, `Apartamento com 2 quartos à venda na Rua Marechal Hermes, 220, Glória, Joinville-2`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[36m[browser][39m Encountered two children with the same key, `Sobrado 120m² no Bairro Osvaldo Cruz – Espaço, Conforto e Excelente Localização-2`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-BR" className="urbanist_c...">
+                          <body
+                            className="min-h-full flex flex-col font-sans"
+-                           __processed_0447c05e-2975-4369-abdd-f7ea7115a2d7__="true"
+-                           bis_status="ok"
+-                           bis_frame_id="2418"
+                          >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://95e8b85f-a62a-4406-b7f7-eed1ee16eada-00-3lqwyhf9sk6w4.spock.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://95e8b85f-a62a-4406-b7f7-eed1ee16eada-00-3lqwyhf9sk6w4.spock.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /comprar [32m200[39m in 412ms[2m (next.js: 67ms, application-code: 345ms)[22m
+ GET / [32m200[39m in 102ms[2m (next.js: 3ms, application-code: 99ms)[22m
+[32m[1m✓[22m[39m Compiled in 214ms
+[32m[1m✓[22m[39m Compiled in 282ms
+ GET /comprar [32m200[39m in 171ms[2m (next.js: 41ms, application-code: 130ms)[22m
+ GET / [32m200[39m in 278ms[2m (next.js: 241ms, application-code: 38ms)[22m
+[?25h
+[1G[0K⠙[1G[0K

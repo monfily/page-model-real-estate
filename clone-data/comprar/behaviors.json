@@ -1,0 +1,17 @@
+{
+  "header_initial": {
+    "position": "sticky",
+    "top": "0px",
+    "zIndex": "999",
+    "transition": "transform 0.3s linear",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "backdropFilter": "none"
+  },
+  "mobile": {
+    "hamburgerFound": false,
+    "hamburgerClass": "",
+    "hamburgerAriaLabel": "",
+    "viewportWidth": 390,
+    "navVisible": true
+  }
+}

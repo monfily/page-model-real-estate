@@ -1,0 +1,877 @@
+
+> ai-website-clone-template@0.3.1 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 365ms
+
+[37m[1m○[22m[39m Compiling / ...
+ GET / [32m200[39m in 7.0s[2m (next.js: 6.1s, application-code: 865ms)[22m
+ GET /comprar [32m200[39m in 2.1s[2m (next.js: 1623ms, application-code: 497ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-BR" className="urbanist_c...">
+                          <body
+                            className="min-h-full flex flex-col font-sans"
+-                           __processed_04a561e9-898f-45b7-ac05-946f2642ff8f__="true"
+-                           bis_status="ok"
+-                           bis_frame_id="2404"
+                          >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://95e8b85f-a62a-4406-b7f7-eed1ee16eada-00-3lqwyhf9sk6w4.spock.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://95e8b85f-a62a-4406-b7f7-eed1ee16eada-00-3lqwyhf9sk6w4.spock.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /comprar [32m200[39m in 242ms[2m (next.js: 4ms, application-code: 237ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/comprar" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-BR" className="urbanist_c...">
+                          <body
+                            className="min-h-full flex flex-col font-sans"
+-                           __processed_78a6ede2-1255-4ab5-b35e-2d12cf923fac__="true"
+-                           bis_status="ok"
+-                           bis_frame_id="2408"
+                          >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://95e8b85f-a62a-4406-b7f7-eed1ee16eada-00-3lqwyhf9sk6w4.spock.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://95e8b85f-a62a-4406-b7f7-eed1ee16eada-00-3lqwyhf9sk6w4.spock.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://95e8b85f-a62a-4406-b7f7-eed1ee16eada-00-3lqwyhf9sk6w4.spock.replit.dev/images/app-chavesnam-o-android-5c9fd3d78a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://95e8b85f-a62a-4406-b7f7-eed1ee16eada-00-3lqwyhf9sk6w4.spock.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://95e8b85f-a62a-4406-b7f7-eed1ee16eada-00-3lqwyhf9sk6w4.spock.replit.dev/images/app-chavesnam-o-ios-862e08884b.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://95e8b85f-a62a-4406-b7f7-eed1ee16eada-00-3lqwyhf9sk6w4.spock.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /comprar [32m200[39m in 459ms[2m (next.js: 6ms, application-code: 452ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/comprar" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{rsc:{...}, ...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-BR" className="urbanist_c...">
+                          <body
+                            className="min-h-full flex flex-col font-sans"
+-                           __processed_e2b2fe1d-c5a8-4591-ac41-f1713d3d6c30__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+-                           cz-shortcut-listen="true"
+                          >
+                            ...
+                              <SegmentViewNode type="page" pagePath="comprar/pa...">
+                                <SegmentTrieNode>
+                                <ComprarPage>
+                                  <div
+                                    className="min-h-screen bg-[#f4f5f7] font-sans text-[#323131]"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <Header>
+                                      <header className="sticky top...">
+                                        <LinkComponent>
+                                        <div
+                                          className="hidden lg:flex items-center space-x-6 flex-1 justify-end mr-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="group relative"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <button>
+                                            <div
+                                              className="absolute top-[74px] left-1/2 -translate-x-1/2 w-[400px] bg-wh..."
+-                                             bis_skin_checked="1"
+                                            >
+                                              <div
+-                                               bis_skin_checked="1"
+                                              >
+                                              <div
+-                                               bis_skin_checked="1"
+                                              >
+                                          <div
+                                            className="group relative"
+-                                           bis_skin_checked="1"
+                                          >
+                                          ...
+                                        <div
+                                          className="hidden lg:flex items-center space-x-3"
+-                                         bis_skin_checked="1"
+                                        >
+                                        ...
+                                    <div
+                                      className="flex"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <FilterSidebar>
+                                        <aside className="hidden xl:...">
+                                          <div
+                                            className="p-6 space-y-6"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="flex items-center justify-between"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="rounded-xl border border-[#ddd] p-4"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="grid grid-cols-3 gap-2"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="space-y-3"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <section className="space-y-3 ...">
+                                              <button>
+                                              <div
+                                                className="grid grid-cols-3 gap-2"
+-                                               bis_skin_checked="1"
+                                              >
+                                            <section className="space-y-3 ...">
+                                              <button>
+                                              <div
+                                                className="grid grid-cols-2 gap-2"
+-                                               bis_skin_checked="1"
+                                              >
+                                                <div
+                                                  className="h-11 rounded-xl border border-[#ddd] bg-white"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                <div
+                                                  className="flex h-11 items-center rounded-xl border border-[#ddd] px..."
+-                                                 bis_skin_checked="1"
+                                                >
++                                                 Até
+                                            <section className="space-y-3 ...">
+                                              <button>
+                                              <div
+                                                className="grid grid-cols-4 gap-2"
+-                                               bis_skin_checked="1"
+                                              >
+                                            <section className="space-y-3 ...">
+                                              <button>
+                                              <div
+                                                className="grid grid-cols-4 gap-2"
+-                                               bis_skin_checked="1"
+                                              >
+                                            <section className="space-y-3 ...">
+                                              <button>
+                                              <div
+                                                className="grid grid-cols-4 gap-2"
+-                                               bis_skin_checked="1"
+                                              >
+                                            <section className="space-y-3 ...">
+                                              <button>
+                                              <div
+                                                className="grid grid-cols-2 gap-2"
+-                                               bis_skin_checked="1"
+                                              >
+                                                <div
+                                                  className="h-11 rounded-xl border border-[#ddd] bg-white"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                <div
+                                                  className="flex h-11 items-center rounded-xl border border-[#ddd] px..."
+-                                                 bis_skin_checked="1"
+                                                >
++                                                 Até
+                                            <section className="space-y-3 ...">
+                                              <button>
+                                              <div
+                                                className="space-y-2"
+-                                               bis_skin_checked="1"
+                                              >
+                                            <section className="space-y-3 ...">
+                                              <button>
+                                              <div
+                                                className="space-y-2"
+-                                               bis_skin_checked="1"
+                                              >
+                                            <section className="space-y-3 ...">
+                                              <button>
+                                              <div
+                                                className="space-y-2"
+-                                               bis_skin_checked="1"
+                                              >
+                                            <section className="space-y-3 ...">
+                                              <button>
+                                              <div
+                                                className="space-y-2"
+-                                               bis_skin_checked="1"
+                                              >
+                                            <section className="space-y-3 ...">
+                                              <button>
+                                              <div
+                                                className="space-y-2"
+-                                               bis_skin_checked="1"
+                                              >
+                                      <main className="min-w-0 fl...">
+                                        <SearchStrip>
+                                          <div
+                                            className="rounded-b-[18px] bg-white px-4 py-4 shadow-[0_2px_8px_rgba(0,0,..."
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="mx-auto flex max-w-[980px] flex-col gap-3 lg:flex-row lg:item..."
+-                                             bis_skin_checked="1"
+                                            >
+                                              <div
+                                                className="flex flex-1 items-center rounded-xl border border-[#d1d0d0]..."
+-                                               bis_skin_checked="1"
+                                              >
+                                              ...
+                                        <div
+                                          className="mx-auto max-w-[980px] px-4 py-5 md:px-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="mb-5 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-be..."
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="flex gap-2"
+-                                             bis_skin_checked="1"
+                                            >
+                                          <div
+                                            className="space-y-4"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <PropertyCard>
+                                              <article className="overflow-h...">
+                                                <div
+                                                  className="grid md:grid-cols-[248px_1fr]"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="relative b...">
+                                                      <a className="relative b..." ref={function} ...>
+                                                        <img>
+                                                        <ImagePreload>
+                                                        <div
+                                                          className="absolute left-3 top-3 flex items-center gap-1 rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                  <div
+                                                    className="flex min-h-[250px] flex-col p-4 md:p-5"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex items-start gap-4"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-3 space-y-1 text-[13px] font-medium text-[#717169]"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-4 flex flex-wrap gap-4 text-[13px] font-bold text-..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-auto flex flex-col gap-4 pt-5 sm:flex-row sm:items..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                            <PropertyCard>
+                                              <article className="overflow-h...">
+                                                <div
+                                                  className="grid md:grid-cols-[248px_1fr]"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="relative b...">
+                                                      <a className="relative b..." ref={function} ...>
+                                                        <img>
+                                                        <div
+                                                          className="absolute left-3 top-3 flex items-center gap-1 rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                  <div
+                                                    className="flex min-h-[250px] flex-col p-4 md:p-5"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex items-start gap-4"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-3 space-y-1 text-[13px] font-medium text-[#717169]"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-4 flex flex-wrap gap-4 text-[13px] font-bold text-..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-auto flex flex-col gap-4 pt-5 sm:flex-row sm:items..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                            <PropertyCard>
+                                              <article className="overflow-h...">
+                                                <div
+                                                  className="grid md:grid-cols-[248px_1fr]"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="relative b...">
+                                                      <a className="relative b..." ref={function} ...>
+                                                        <img>
+                                                        <div
+                                                          className="absolute left-3 top-3 flex items-center gap-1 rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                        ...
+                                                  <div
+                                                    className="flex min-h-[250px] flex-col p-4 md:p-5"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex items-start gap-4"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-3 space-y-1 text-[13px] font-medium text-[#717169]"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-4 flex flex-wrap gap-4 text-[13px] font-bold text-..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-auto flex flex-col gap-4 pt-5 sm:flex-row sm:items..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                            <PropertyCard>
+                                              <article className="overflow-h...">
+                                                <div
+                                                  className="grid md:grid-cols-[248px_1fr]"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="relative b...">
+                                                      <a className="relative b..." ref={function} ...>
+                                                        <img>
+                                                        <div
+                                                          className="absolute left-3 top-3 flex items-center gap-1 rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                  <div
+                                                    className="flex min-h-[250px] flex-col p-4 md:p-5"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex items-start gap-4"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-3 space-y-1 text-[13px] font-medium text-[#717169]"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-4 flex flex-wrap gap-4 text-[13px] font-bold text-..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-auto flex flex-col gap-4 pt-5 sm:flex-row sm:items..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                            <PropertyCard>
+                                              <article className="overflow-h...">
+                                                <div
+                                                  className="grid md:grid-cols-[248px_1fr]"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="relative b...">
+                                                      <a className="relative b..." ref={function} ...>
+                                                        <img>
+                                                        <div
+                                                          className="absolute left-3 top-3 flex items-center gap-1 rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                  <div
+                                                    className="flex min-h-[250px] flex-col p-4 md:p-5"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex items-start gap-4"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-3 space-y-1 text-[13px] font-medium text-[#717169]"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-4 flex flex-wrap gap-4 text-[13px] font-bold text-..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-auto flex flex-col gap-4 pt-5 sm:flex-row sm:items..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                            <AgencySection>
+                                              <section className="rounded-xl...">
+                                                <div
+                                                  className="flex items-center justify-between gap-3"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <div
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                  ...
+                                                <div
+                                                  className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-5"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="overflow-h...">
+                                                      <a className="overflow-h..." ref={function} ...>
+                                                        <div
+                                                          className="relative h-[132px] bg-[#f4f5f7]"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                        <div
+                                                          className="p-3"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="overflow-h...">
+                                                      <a className="overflow-h..." ref={function} ...>
+                                                        <div
+                                                          className="relative h-[132px] bg-[#f4f5f7]"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                        <div
+                                                          className="p-3"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="overflow-h...">
+                                                      <a className="overflow-h..." ref={function} ...>
+                                                        <div
+                                                          className="relative h-[132px] bg-[#f4f5f7]"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                        <div
+                                                          className="p-3"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="overflow-h...">
+                                                      <a className="overflow-h..." ref={function} ...>
+                                                        <div
+                                                          className="relative h-[132px] bg-[#f4f5f7]"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                        <div
+                                                          className="p-3"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="overflow-h...">
+                                                      <a className="overflow-h..." ref={function} ...>
+                                                        <div
+                                                          className="relative h-[132px] bg-[#f4f5f7]"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                        <div
+                                                          className="p-3"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                            <PropertyCard>
+                                              <article className="overflow-h...">
+                                                <div
+                                                  className="grid md:grid-cols-[248px_1fr]"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="relative b...">
+                                                      <a className="relative b..." ref={function} ...>
+                                                        <img>
+                                                        <div
+                                                          className="absolute left-3 top-3 flex items-center gap-1 rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                        ...
+                                                  <div
+                                                    className="flex min-h-[250px] flex-col p-4 md:p-5"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex items-start gap-4"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-3 space-y-1 text-[13px] font-medium text-[#717169]"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-4 flex flex-wrap gap-4 text-[13px] font-bold text-..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-auto flex flex-col gap-4 pt-5 sm:flex-row sm:items..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                            <PropertyCard>
+                                              <article className="overflow-h...">
+                                                <div
+                                                  className="grid md:grid-cols-[248px_1fr]"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="relative b...">
+                                                      <a className="relative b..." ref={function} ...>
+                                                        <img>
+                                                        <div
+                                                          className="absolute left-3 top-3 flex items-center gap-1 rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                  <div
+                                                    className="flex min-h-[250px] flex-col p-4 md:p-5"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex items-start gap-4"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-3 space-y-1 text-[13px] font-medium text-[#717169]"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-4 flex flex-wrap gap-4 text-[13px] font-bold text-..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-auto flex flex-col gap-4 pt-5 sm:flex-row sm:items..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                            <PropertyCard>
+                                              <article className="overflow-h...">
+                                                <div
+                                                  className="grid md:grid-cols-[248px_1fr]"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="relative b...">
+                                                      <a className="relative b..." ref={function} ...>
+                                                        <img>
+                                                        <div
+                                                          className="absolute left-3 top-3 flex items-center gap-1 rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                  <div
+                                                    className="flex min-h-[250px] flex-col p-4 md:p-5"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex items-start gap-4"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-3 space-y-1 text-[13px] font-medium text-[#717169]"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-4 flex flex-wrap gap-4 text-[13px] font-bold text-..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-auto flex flex-col gap-4 pt-5 sm:flex-row sm:items..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                            <PropertyCard>
+                                              <article className="overflow-h...">
+                                                <div
+                                                  className="grid md:grid-cols-[248px_1fr]"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="relative b...">
+                                                      <a className="relative b..." ref={function} ...>
+                                                        <img>
+                                                        <div
+                                                          className="absolute left-3 top-3 flex items-center gap-1 rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                  <div
+                                                    className="flex min-h-[250px] flex-col p-4 md:p-5"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex items-start gap-4"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-3 space-y-1 text-[13px] font-medium text-[#717169]"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-4 flex flex-wrap gap-4 text-[13px] font-bold text-..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-auto flex flex-col gap-4 pt-5 sm:flex-row sm:items..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                            <PropertyCard>
+                                              <article className="overflow-h...">
+                                                <div
+                                                  className="grid md:grid-cols-[248px_1fr]"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <LinkComponent>
+                                                    <LinkComponent href="#" className="relative b...">
+                                                      <a className="relative b..." ref={function} ...>
+                                                        <img>
+                                                        <div
+                                                          className="absolute left-3 top-3 flex items-center gap-1 rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                  <div
+                                                    className="flex min-h-[250px] flex-col p-4 md:p-5"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex items-start gap-4"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-3 space-y-1 text-[13px] font-medium text-[#717169]"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-4 flex flex-wrap gap-4 text-[13px] font-bold text-..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                    <div
+                                                      className="mt-auto flex flex-col gap-4 pt-5 sm:flex-row sm:items..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                    <Footer>
+                                      <footer className="w-full bg-...">
+                                        <div
+                                          className="max-w-[1280px] mx-auto space-y-12"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-[14px]"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="space-y-4"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="space-y-4"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="space-y-4"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="space-y-4"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="space-y-4"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="space-y-4"
+-                                             bis_skin_checked="1"
+                                            >
+                                              <h4>
+                                              <ul>
+                                              <div
+                                                className="pt-6 space-y-3"
+-                                               bis_skin_checked="1"
+                                              >
+                                                <h4>
+                                                <div
+                                                  className="flex flex-col gap-2"
+-                                                 bis_skin_checked="1"
+                                                >
+                                          <div
+                                            className="h-px w-full bg-white/10"
+-                                           bis_skin_checked="1"
+                                          >
+                                          <div
+                                            className="flex flex-col md:flex-row justify-between items-center md:items..."
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="flex flex-col items-center md:items-start space-y-4 max-w-sm ..."
+-                                             bis_skin_checked="1"
+                                            >
+                                              <div
+                                                className="opacity-100 brightness-0 invert"
+-                                               bis_skin_checked="1"
+                                              >
+                                              ...
+                                            <div
+                                              className="flex gap-4"
+-                                             bis_skin_checked="1"
+                                            >
+                                          <div
+                                            className="text-center md:text-left text-white/50 text-[13px] pt-4 flex fl..."
+-                                           bis_skin_checked="1"
+                                          >
+                                            <p>
+                                            <div
+                                              className="space-x-4 mt-2 md:mt-0"
+-                                             bis_skin_checked="1"
+                                            >
+                              ...
+                  ...
+ 
+[36m[browser][39m [33mImage with src "https://95e8b85f-a62a-4406-b7f7-eed1ee16eada-00-3lqwyhf9sk6w4.spock.replit.dev/images/app-chavesnam-o-android-5c9fd3d78a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m
+[36m[browser][39m [33mImage with src "https://95e8b85f-a62a-4406-b7f7-eed1ee16eada-00-3lqwyhf9sk6w4.spock.replit.dev/images/app-chavesnam-o-ios-862e08884b.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m
+ GET /comprar [32m200[39m in 20ms[2m (next.js: 6ms, application-code: 14ms)[22m
+ GET /comprar [32m200[39m in 12ms[2m (next.js: 5ms, application-code: 7ms)[22m
+ GET / [32m200[39m in 52ms[2m (next.js: 3ms, application-code: 49ms)[22m
+ GET / [32m200[39m in 513ms[2m (next.js: 456ms, application-code: 57ms)[22m
+ GET /comprar [32m200[39m in 519ms[2m (next.js: 302ms, application-code: 217ms)[22m
+ GET / [32m200[39m in 40ms[2m (next.js: 4ms, application-code: 36ms)[22m
+ GET / [32m200[39m in 247ms[2m (next.js: 113ms, application-code: 134ms)[22m
+ GET /comprar [32m200[39m in 281ms[2m (next.js: 174ms, application-code: 106ms)[22m
+ GET / [32m200[39m in 425ms[2m (next.js: 283ms, application-code: 142ms)[22m
+ GET /comprar [32m200[39m in 340ms[2m (next.js: 223ms, application-code: 118ms)[22m
+ GET / [32m200[39m in 220ms[2m (next.js: 77ms, application-code: 143ms)[22m
+ GET /comprar [32m200[39m in 145ms[2m (next.js: 3ms, application-code: 141ms)[22m
+ GET / [32m200[39m in 409ms[2m (next.js: 187ms, application-code: 222ms)[22m
+ GET /comprar [32m200[39m in 204ms[2m (next.js: 3ms, application-code: 201ms)[22m
+ GET /comprar [32m200[39m in 119ms[2m (next.js: 3ms, application-code: 116ms)[22m
+[32m[1m✓[22m[39m Compiled in 303ms
+[32m[1m✓[22m[39m Compiled in 553ms
+ GET / [32m200[39m in 660ms[2m (next.js: 373ms, application-code: 287ms)[22m
+ GET /comprar [32m200[39m in 679ms[2m (next.js: 509ms, application-code: 170ms)[22m
+[32m[1m✓[22m[39m Compiled in 448ms
+ GET / [32m200[39m in 342ms[2m (next.js: 192ms, application-code: 150ms)[22m
+ GET /comprar [32m200[39m in 185ms[2m (next.js: 67ms, application-code: 118ms)[22m
+[?25h
+[1G[0K⠙[1G[0K
