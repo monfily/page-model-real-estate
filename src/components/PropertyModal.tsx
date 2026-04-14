@@ -86,7 +86,28 @@ export function PropertyModal({ property }: { property: Property }) {
   const [quickQuestion, setQuickQuestion] = useState("");
   const [customQuestion, setCustomQuestion] = useState("");
   const [msgSent, setMsgSent] = useState(false);
+  const [visitSent, setVisitSent] = useState(false);
+  const [selectedDate, setSelectedDate] = useState<number>(0);
+  const [weekOffset, setWeekOffset] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  const getWeekDays = (offset: number) => {
+    const today = new Date();
+    const days = [];
+    const dayNames = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"];
+    const monthNames = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
+    for (let i = 0; i < 5; i++) {
+      const d = new Date(today);
+      d.setDate(today.getDate() + offset * 5 + i);
+      days.push({
+        dayName: dayNames[d.getDay()],
+        day: d.getDate(),
+        month: monthNames[d.getMonth()],
+        key: d.toISOString().slice(0, 10),
+      });
+    }
+    return days;
+  };
 
   const images = property.images;
   const totalImages = images.length;
@@ -131,7 +152,7 @@ export function PropertyModal({ property }: { property: Property }) {
       <div className="flex-1 bg-black/50 cursor-pointer" onClick={() => router.back()} />
 
       {/* Modal panel — slides in from right */}
-      <div className="relative flex flex-col bg-white w-full max-w-[1100px] shadow-2xl overflow-hidden">
+      <div className="relative flex flex-col bg-white w-full max-w-[1280px] shadow-2xl overflow-hidden">
 
         {/* ── Fixed tab nav ── */}
         <div className="shrink-0 flex items-center border-b border-[#e7e6e6] bg-white px-4 h-[56px] gap-1 z-10">
@@ -253,7 +274,7 @@ export function PropertyModal({ property }: { property: Property }) {
           </div>
 
           {/* ── Two-column content ── */}
-          <div className="grid lg:grid-cols-[1fr_320px] min-h-0">
+          <div className="grid lg:grid-cols-[1fr_380px] min-h-0">
 
             {/* ── LEFT: main content ── */}
             <div className="min-w-0 p-6 space-y-6 border-r border-[#f0efef]">
@@ -627,14 +648,14 @@ export function PropertyModal({ property }: { property: Property }) {
                 {/* Contact card */}
                 <div className="rounded-xl border border-[#ddd] bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] overflow-hidden">
                   <div className="px-5 pt-5 pb-4">
-                    <h3 className="text-[16px] font-bold text-[#323131] mb-4">Fale com o anunciante</h3>
+                    <h3 className="text-[18px] font-bold text-[#323131] mb-4">Fale com o anunciante</h3>
                     {/* Contact tabs */}
-                    <div className="grid grid-cols-2 rounded-xl border border-[#ddd] overflow-hidden mb-4">
+                    <div className="grid grid-cols-2 rounded-xl border border-[#ddd] overflow-hidden mb-5">
                       {(["mensagem", "visita"] as const).map((t) => (
                         <button
                           key={t}
                           onClick={() => setContactTab(t)}
-                          className={`flex items-center justify-center gap-1.5 py-2.5 text-[13px] font-bold transition-colors ${
+                          className={`flex items-center justify-center gap-1.5 py-3 text-[14px] font-bold transition-colors ${
                             contactTab === t
                               ? "bg-white text-[#323131] border-b-2 border-[#eb0027]"
                               : "bg-[#f6f5f5] text-[#717169] hover:bg-[#eeeded]"
@@ -649,59 +670,141 @@ export function PropertyModal({ property }: { property: Property }) {
                       ))}
                     </div>
 
-                    {msgSent ? (
-                      <div className="rounded-xl bg-[#f0fff4] border border-[#bbf7d0] p-4 text-center">
-                        <p className="text-[24px] mb-1">✓</p>
-                        <p className="font-bold text-[#166534] text-[14px]">Mensagem enviada!</p>
-                        <p className="text-[13px] text-[#166534] mt-0.5">O anunciante entrará em contato.</p>
-                      </div>
-                    ) : (
-                      <form
-                        onSubmit={(e) => { e.preventDefault(); setMsgSent(true); }}
-                        className="space-y-2.5"
-                      >
-                        <div className="flex items-center gap-2 h-11 rounded-xl border border-[#d1d0d0] px-3">
-                          <User className="h-4 w-4 text-[#b0afaf] shrink-0" />
-                          <input type="text" placeholder="Digite seu nome" required className="flex-1 text-[13px] font-medium text-[#323131] placeholder:text-[#b0afaf] outline-none bg-transparent" />
+                    {/* ── MENSAGEM tab ── */}
+                    {contactTab === "mensagem" && (
+                      msgSent ? (
+                        <div className="rounded-xl bg-[#f0fff4] border border-[#bbf7d0] p-4 text-center">
+                          <p className="text-[24px] mb-1">✓</p>
+                          <p className="font-bold text-[#166534] text-[15px]">Mensagem enviada!</p>
+                          <p className="text-[14px] text-[#166534] mt-0.5">O anunciante entrará em contato.</p>
                         </div>
-                        <div className="flex items-center gap-2 h-11 rounded-xl border border-[#d1d0d0] px-3">
-                          <svg className="h-4 w-4 text-[#b0afaf] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
-                          <input type="email" placeholder="Digite seu email" required className="flex-1 text-[13px] font-medium text-[#323131] placeholder:text-[#b0afaf] outline-none bg-transparent" />
+                      ) : (
+                        <form
+                          onSubmit={(e) => { e.preventDefault(); setMsgSent(true); }}
+                          className="space-y-3"
+                        >
+                          <div className="flex items-center gap-2 h-12 rounded-xl border border-[#d1d0d0] px-3">
+                            <User className="h-4 w-4 text-[#b0afaf] shrink-0" />
+                            <input type="text" placeholder="Digite seu nome" required className="flex-1 text-[14px] font-medium text-[#323131] placeholder:text-[#b0afaf] outline-none bg-transparent" />
+                          </div>
+                          <div className="flex items-center gap-2 h-12 rounded-xl border border-[#d1d0d0] px-3">
+                            <svg className="h-4 w-4 text-[#b0afaf] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+                            <input type="email" placeholder="Digite seu email" required className="flex-1 text-[14px] font-medium text-[#323131] placeholder:text-[#b0afaf] outline-none bg-transparent" />
+                          </div>
+                          <div className="flex items-center gap-2 h-12 rounded-xl border border-[#d1d0d0] px-3">
+                            <Phone className="h-4 w-4 text-[#b0afaf] shrink-0" />
+                            <input type="tel" placeholder="(xx) xxxxx-xxxx" className="flex-1 text-[14px] font-medium text-[#323131] placeholder:text-[#b0afaf] outline-none bg-transparent" />
+                          </div>
+                          <textarea
+                            rows={3}
+                            defaultValue="Olá, gostaria de mais informações sobre este imóvel."
+                            className="w-full rounded-xl border border-[#d1d0d0] px-3 py-2.5 text-[14px] font-medium text-[#323131] focus:outline-none focus:border-[#eb0027] resize-none"
+                          />
+                          <button type="submit" className="w-full h-12 rounded-[60px] bg-[#eb0027] text-white font-bold text-[15px] hover:bg-[#d60023] transition-colors">
+                            Enviar mensagem
+                          </button>
+                          <p className="text-[12px] text-[#717169] leading-relaxed">
+                            Ao enviar, você afirma que leu, compreendeu e concordou com os nossos{" "}
+                            <span className="underline cursor-pointer">Termos de Uso</span> e{" "}
+                            <span className="underline cursor-pointer">Política de Privacidade</span>.
+                          </p>
+                        </form>
+                      )
+                    )}
+
+                    {/* ── AGENDAR VISITA tab ── */}
+                    {contactTab === "visita" && (
+                      visitSent ? (
+                        <div className="rounded-xl bg-[#f0fff4] border border-[#bbf7d0] p-4 text-center">
+                          <p className="text-[24px] mb-1">✓</p>
+                          <p className="font-bold text-[#166534] text-[15px]">Visita solicitada!</p>
+                          <p className="text-[14px] text-[#166534] mt-0.5">O anunciante confirmará em breve.</p>
                         </div>
-                        <div className="flex items-center gap-2 h-11 rounded-xl border border-[#d1d0d0] px-3">
-                          <Phone className="h-4 w-4 text-[#b0afaf] shrink-0" />
-                          <input type="tel" placeholder="(xx) xxxxx-xxxx" className="flex-1 text-[13px] font-medium text-[#323131] placeholder:text-[#b0afaf] outline-none bg-transparent" />
-                        </div>
-                        <textarea
-                          rows={3}
-                          defaultValue="Olá, gostaria de mais informações sobre este imóvel."
-                          className="w-full rounded-xl border border-[#d1d0d0] px-3 py-2 text-[13px] font-medium text-[#323131] focus:outline-none focus:border-[#eb0027] resize-none"
-                        />
-                        <button type="submit" className="w-full h-11 rounded-[60px] bg-[#eb0027] text-white font-bold text-[14px] hover:bg-[#d60023] transition-colors">
-                          Enviar mensagem
-                        </button>
-                        <p className="text-[11px] text-[#717169] leading-relaxed">
-                          Ao enviar, você afirma que leu, compreendeu e concordou com os nossos{" "}
-                          <span className="underline cursor-pointer">Termos de Uso</span> e{" "}
-                          <span className="underline cursor-pointer">Política de Privacidade</span>.
-                        </p>
-                      </form>
+                      ) : (
+                        <form
+                          onSubmit={(e) => { e.preventDefault(); setVisitSent(true); }}
+                          className="space-y-3"
+                        >
+                          {/* Date picker */}
+                          <div className="rounded-xl border border-[#e7e6e6] bg-[#fafafa] p-3">
+                            <div className="flex items-center justify-between mb-3">
+                              <span className="text-[14px] font-bold text-[#323131]">Escolha uma data</span>
+                              <div className="flex gap-1">
+                                <button
+                                  type="button"
+                                  onClick={() => { setWeekOffset((p) => Math.max(0, p - 1)); setSelectedDate(0); }}
+                                  className="flex h-8 w-8 items-center justify-center rounded-full border border-[#d1d0d0] bg-white hover:bg-[#f6f5f5] transition-colors disabled:opacity-40"
+                                  disabled={weekOffset === 0}
+                                >
+                                  <svg viewBox="0 0 16 16" className="h-4 w-4 text-[#323131]" fill="none" stroke="currentColor" strokeWidth="2"><path d="M10 12L6 8l4-4"/></svg>
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => { setWeekOffset((p) => p + 1); setSelectedDate(0); }}
+                                  className="flex h-8 w-8 items-center justify-center rounded-full border border-[#d1d0d0] bg-white hover:bg-[#f6f5f5] transition-colors"
+                                >
+                                  <svg viewBox="0 0 16 16" className="h-4 w-4 text-[#323131]" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 4l4 4-4 4"/></svg>
+                                </button>
+                              </div>
+                            </div>
+                            <div className="grid grid-cols-5 gap-1.5">
+                              {getWeekDays(weekOffset).map((d, i) => (
+                                <button
+                                  key={d.key}
+                                  type="button"
+                                  onClick={() => setSelectedDate(weekOffset * 5 + i)}
+                                  className={`flex flex-col items-center rounded-xl py-2.5 text-center transition-colors ${
+                                    selectedDate === weekOffset * 5 + i
+                                      ? "bg-[#323131] text-white"
+                                      : "bg-white border border-[#e7e6e6] text-[#323131] hover:border-[#323131]"
+                                  }`}
+                                >
+                                  <span className="text-[11px] font-semibold leading-tight">{d.dayName}</span>
+                                  <span className="text-[20px] font-extrabold leading-tight mt-0.5">{d.day}</span>
+                                  <span className="text-[11px] font-semibold leading-tight">{d.month}</span>
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div className="flex items-center gap-2 h-12 rounded-xl border border-[#d1d0d0] px-3">
+                            <User className="h-4 w-4 text-[#b0afaf] shrink-0" />
+                            <input type="text" placeholder="Digite seu nome" required className="flex-1 text-[14px] font-medium text-[#323131] placeholder:text-[#b0afaf] outline-none bg-transparent" />
+                          </div>
+                          <div className="flex items-center gap-2 h-12 rounded-xl border border-[#d1d0d0] px-3">
+                            <svg className="h-4 w-4 text-[#b0afaf] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+                            <input type="email" placeholder="Digite seu email" required className="flex-1 text-[14px] font-medium text-[#323131] placeholder:text-[#b0afaf] outline-none bg-transparent" />
+                          </div>
+                          <div className="flex items-center gap-2 h-12 rounded-xl border border-[#d1d0d0] px-3">
+                            <Phone className="h-4 w-4 text-[#b0afaf] shrink-0" />
+                            <input type="tel" placeholder="(xx) xxxxx-xxxx" className="flex-1 text-[14px] font-medium text-[#323131] placeholder:text-[#b0afaf] outline-none bg-transparent" />
+                          </div>
+                          <button type="submit" className="w-full h-12 rounded-[60px] bg-[#eb0027] text-white font-bold text-[15px] hover:bg-[#d60023] transition-colors">
+                            Solicitar visita
+                          </button>
+                          <p className="text-[12px] text-[#717169] leading-relaxed">
+                            Ao enviar, você afirma que leu, compreendeu e concordou com os nossos{" "}
+                            <span className="underline cursor-pointer">Termos de Uso</span> e{" "}
+                            <span className="underline cursor-pointer">Política de Privacidade</span>.
+                          </p>
+                        </form>
+                      )
                     )}
                   </div>
 
                   <div className="border-t border-[#f0efef] px-4 py-3 flex items-center gap-2">
                     <button
                       onClick={() => setShowPhone((p) => !p)}
-                      className="flex-1 h-10 rounded-[60px] border-2 border-[#323131] text-[#323131] font-bold text-[13px] flex items-center justify-center gap-1.5 hover:bg-[#f6f5f5] transition-colors"
+                      className="flex-1 h-11 rounded-[60px] border-2 border-[#323131] text-[#323131] font-bold text-[14px] flex items-center justify-center gap-1.5 hover:bg-[#f6f5f5] transition-colors"
                     >
                       <Phone className="h-4 w-4" />
-                      {showPhone ? "(48) 3024-0000" : "(48) 3024... Ver"}
+                      {showPhone ? "(31) 2115-0000" : "(31) 2115... Ver"}
                     </button>
                     <a
-                      href={`https://wa.me/${property.whatsapp ?? "5548900000000"}`}
+                      href={`https://wa.me/${property.whatsapp ?? "5531900000000"}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 h-10 rounded-[60px] bg-[#25d366] text-white font-bold text-[13px] flex items-center justify-center gap-1.5 hover:bg-[#20bd5a] transition-colors"
+                      className="flex-1 h-11 rounded-[60px] bg-[#25d366] text-white font-bold text-[14px] flex items-center justify-center gap-1.5 hover:bg-[#20bd5a] transition-colors"
                     >
                       <WhatsAppIcon />
                       WhatsApp

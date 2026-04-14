@@ -4,13 +4,8 @@ import Link from "next/link";
 import { Logo } from "./Logo";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
 
-type HeaderProps = {
-  hideVehicles?: boolean;
-};
-
-export function Header({ hideVehicles = false }: HeaderProps) {
+export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -51,27 +46,15 @@ export function Header({ hideVehicles = false }: HeaderProps) {
           </div>
         </div>
 
-        {!hideVehicles && (
-          <div className="group relative">
-            <button className="flex items-center space-x-1 text-brand-default font-semibold text-[15px] hover:text-brand-primary h-[74px]">
-              <span>Veículos</span>
-              <ChevronDown className="h-4 w-4" />
-            </button>
-          </div>
-        )}
-
         <Link href="/anunciar-imoveis-carros-e-motos/" className="text-brand-default font-semibold text-[15px] hover:text-brand-primary">
           Anuncie
         </Link>
       </div>
 
       {/* Auth Buttons */}
-      <div className="hidden lg:flex items-center space-x-3">
-        <Link href="/entrar/" className="px-5 py-2 text-[15px] font-bold text-brand-default border border-brand-outline rounded-[60px] hover:bg-brand-surface transition-colors">
-          Entrar
-        </Link>
-        <Link href="/cadastre-se/" className="px-5 py-2 text-[15px] font-bold text-white bg-brand-primary rounded-[60px] hover:bg-[#d60023] transition-colors">
-          Cadastre-se
+      <div className="hidden lg:flex items-center">
+        <Link href="/contato/" className="px-5 py-2 text-[15px] font-bold text-white bg-brand-primary rounded-[60px] hover:bg-[#d60023] transition-colors">
+          Contactar
         </Link>
       </div>
 
@@ -107,28 +90,15 @@ export function Header({ hideVehicles = false }: HeaderProps) {
                   <li><Link href="/lancamentos-imoveis/brasil/" className="text-brand-txt-secondary block py-1">Lançamentos</Link></li>
                 </ul>
               </div>
-              
-              {!hideVehicles && (
-                <div className="space-y-4">
-                  <h3 className="font-bold text-brand-primary text-lg">Veículos</h3>
-                  <ul className="space-y-3 pl-4 border-l-2 border-brand-surface">
-                    <li><Link href="/carros-usados/brasil/" className="text-brand-txt-secondary block py-1">Carros</Link></li>
-                    <li><Link href="/motos-usadas/brasil/" className="text-brand-txt-secondary block py-1">Motos</Link></li>
-                  </ul>
-                </div>
-              )}
-              
+
               <Link href="/anunciar-imoveis-carros-e-motos/" className="block font-bold text-brand-default text-lg pt-4 border-t border-brand-surface">
                 Anuncie grátis
               </Link>
             </div>
             
-            <div className="p-6 border-t border-brand-outline space-y-3">
-              <Link href="/entrar/" className="block w-full text-center px-5 py-3 font-bold text-brand-default border border-brand-outline rounded-[60px]">
-                Entrar
-              </Link>
-              <Link href="/cadastre-se/" className="block w-full text-center px-5 py-3 font-bold text-white bg-brand-primary rounded-[60px]">
-                Cadastre-se
+            <div className="p-6 border-t border-brand-outline">
+              <Link href="/contato/" className="block w-full text-center px-5 py-3 font-bold text-white bg-brand-primary rounded-[60px]">
+                Contactar
               </Link>
             </div>
           </div>

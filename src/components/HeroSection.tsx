@@ -2,10 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Search } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="relative w-full h-[500px] md:h-[702px] flex items-center">
+    <section className="relative w-full h-[80vh] md:h-[702px] flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image 
@@ -16,55 +17,57 @@ export function HeroSection() {
           className="object-cover object-center"
           priority
         />
-        {/* Slight overlay to ensure text legibility if needed, original seems to just use the image */}
-        <div className="absolute inset-0 bg-black/10 md:bg-transparent"></div>
+        <div className="absolute inset-0 bg-black/20 md:bg-black/10"></div>
       </div>
 
       {/* Content Box */}
-      <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 md:px-8">
-        <div className="bg-white rounded-2xl p-6 md:p-10 w-full md:max-w-[640px] shadow-lg animate-[fade-up_0.5s_ease-out]">
-          <h1 className="text-3xl md:text-[38px] font-extrabold text-brand-txt-primary leading-tight mb-8">
+      <div className="relative z-10 w-full px-4 md:px-8 md:max-w-[1280px] md:mx-auto flex justify-center md:block">
+        <div className="bg-white rounded-2xl p-6 md:p-10 w-full max-w-[420px] md:max-w-[520px] shadow-lg animate-[fade-up_0.5s_ease-out]">
+          <h1 className="text-3xl md:text-[38px] font-extrabold text-brand-txt-primary leading-tight mb-6">
             Encontre milhões de imóveis em todo Brasil
           </h1>
 
-          <div className="flex space-x-6 border-b border-brand-surface mb-6">
-            <div className="pb-3 font-bold text-[17px] relative text-brand-primary">
-              Imóveis
-              <div className="absolute bottom-0 left-0 w-full h-[3px] bg-brand-primary rounded-t-md" />
-            </div>
-          </div>
-
-          <div className="flex flex-col space-y-3">
-            <div className="flex flex-col md:flex-row gap-3">
-              <button className="flex-1 px-4 py-3 border border-brand-outline rounded-[60px] text-left text-[15px] font-medium text-brand-txt-secondary hover:border-brand-primary/50 bg-white flex justify-between items-center">
-                <div className="flex flex-col">
-                  <span className="text-[11px] font-bold text-brand-txt-secondary uppercase tracking-wider">O que você deseja?</span>
-                  <span className="text-brand-txt-primary font-bold">Selecionar</span>
-                </div>
-                <span className="text-brand-txt-secondary text-[10px]">▼</span>
-              </button>
-              
-              <button className="flex-1 px-4 py-3 border border-brand-outline rounded-[60px] text-left text-[15px] font-medium text-brand-txt-secondary hover:border-brand-primary/50 bg-white flex justify-between items-center">
-                <div className="flex flex-col">
-                  <span className="text-[11px] font-bold text-brand-txt-secondary uppercase tracking-wider">Tipo de Imóvel</span>
-                  <span className="text-brand-txt-primary font-bold">Todos</span>
-                </div>
-                <span className="text-brand-txt-secondary text-[10px]">▼</span>
-              </button>
-            </div>
-
-            <div className="flex flex-col md:flex-row gap-3">
-              <div className="flex-grow relative">
-                <input 
-                  type="text" 
-                  placeholder="Localização" 
-                  className="w-full h-full min-h-[56px] px-6 border border-brand-outline rounded-[60px] text-[15px] font-medium text-brand-txt-primary focus:border-brand-primary focus:outline-none placeholder:text-brand-txt-secondary"
-                />
+          <div className="flex flex-col gap-2.5">
+            {/* O que você deseja? */}
+            <button className="w-full px-4 py-3.5 border border-brand-outline rounded-xl text-left hover:border-brand-primary/60 bg-white flex justify-between items-center transition-colors">
+              <div className="flex flex-col gap-0.5">
+                <span className="text-[12px] font-semibold text-brand-txt-secondary">O que você deseja?</span>
+                <span className="text-[15px] font-bold text-brand-txt-primary">Selecionar</span>
               </div>
-              <Link href="/comprar" className="h-[56px] px-8 bg-brand-primary text-white font-bold text-[17px] rounded-[60px] hover:bg-[#d60023] transition-colors md:w-auto w-full flex items-center justify-center">
-                Buscar
-              </Link>
+              <svg viewBox="0 0 16 16" className="h-4 w-4 text-brand-txt-secondary shrink-0" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M4 6l4-4 4 4M4 10l4 4 4-4" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+
+            {/* Tipo de Imóvel */}
+            <button className="w-full px-4 py-3.5 border border-brand-outline rounded-xl text-left hover:border-brand-primary/60 bg-white flex justify-between items-center transition-colors">
+              <div className="flex flex-col gap-0.5">
+                <span className="text-[12px] font-semibold text-brand-txt-secondary">Tipo de Imóvel</span>
+                <span className="text-[15px] font-bold text-brand-txt-primary">Todos</span>
+              </div>
+              <svg viewBox="0 0 16 16" className="h-4 w-4 text-brand-txt-secondary shrink-0" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M4 6l4-4 4 4M4 10l4 4 4-4" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+
+            {/* Localização */}
+            <div className="w-full px-4 py-3.5 border border-brand-outline rounded-xl bg-white focus-within:border-brand-primary transition-colors">
+              <p className="text-[12px] font-semibold text-brand-txt-secondary mb-0.5">Localização</p>
+              <input
+                type="text"
+                placeholder="Digite cidade, bairro ou rua"
+                className="w-full text-[15px] font-medium text-brand-txt-primary placeholder:text-brand-txt-secondary outline-none bg-transparent"
+              />
             </div>
+
+            {/* Buscar */}
+            <Link
+              href="/comprar"
+              className="w-full h-[52px] bg-brand-primary text-white font-bold text-[17px] rounded-xl hover:bg-[#d60023] transition-colors flex items-center justify-center gap-2 mt-0.5"
+            >
+              <Search className="h-5 w-5" />
+              Buscar
+            </Link>
           </div>
         </div>
       </div>

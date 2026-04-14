@@ -2,11 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FilterButton } from "@/components/ComprarClient";
+import { FilterButton, SortDropdown, PropertyTypeChips } from "@/components/ComprarClient";
 import { properties } from "@/lib/properties";
 import type { Property } from "@/lib/properties";
 import {
-  ArrowUpDown,
   Bath,
   BedDouble,
   Building2,
@@ -20,7 +19,6 @@ import {
   MapPin,
   MessageCircle,
   Ruler,
-  Search,
 } from "lucide-react";
 
 const filters = [
@@ -81,17 +79,22 @@ const agencyCards = [
 
 function FilterSidebar() {
   return (
-    <aside className="hidden xl:block w-[300px] shrink-0 sticky top-[94px] h-[calc(100vh-112px)] overflow-hidden hover:overflow-y-auto scrollbar-hide rounded-xl border border-[#ddd] bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)]">
-      <div className="p-5 space-y-5">
-        <div className="flex items-center justify-between">
-          <h2 className="text-[21px] leading-[30px] font-bold text-[#323131]">Filtros</h2>
-          <button className="text-[13px] font-semibold text-[#eb0027]">Limpar tudo</button>
-        </div>
+    <aside className="hidden xl:flex xl:flex-col w-[360px] shrink-0 overflow-y-auto py-5 gap-3">
+      {/* "Seleção atual" — sticks to the top of the sidebar's own scroll */}
+      <div className="sticky top-0 z-10 shrink-0">
         <div className="rounded-xl border border-[#f4c8d0] bg-[#fff0f2] p-4">
           <div className="flex items-center justify-between gap-3">
             <p className="text-[13px] font-bold text-[#323131]">Seleção atual</p>
             <p className="text-[13px] font-bold text-[#eb0027]">Nenhum filtro</p>
           </div>
+        </div>
+      </div>
+
+      {/* Filter card — scrolls naturally inside the sidebar column */}
+      <div className="rounded-xl border border-[#ddd] bg-white p-5 space-y-5">
+        <div className="flex items-center justify-between">
+          <h2 className="text-[21px] leading-[30px] font-bold text-[#323131]">Filtros</h2>
+          <button className="text-[13px] font-semibold text-[#eb0027]">Limpar tudo</button>
         </div>
         <div className="grid grid-cols-3 gap-2">
           {[
@@ -142,12 +145,11 @@ function FilterSidebar() {
               </div>
             )}
             {filter.checks && (
-              <div className="space-y-2">
+              <div className="flex flex-wrap gap-2">
                 {filter.checks.map((check) => (
-                  <label key={check} className="flex items-center gap-2 text-[13px] font-medium text-[#5e5c5d]">
-                    <span className="h-4 w-4 rounded border border-[#d1d0d0] bg-white" />
+                  <button key={check} className="rounded-xl border border-[#ddd] px-3 py-2 text-[13px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors">
                     {check}
-                  </label>
+                  </button>
                 ))}
               </div>
             )}
@@ -155,22 +157,6 @@ function FilterSidebar() {
         ))}
       </div>
     </aside>
-  );
-}
-
-function SearchStrip() {
-  return (
-    <div className="rounded-b-[18px] bg-white px-4 py-4 shadow-[0_2px_8px_rgba(0,0,0,0.08)] md:px-6">
-      <div className="mx-auto flex max-w-[980px] flex-col gap-3 lg:flex-row lg:items-center">
-        <div className="flex flex-1 items-center rounded-xl border border-[#d1d0d0] bg-white px-4 py-3">
-          <Search className="mr-3 h-5 w-5 text-[#717169]" />
-          <span className="text-[15px] font-semibold text-[#323131]">Imóveis</span>
-          <span className="mx-3 h-5 w-px bg-[#ddd]" />
-          <span className="text-[15px] text-[#717169]">Em todo Brasil</span>
-        </div>
-        <button className="h-12 rounded-xl bg-[#eb0027] px-8 text-[15px] font-bold text-white">Buscar</button>
-      </div>
-    </div>
   );
 }
 
@@ -185,10 +171,10 @@ function PropertyCard({ property, priority = false }: { property: Property; prio
   const propertyUrl = `/imovel/${property.slug}/${property.id}`;
 
   return (
-    <article className="overflow-hidden rounded-xl border border-[#ddd] bg-white shadow-[0_2px_4px_rgba(0,0,0,0.08)] transition-shadow hover:shadow-[0_6px_16px_rgba(0,0,0,0.12)]">
-      <div className="grid md:grid-cols-[248px_1fr]">
-        <Link href={propertyUrl} className="relative block h-[210px] md:h-full min-h-[250px] overflow-hidden bg-[#f4f5f7]">
-          <Image src={property.images[0]} alt={property.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 248px" priority={priority} unoptimized />
+    <article className="overflow-hidden rounded-xl border border-[#ddd] bg-white transition-shadow hover:border-[#bbb]">
+      <div className="grid md:grid-cols-[340px_1fr]">
+        <Link href={propertyUrl} className="relative block h-[230px] md:h-full min-h-[300px] overflow-hidden bg-[#f4f5f7]">
+          <Image src={property.images[0]} alt={property.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 340px" priority={priority} unoptimized />
           <div className="absolute left-3 top-3 flex items-center gap-1 rounded-full bg-black/70 px-2 py-1 text-xs font-bold text-white">
             <Camera className="h-3.5 w-3.5" />
             1/{property.images.length}
@@ -197,7 +183,7 @@ function PropertyCard({ property, priority = false }: { property: Property; prio
             <span className="absolute bottom-3 left-3 rounded-full bg-[#872bff] px-3 py-1 text-xs font-bold text-white">{property.badge}</span>
           )}
         </Link>
-        <div className="flex min-h-[250px] flex-col p-4 md:p-5">
+        <div className="flex min-h-[300px] flex-col p-4 md:p-5">
           <div className="flex items-start gap-4">
             <Link href={propertyUrl} className="flex-1">
               <h2 className="line-clamp-2 text-[15px] font-bold leading-[22px] tracking-[0.2px] text-[#323131] md:text-[16px]">{property.title}</h2>
@@ -268,32 +254,38 @@ function AgencySection() {
 
 export default function ComprarPage() {
   return (
-    <div className="min-h-screen bg-[#f4f5f7] font-sans text-[#323131]">
+    <div className="h-screen flex flex-col bg-[#f4f5f7] font-sans text-[#323131] overflow-hidden">
       <Header />
-      <div className="mx-auto flex max-w-[1320px] items-start gap-6 px-4 py-5">
+      {/* Fixed-height row — each column scrolls independently */}
+      <div className="flex flex-1 overflow-hidden max-w-[1440px] mx-auto w-full px-4 gap-6">
         <FilterSidebar />
-        <main className="min-w-0 flex-1 pb-12">
-          <SearchStrip />
-          <div className="mx-auto max-w-[980px] px-4 py-5 md:px-6">
-            <div className="mb-5 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+        <main className="min-w-0 flex-1 overflow-y-auto">
+          <div className="py-5 pb-16">
+            {/* Mobile: filter + sort buttons ABOVE the title */}
+            <div className="flex gap-2 items-center mb-3 lg:hidden">
+              <FilterButton />
+              <SortDropdown />
+            </div>
+
+            <div className="mb-3 flex lg:items-end lg:justify-between">
               <div>
-                <nav className="mb-2 flex items-center gap-2 text-[13px] font-semibold text-[#717169]">
+                <nav className="hidden md:flex mb-2 items-center gap-2 text-[13px] font-semibold text-[#717169]">
                   <Link href="#" className="text-[#475cff]">Imóveis</Link>
                   <span>/</span>
                   <span>Em todo Brasil</span>
                 </nav>
-                <h1 className="text-[28px] font-extrabold leading-9 tracking-[0.2px] text-[#323131] md:text-[38px] md:leading-[46px]">4.530.289 Imóveis em todo Brasil</h1>
+                <h1 className="text-[20px] font-extrabold leading-7 tracking-[0.2px] text-[#323131] md:text-[28px] md:leading-9 lg:text-[38px] lg:leading-[46px]">4.530.289 Imóveis em todo Brasil</h1>
               </div>
-              <div className="flex gap-2">
+              {/* Desktop: filter + sort buttons beside the title */}
+              <div className="hidden lg:flex gap-2 items-center">
                 <FilterButton />
-                <button className="flex h-11 items-center gap-2 rounded-xl border border-[#d1d0d0] bg-white px-4 text-[15px] font-bold text-[#323131]">
-                  <ArrowUpDown className="h-4 w-4" />
-                  <span className="hidden sm:inline">Ordernar por</span>
-                  <span className="text-[#717169]">Mais relevantes</span>
-                </button>
+                <SortDropdown />
               </div>
             </div>
-            <div className="space-y-4">
+
+            <PropertyTypeChips />
+
+            <div className="mt-6 space-y-4">
               {properties.slice(0, 5).map((property, index) => (
                 <PropertyCard key={property.id} property={property} priority={index === 0} />
               ))}
@@ -302,10 +294,10 @@ export default function ComprarPage() {
                 <PropertyCard key={property.id} property={property} />
               ))}
             </div>
+            <Footer />
           </div>
         </main>
       </div>
-      <Footer />
     </div>
   );
 }

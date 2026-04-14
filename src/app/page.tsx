@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <div className="min-h-screen bg-brand-surface font-sans flex flex-col overflow-x-hidden">
-      <Header hideVehicles />
+      <Header />
       <main className="flex-grow">
         <HeroSection />
         <PropertySection />

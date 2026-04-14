@@ -1,0 +1,188 @@
+
+> ai-website-clone-template@0.3.1 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 366ms
+[35m[1mAttention[22m[39m: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[36mhttps://nextjs.org/telemetry[39m
+
+
+ GET / [32m200[39m in 3.2s[2m (next.js: 2.8s, application-code: 361ms)[22m
+ GET / [32m200[39m in 189ms[2m (next.js: 4ms, application-code: 185ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <HTTPAccessFallbackBoundary notFound={[...]}>
+                        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={[...]} forbidden={undefined} ...>
+                          <link>
+                          <script>
+                          <script>
+                          <RootLayout>
+                            <html lang="pt-BR" className="urbanist_c...">
+                              <body
+                                className="min-h-full flex flex-col font-sans"
+-                               __processed_c76ded5f-ea75-4adf-84b9-e8c6fdd0e337__="true"
+-                               bis_status="ok"
+-                               bis_frame_id="270"
+                              >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://618fbbe4-66c2-4702-98bf-588544a76391-00-279ktuwpco4f0.worf.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://618fbbe4-66c2-4702-98bf-588544a76391-00-279ktuwpco4f0.worf.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /comprar [32m200[39m in 805ms[2m (next.js: 662ms, application-code: 143ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 1344ms[2m (next.js: 1301ms, application-code: 43ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 70ms[2m (next.js: 34ms, application-code: 37ms)[22m
+ GET /imovel/loja-comercial-para-locacao-bh-santo-agostinho-154m2-RS11000/id-29100001 [32m200[39m in 69ms[2m (next.js: 38ms, application-code: 31ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 73ms[2m (next.js: 35ms, application-code: 38ms)[22m
+ GET /imovel/loja-comercial-para-locacao-bh-santo-agostinho-154m2-RS11000/id-29100001 [32m200[39m in 146ms[2m (next.js: 41ms, application-code: 105ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 95ms[2m (next.js: 53ms, application-code: 42ms)[22m
+[32m[1m✓[22m[39m Compiled in 434ms
+[33m[1m⚠[22m[39m Fast Refresh had to perform a full reload when ./src/components/ComprarClient.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /comprar [32m200[39m in 433ms[2m (next.js: 199ms, application-code: 235ms)[22m
+ GET /comprar [32m200[39m in 621ms[2m (next.js: 3ms, application-code: 618ms)[22m
+ GET /comprar [32m200[39m in 113ms[2m (next.js: 14ms, application-code: 99ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/comprar" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <HTTPAccessFallbackBoundary notFound={[...]}>
+                        <HTTPAccessFallbackErrorBoundary pathname="/comprar" notFound={[...]} forbidden={undefined} ...>
+                          <link>
+                          <script>
+                          <script>
+                          <RootLayout>
+                            <html lang="pt-BR" className="urbanist_c...">
+                              <body
+                                className="min-h-full flex flex-col font-sans"
+-                               __processed_8d331a51-6ccd-42a5-a726-ab773bf4a9a1__="true"
+-                               bis_status="ok"
+-                               bis_frame_id="270"
+                              >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://618fbbe4-66c2-4702-98bf-588544a76391-00-279ktuwpco4f0.worf.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://618fbbe4-66c2-4702-98bf-588544a76391-00-279ktuwpco4f0.worf.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /imovel/sala-comercial-para-locacao-sp-republica-93m2-RS4000/id-29100003 [32m200[39m in 96ms[2m (next.js: 54ms, application-code: 42ms)[22m
+[32m[1m✓[22m[39m Compiled in 281ms
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 994ms[2m (next.js: 562ms, application-code: 432ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 411ms[2m (next.js: 78ms, application-code: 333ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 76ms[2m (next.js: 8ms, application-code: 68ms)[22m
+ GET /comprar [32m200[39m in 1262ms[2m (next.js: 436ms, application-code: 826ms)[22m
+ GET /comprar [32m200[39m in 354ms[2m (next.js: 6ms, application-code: 348ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 311ms[2m (next.js: 270ms, application-code: 41ms)[22m
+ GET /comprar [32m200[39m in 478ms[2m (next.js: 96ms, application-code: 382ms)[22m
+ GET / [32m200[39m in 114ms[2m (next.js: 69ms, application-code: 45ms)[22m
+ GET /comprar [32m200[39m in 166ms[2m (next.js: 2ms, application-code: 164ms)[22m
+[32m[1m✓[22m[39m Compiled in 297ms
+[32m[1m✓[22m[39m Compiled in 90ms
+[32m[1m✓[22m[39m Compiled in 189ms
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 95ms[2m (next.js: 46ms, application-code: 50ms)[22m
+[32m[1m✓[22m[39m Compiled in 227ms
+ GET /comprar [32m200[39m in 1338ms[2m (next.js: 5ms, application-code: 1334ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 2.0s[2m (next.js: 1642ms, application-code: 387ms)[22m
+[36m[browser][39m [33mImage with src "/images/casa-comercial-com-2-salas---v-01ba2ce67e.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading[39m
+[36m[browser][39m [33mImage with src "https://618fbbe4-66c2-4702-98bf-588544a76391-00-279ktuwpco4f0.worf.replit.dev/images/app-chavesnam-o-android-5c9fd3d78a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://618fbbe4-66c2-4702-98bf-588544a76391-00-279ktuwpco4f0.worf.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://618fbbe4-66c2-4702-98bf-588544a76391-00-279ktuwpco4f0.worf.replit.dev/images/app-chavesnam-o-ios-862e08884b.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://618fbbe4-66c2-4702-98bf-588544a76391-00-279ktuwpco4f0.worf.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /comprar [32m200[39m in 660ms[2m (next.js: 370ms, application-code: 291ms)[22m
+[32m[1m✓[22m[39m Compiled in 20ms
+[33m[1m⚠[22m[39m Fast Refresh had to perform a full reload when ./src/components/ComprarClient.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /comprar [32m200[39m in 620ms[2m (next.js: 241ms, application-code: 380ms)[22m
+ GET /comprar [32m200[39m in 1208ms[2m (next.js: 416ms, application-code: 792ms)[22m
+ GET /comprar [32m200[39m in 1142ms[2m (next.js: 70ms, application-code: 1073ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/comprar" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <HTTPAccessFallbackBoundary notFound={[...]}>
+                        <HTTPAccessFallbackErrorBoundary pathname="/comprar" notFound={[...]} forbidden={undefined} ...>
+                          <link>
+                          <script>
+                          <script>
+                          <RootLayout>
+                            <html lang="pt-BR" className="urbanist_c...">
+                              <body
+                                className="min-h-full flex flex-col font-sans"
+-                               __processed_9ab8f255-7c96-48f9-8c70-a3c1d0677ff2__="true"
+-                               bis_status="ok"
+-                               bis_frame_id="270"
+                              >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://618fbbe4-66c2-4702-98bf-588544a76391-00-279ktuwpco4f0.worf.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://618fbbe4-66c2-4702-98bf-588544a76391-00-279ktuwpco4f0.worf.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://618fbbe4-66c2-4702-98bf-588544a76391-00-279ktuwpco4f0.worf.replit.dev/images/app-chavesnam-o-android-5c9fd3d78a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://618fbbe4-66c2-4702-98bf-588544a76391-00-279ktuwpco4f0.worf.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://618fbbe4-66c2-4702-98bf-588544a76391-00-279ktuwpco4f0.worf.replit.dev/images/app-chavesnam-o-ios-862e08884b.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://618fbbe4-66c2-4702-98bf-588544a76391-00-279ktuwpco4f0.worf.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 98ms[2m (next.js: 58ms, application-code: 40ms)[22m
+ GET /comprar [32m200[39m in 641ms[2m (next.js: 164ms, application-code: 477ms)[22m
+ GET /comprar [32m200[39m in 159ms[2m (next.js: 5ms, application-code: 154ms)[22m
+ GET /comprar [32m200[39m in 290ms[2m (next.js: 98ms, application-code: 191ms)[22m
+[32m[1m✓[22m[39m Compiled in 232ms
+[?25h
+[1G[0K⠙[1G[0K
