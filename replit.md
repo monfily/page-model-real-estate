@@ -62,6 +62,28 @@ The clone was built using:
 - `package.json`: dev/start scripts use `-p 5000 -H 0.0.0.0`
 - `.replit`: workflow `Start application` runs `npm run dev` and waits for port 5000
 
+## Property Detail Modal
+
+- Next.js intercepting routes (`@modal/(.)imovel/[slug]/[id]`) open property as a right-side drawer at 1100px max-width while keeping `/comprar` dimmed behind.
+- Direct URL access (`/imovel/[slug]/[id]`) renders a full-page layout.
+- Modal tab nav: **Anúncio · N Fotos · Mapa · Street View · Nas proximidades** (all tabs functional with conditional rendering)
+  - **Anúncio**: split gallery + two-column content (description, specs, contact, financing, amenities, bus stops)
+  - **N Fotos**: masonry 2–3-column gallery of all property photos (N is dynamic count)
+  - **Mapa**: full-height Leaflet + OpenStreetMap map centered on property coordinates, with home pin
+  - **Street View**: Google Maps Street View embedded via iframe (no API key required)
+  - **Nas proximidades**: Leaflet map with 8 category filter pills (Parques, Transporte, Mercados, Alimentação, Farmácias, Academias, Escolas, Hospitais) + category markers
+- Split gallery: large main photo + 2 side thumbnails
+- Contact panel: Mensagem/Agendar tabs, form fields, phone reveal, WhatsApp, Anunciante Diamante card
+- Dynamic breadcrumbs/title from property data; description expandable
+- Leaflet components lazy-loaded (SSR-safe) using `lazy` + `Suspense`; container double-init protection via `_leaflet_id` cleanup
+
+## Mobile Filter Drawer
+
+- `MobileFilterDrawer.tsx`: full-height left-side drawer opened by "Filtros" button (visible below `xl`)
+- Same filter sections as the desktop sidebar: type tabs, location, price, rooms, baths, parking, area, amenities
+- Sticky footer with "Limpar tudo" + "Aplicar filtros" buttons
+- `ComprarClient.tsx`: client component that owns drawer open/close state and renders the button + drawer
+
 ## Migration Status
 
 - Dependencies have been installed for Node and Python helper scripts.

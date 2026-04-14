@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { FilterButton } from "@/components/ComprarClient";
+import { properties } from "@/lib/properties";
+import type { Property } from "@/lib/properties";
 import {
   ArrowUpDown,
   Bath,
@@ -18,7 +21,6 @@ import {
   MessageCircle,
   Ruler,
   Search,
-  SlidersHorizontal,
 } from "lucide-react";
 
 const filters = [
@@ -66,141 +68,6 @@ const filters = [
   {
     title: "Tipo de Vendedor",
     checks: ["Direto com proprietário", "Somente Imobiliárias"],
-  },
-];
-
-const properties = [
-  {
-    title: "Casa comercial com 2 salas à venda na Rua da Emílio Ferdinando Schroeder, 48, Agronômica, Florianópolis por R$ 2.350.000",
-    address: "Rua Da Emílio Ferdinando Schroeder, 48",
-    location: "Agronômica, Florianópolis/SC",
-    area: "281m²",
-    beds: "2",
-    baths: "1",
-    parking: "2",
-    price: "R$ 2.350.000",
-    feeLabel: "Iptu:",
-    fee: "R$ 2.645",
-    images: ["/images/casa-comercial-com-2-salas---v-01ba2ce67e.jpg", "/images/casa-comercial-com-2-salas---v-14d52942fa.jpg"],
-  },
-  {
-    title: "Loja Comercial para Locação no Bairro Santo Agostinho – 154m²",
-    address: "Endereço indisponível",
-    location: "Santo Agostinho, Belo Horizonte/MG",
-    area: "154m²",
-    beds: "",
-    baths: "2",
-    parking: "",
-    price: "R$ 11.000",
-    feeLabel: "Iptu:",
-    fee: "R$ 232",
-    images: ["/images/loja-comercial-para-loca--o-no-c1f36d8e52.jpg", "/images/loja-comercial-para-loca--o-no-bc31fca628.jpg"],
-  },
-  {
-    title: "Lançamento a 100 metros do mar com financiamento direto com a construtora sem burocracia",
-    address: "Rua Fernão Dias, 33",
-    location: "Aviação, Praia Grande/SP",
-    area: "74.592m²",
-    beds: "2",
-    baths: "1",
-    parking: "1",
-    price: "R$ 589.193",
-    feeLabel: "A partir de",
-    fee: "Em Obras",
-    badge: "Lançamento",
-    images: ["/images/lan-amento-a-100-metros-do-mar-3972cccce2.jpg", "/images/lan-amento-a-100-metros-do-mar-d04931d857.jpg"],
-  },
-  {
-    title: "Sala Comercial para Locação em São Paulo, República, 2 banheiros",
-    address: "Avenida Ipiranga, 1071",
-    location: "República, São Paulo/SP",
-    area: "93m²",
-    beds: "",
-    baths: "2",
-    parking: "",
-    price: "R$ 4.000",
-    feeLabel: "Condomínio",
-    fee: "R$ 2.336",
-    images: ["/images/sala-comercial-para-loca--o-em-92ee1d4d44.jpg", "/images/sala-comercial-para-loca--o-em-dcb185174a.jpg"],
-  },
-  {
-    title: "Apartamento para Venda em Ribeirão Preto, Vila do Golf, 2 dormitórios, 1 suíte, 2 banheiros, 2 vagas",
-    address: "Endereço indisponível",
-    location: "Vila do Golf, Ribeirão Preto/SP",
-    area: "81m²",
-    beds: "2",
-    baths: "2",
-    parking: "2",
-    price: "R$ 530.000",
-    feeLabel: "Condomínio",
-    fee: "R$ 700",
-    images: ["/images/apartamento-para-venda-em-ribe-dbe0c2271a.jpg", "/images/apartamento-para-venda-em-ribe-ccc271ecdd.jpg"],
-  },
-  {
-    title: "Sobrado com 134m² 3 quartos, para aluguel, no bairro Jardim Cruzeiro em São José dos Pinhais",
-    address: "Rua Margarida Pianaro Moro",
-    location: "Jardim Cruzeiro, São José dos Pinhais/PR",
-    area: "134m²",
-    beds: "3",
-    baths: "3",
-    parking: "3",
-    price: "R$ 4.300",
-    feeLabel: "Iptu:",
-    fee: "R$ 1.200",
-    badge: "Destaque",
-    images: ["/images/sobrado-com-134m--3-quartos--p-40c678b3d4.jpg", "/images/sobrado-com-134m--3-quartos--p-0c284ae5ae.jpg"],
-  },
-  {
-    title: "Apartamento com 2 quartos à venda na Rua Marechal Hermes, 220, Glória, Joinville",
-    address: "Rua Marechal Hermes, 220",
-    location: "Glória, Joinville/SC",
-    area: "78m²",
-    beds: "2",
-    baths: "2",
-    parking: "3",
-    price: "R$ 650.000",
-    feeLabel: "Condomínio",
-    fee: "R$ 409",
-    images: ["/images/apartamento-com-2-quartos---ve-e698d3ef94.jpg", "/images/apartamento-com-2-quartos---ve-63cb687b80.jpg"],
-  },
-  {
-    title: "Sobrado 120m² no Bairro Osvaldo Cruz – Espaço, Conforto e Excelente Localização",
-    address: "Rua Bom Pastor, 9999",
-    location: "Osvaldo Cruz, São Caetano do Sul/SP",
-    area: "120m²",
-    beds: "3",
-    baths: "2",
-    parking: "2",
-    price: "R$ 3.300",
-    feeLabel: "Iptu:",
-    fee: "R$ 115",
-    images: ["/images/sobrado-120m--no-bairro-osvald-b221f6c911.jpg", "/images/sobrado-120m--no-bairro-osvald-ca181cb7ab.jpg"],
-  },
-  {
-    title: "Lote em Condomínio Fechado para Venda em Teresópolis, Prata",
-    address: "Endereço indisponível",
-    location: "Prata, Teresópolis/RJ",
-    area: "966m²",
-    beds: "",
-    baths: "",
-    parking: "",
-    price: "R$ 300.000",
-    feeLabel: "",
-    fee: "",
-    images: ["/images/lote-em-condom-nio-fechado-par-a86333566e.jpg", "/images/lote-em-condom-nio-fechado-par-04642fe793.jpg"],
-  },
-  {
-    title: "Prédio à venda ou alugar no Bairro Vila Marina - Santo André/SP",
-    address: "Rua Coronel Seabra",
-    location: "Vila Marina, Santo André/SP",
-    area: "469m²",
-    beds: "",
-    baths: "5",
-    parking: "6",
-    price: "R$ 12.500",
-    feeLabel: "Venda ou aluguel",
-    fee: "R$ 2.800.000",
-    images: ["/images/pr-dio---venda-ou-alugar-no-ba-08f3d92c6b.jpg", "/images/pr-dio---venda-ou-alugar-no-ba-8b904379db.jpg"],
   },
 ];
 
@@ -307,7 +174,7 @@ function SearchStrip() {
   );
 }
 
-function PropertyCard({ property, priority = false }: { property: (typeof properties)[number]; priority?: boolean }) {
+function PropertyCard({ property, priority = false }: { property: Property; priority?: boolean }) {
   const details = [
     { value: property.area, icon: Ruler },
     { value: property.beds, icon: BedDouble },
@@ -315,14 +182,16 @@ function PropertyCard({ property, priority = false }: { property: (typeof proper
     { value: property.parking, icon: Car },
   ].filter((item) => item.value);
 
+  const propertyUrl = `/imovel/${property.slug}/${property.id}`;
+
   return (
     <article className="overflow-hidden rounded-xl border border-[#ddd] bg-white shadow-[0_2px_4px_rgba(0,0,0,0.08)] transition-shadow hover:shadow-[0_6px_16px_rgba(0,0,0,0.12)]">
       <div className="grid md:grid-cols-[248px_1fr]">
-        <Link href="#" className="relative block h-[210px] md:h-full min-h-[250px] overflow-hidden bg-[#f4f5f7]">
+        <Link href={propertyUrl} className="relative block h-[210px] md:h-full min-h-[250px] overflow-hidden bg-[#f4f5f7]">
           <Image src={property.images[0]} alt={property.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 248px" priority={priority} unoptimized />
           <div className="absolute left-3 top-3 flex items-center gap-1 rounded-full bg-black/70 px-2 py-1 text-xs font-bold text-white">
             <Camera className="h-3.5 w-3.5" />
-            1/2
+            1/{property.images.length}
           </div>
           {property.badge && (
             <span className="absolute bottom-3 left-3 rounded-full bg-[#872bff] px-3 py-1 text-xs font-bold text-white">{property.badge}</span>
@@ -330,7 +199,7 @@ function PropertyCard({ property, priority = false }: { property: (typeof proper
         </Link>
         <div className="flex min-h-[250px] flex-col p-4 md:p-5">
           <div className="flex items-start gap-4">
-            <Link href="#" className="flex-1">
+            <Link href={propertyUrl} className="flex-1">
               <h2 className="line-clamp-2 text-[15px] font-bold leading-[22px] tracking-[0.2px] text-[#323131] md:text-[16px]">{property.title}</h2>
             </Link>
             <button className="rounded-full border border-[#ddd] p-2 text-[#5e5c5d]">
@@ -343,7 +212,7 @@ function PropertyCard({ property, priority = false }: { property: (typeof proper
           </div>
           <div className="mt-4 flex flex-wrap gap-4 text-[13px] font-bold text-[#323131]">
             {details.map((detail, index) => (
-              <span key={`${property.title}-${detail.value}-${index}`} className="flex items-center gap-1.5">
+              <span key={`${property.id}-${index}`} className="flex items-center gap-1.5">
                 <detail.icon className="h-4 w-4 text-[#717169]" />
                 {detail.value}
               </span>
@@ -356,10 +225,13 @@ function PropertyCard({ property, priority = false }: { property: (typeof proper
                 <p className="mt-1 text-[13px] font-semibold text-[#717169]"><span>{property.feeLabel}</span> <span className="text-[#323131]">{property.fee}</span></p>
               )}
             </div>
-            <button className="flex h-11 items-center justify-center gap-2 rounded-[60px] bg-[#eb0027] px-6 text-[15px] font-bold text-white">
+            <Link
+              href={propertyUrl}
+              className="flex h-11 items-center justify-center gap-2 rounded-[60px] bg-[#eb0027] px-6 text-[15px] font-bold text-white hover:bg-[#d60023] transition-colors"
+            >
               <MessageCircle className="h-4 w-4" />
               Contatar
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -413,10 +285,7 @@ export default function ComprarPage() {
                 <h1 className="text-[28px] font-extrabold leading-9 tracking-[0.2px] text-[#323131] md:text-[38px] md:leading-[46px]">4.530.289 Imóveis em todo Brasil</h1>
               </div>
               <div className="flex gap-2">
-                <button className="flex h-11 items-center gap-2 rounded-xl border border-[#d1d0d0] bg-white px-4 text-[15px] font-bold text-[#323131] xl:hidden">
-                  <SlidersHorizontal className="h-4 w-4" />
-                  Filtros
-                </button>
+                <FilterButton />
                 <button className="flex h-11 items-center gap-2 rounded-xl border border-[#d1d0d0] bg-white px-4 text-[15px] font-bold text-[#323131]">
                   <ArrowUpDown className="h-4 w-4" />
                   <span className="hidden sm:inline">Ordernar por</span>
@@ -426,11 +295,11 @@ export default function ComprarPage() {
             </div>
             <div className="space-y-4">
               {properties.slice(0, 5).map((property, index) => (
-                <PropertyCard key={property.title} property={property} priority={index === 0} />
+                <PropertyCard key={property.id} property={property} priority={index === 0} />
               ))}
               <AgencySection />
               {properties.slice(5).map((property) => (
-                <PropertyCard key={property.title} property={property} />
+                <PropertyCard key={property.id} property={property} />
               ))}
             </div>
           </div>

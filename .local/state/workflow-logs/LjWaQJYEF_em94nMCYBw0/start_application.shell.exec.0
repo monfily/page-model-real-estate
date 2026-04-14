@@ -1,0 +1,141 @@
+
+> ai-website-clone-template@0.3.1 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 402ms
+
+ GET / [32m200[39m in 2.3s[2m (next.js: 1871ms, application-code: 444ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <HTTPAccessFallbackBoundary notFound={[...]}>
+                        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={[...]} forbidden={undefined} ...>
+                          <link>
+                          <script>
+                          <script>
+                          <RootLayout>
+                            <html lang="pt-BR" className="urbanist_c...">
+                              <body
+                                className="min-h-full flex flex-col font-sans"
+-                               __processed_a03d1a0d-68f6-49ef-94b1-e3a4fa653005__="true"
+-                               bis_status="ok"
+-                               bis_frame_id="3437"
+                              >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 1033ms[2m (next.js: 666ms, application-code: 366ms)[22m
+[36m[browser][39m [33mImage with src "/images/casa-comercial-com-2-salas---v-01ba2ce67e.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading[39m
+ GET / [32m200[39m in 179ms[2m (next.js: 4ms, application-code: 174ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <HTTPAccessFallbackBoundary notFound={[...]}>
+                        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={[...]} forbidden={undefined} ...>
+                          <link>
+                          <script>
+                          <script>
+                          <RootLayout>
+                            <html lang="pt-BR" className="urbanist_c...">
+                              <body
+                                className="min-h-full flex flex-col font-sans"
+-                               __processed_f7174893-ce8d-4838-bc86-5b9f5f8e1779__="true"
+-                               bis_status="ok"
+-                               bis_frame_id="3441"
+                              >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /comprar [32m200[39m in 546ms[2m (next.js: 32ms, application-code: 514ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 281ms[2m (next.js: 50ms, application-code: 231ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/imovel/ca..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <HTTPAccessFallbackBoundary notFound={[...]}>
+                        <HTTPAccessFallbackErrorBoundary pathname="/imovel/ca..." notFound={[...]} forbidden={undefined} ...>
+                          <link>
+                          <script>
+                          <script>
+                          <RootLayout>
+                            <html lang="pt-BR" className="urbanist_c...">
+                              <body
+                                className="min-h-full flex flex-col font-sans"
+-                               __processed_4288755b-9c86-4599-a48f-4ec01b694df1__="true"
+-                               bis_status="ok"
+-                               bis_frame_id="3441"
+                              >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /comprar [32m200[39m in 107ms[2m (next.js: 5ms, application-code: 102ms)[22m
+ GET /imovel/loja-comercial-para-locacao-bh-santo-agostinho-154m2-RS11000/id-29100001 [32m200[39m in 481ms[2m (next.js: 452ms, application-code: 29ms)[22m

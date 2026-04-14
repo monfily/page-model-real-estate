@@ -1,0 +1,271 @@
+export type Property = {
+  slug: string;
+  id: string;
+  title: string;
+  address: string;
+  location: string;
+  area: string;
+  beds: string;
+  baths: string;
+  parking: string;
+  suites?: string;
+  price: string;
+  feeLabel: string;
+  fee: string;
+  badge?: string;
+  images: string[];
+  description?: string;
+  privativeAmenities?: string[];
+  commonAmenities?: string[];
+  zipCode?: string;
+  lat?: number;
+  lon?: number;
+  phone?: string;
+  whatsapp?: string;
+  ref?: string;
+};
+
+export const properties: Property[] = [
+  {
+    slug: "casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000",
+    id: "id-23890098",
+    title: "Casa comercial com 2 salas à venda na Rua da Emílio Ferdinando Schroeder, 48, Agronômica, Florianópolis por R$ 2.350.000",
+    address: "Rua Da Emílio Ferdinando Schroeder, 48",
+    location: "Agronômica, Florianópolis/SC",
+    area: "281m²",
+    beds: "4",
+    baths: "1",
+    suites: "2",
+    parking: "2",
+    price: "R$ 2.350.000",
+    feeLabel: "Iptu:",
+    fee: "R$ 2.645",
+    images: [
+      "/images/casa-comercial-com-2-salas---v-01ba2ce67e.jpg",
+      "/images/casa-comercial-com-2-salas---v-14d52942fa.jpg",
+    ],
+    description: "Localizado no coração do bairro Agronômica, em Florianópolis, este imóvel comercial de alto padrão oferece amplas salas que proporcionam um ambiente acolhedor e convidativo, uma copa cozinha completa e uma área de serviço bem distribuída. Cada detalhe foi cuidadosamente planejado para oferecer o máximo de comodidade aos seus ocupantes.\n\nAlém disso, conta com uma dependência de empregada com banheiro, garantindo praticidade e privacidade. Com espaço para estacionamento de até 2 carros na garagem, este imóvel combina funcionalidade e sofisticação em um único endereço privilegiado.\n\nExcelente oportunidade para quem busca um imóvel comercial em uma das regiões mais valorizadas de Florianópolis.",
+    privativeAmenities: ["Área de serviço", "Closet", "Lavabo", "Lavanderia", "Mobiliado", "Quintal"],
+    commonAmenities: ["Interfone", "Jardim"],
+    zipCode: "88025-080",
+    lat: -27.57919,
+    lon: -48.54267,
+    phone: "(48) 3333-0000",
+    whatsapp: "5548933330000",
+    ref: "860",
+  },
+  {
+    slug: "loja-comercial-para-locacao-bh-santo-agostinho-154m2-RS11000",
+    id: "id-29100001",
+    title: "Loja Comercial para Locação no Bairro Santo Agostinho – 154m²",
+    address: "Endereço indisponível",
+    location: "Santo Agostinho, Belo Horizonte/MG",
+    area: "154m²",
+    beds: "",
+    baths: "2",
+    parking: "",
+    price: "R$ 11.000",
+    feeLabel: "Iptu:",
+    fee: "R$ 232",
+    images: [
+      "/images/loja-comercial-para-loca--o-no-c1f36d8e52.jpg",
+      "/images/loja-comercial-para-loca--o-no-bc31fca628.jpg",
+    ],
+    description: "Loja comercial para locação no coração do bairro Santo Agostinho, em Belo Horizonte. Imóvel com 154m² de área útil, ideal para comércio, escritório ou prestação de serviços. Localização privilegiada, com grande fluxo de pessoas e fácil acesso a transporte público.",
+    privativeAmenities: ["Área de serviço"],
+    commonAmenities: ["Interfone"],
+    zipCode: "30180-000",
+    ref: "1001",
+  },
+  {
+    slug: "lancamento-100m-do-mar-sp-praia-grande-aviacao-74m2-RS589193",
+    id: "id-29100002",
+    badge: "Lançamento",
+    title: "Lançamento a 100 metros do mar com financiamento direto com a construtora sem burocracia",
+    address: "Rua Fernão Dias, 33",
+    location: "Aviação, Praia Grande/SP",
+    area: "74.592m²",
+    beds: "2",
+    baths: "1",
+    parking: "1",
+    price: "R$ 589.193",
+    feeLabel: "A partir de",
+    fee: "Em Obras",
+    images: [
+      "/images/lan-amento-a-100-metros-do-mar-3972cccce2.jpg",
+      "/images/lan-amento-a-100-metros-do-mar-d04931d857.jpg",
+    ],
+    description: "Lançamento exclusivo a apenas 100 metros do mar em Praia Grande, SP. Financiamento direto com a construtora, sem burocracia e sem entrada. Apartamentos modernos com 2 dormitórios, 1 banheiro e 1 vaga de garagem. Empreendimento em obras com entrega prevista para 2027.",
+    privativeAmenities: ["Varanda", "Área de serviço"],
+    commonAmenities: ["Piscina", "Churrasqueira", "Salão de festas", "Playground"],
+    zipCode: "11701-000",
+    ref: "1002",
+  },
+  {
+    slug: "sala-comercial-para-locacao-sp-republica-93m2-RS4000",
+    id: "id-29100003",
+    title: "Sala Comercial para Locação em São Paulo, República, 2 banheiros",
+    address: "Avenida Ipiranga, 1071",
+    location: "República, São Paulo/SP",
+    area: "93m²",
+    beds: "",
+    baths: "2",
+    parking: "",
+    price: "R$ 4.000",
+    feeLabel: "Condomínio",
+    fee: "R$ 2.336",
+    images: [
+      "/images/sala-comercial-para-loca--o-em-92ee1d4d44.jpg",
+      "/images/sala-comercial-para-loca--o-em-dcb185174a.jpg",
+    ],
+    description: "Sala comercial para locação na Avenida Ipiranga, região central de São Paulo. 93m² de área útil, 2 banheiros, localização estratégica no coração da República. Ideal para escritórios, consultórios e prestadores de serviços.",
+    privativeAmenities: ["Ar-condicionado"],
+    commonAmenities: ["Elevador", "Interfone", "Portaria"],
+    zipCode: "01102-020",
+    ref: "1003",
+  },
+  {
+    slug: "apartamento-venda-sp-ribeirao-preto-vila-do-golf-81m2-RS530000",
+    id: "id-29100004",
+    title: "Apartamento para Venda em Ribeirão Preto, Vila do Golf, 2 dormitórios, 1 suíte, 2 banheiros, 2 vagas",
+    address: "Endereço indisponível",
+    location: "Vila do Golf, Ribeirão Preto/SP",
+    area: "81m²",
+    beds: "2",
+    baths: "2",
+    suites: "1",
+    parking: "2",
+    price: "R$ 530.000",
+    feeLabel: "Condomínio",
+    fee: "R$ 700",
+    images: [
+      "/images/apartamento-para-venda-em-ribe-dbe0c2271a.jpg",
+      "/images/apartamento-para-venda-em-ribe-ccc271ecdd.jpg",
+    ],
+    description: "Apartamento à venda no bairro Vila do Golf, em Ribeirão Preto. 81m², 2 dormitórios sendo 1 suíte, 2 banheiros e 2 vagas de garagem. Condomínio acessível e localização tranquila. Ótima oportunidade para quem busca qualidade de vida.",
+    privativeAmenities: ["Varanda", "Armários Planejados", "Closet"],
+    commonAmenities: ["Piscina", "Churrasqueira", "Salão de festas", "Playground", "Elevador"],
+    zipCode: "14051-000",
+    ref: "1004",
+  },
+  {
+    slug: "sobrado-aluguel-pr-sao-jose-pinhais-jardim-cruzeiro-134m2-RS4300",
+    id: "id-29100005",
+    badge: "Destaque",
+    title: "Sobrado com 134m² 3 quartos, para aluguel, no bairro Jardim Cruzeiro em São José dos Pinhais",
+    address: "Rua Margarida Pianaro Moro",
+    location: "Jardim Cruzeiro, São José dos Pinhais/PR",
+    area: "134m²",
+    beds: "3",
+    baths: "3",
+    parking: "3",
+    price: "R$ 4.300",
+    feeLabel: "Iptu:",
+    fee: "R$ 1.200",
+    images: [
+      "/images/sobrado-com-134m--3-quartos--p-40c678b3d4.jpg",
+      "/images/sobrado-com-134m--3-quartos--p-0c284ae5ae.jpg",
+    ],
+    description: "Sobrado para aluguel no Jardim Cruzeiro, São José dos Pinhais. 134m², 3 quartos, 3 banheiros e 3 vagas de garagem. Imóvel espaçoso, bem localizado e pronto para morar. Excelente custo-benefício para famílias.",
+    privativeAmenities: ["Quintal", "Área de serviço", "Jardim"],
+    commonAmenities: ["Interfone"],
+    zipCode: "83040-000",
+    ref: "1005",
+  },
+  {
+    slug: "apartamento-venda-sc-joinville-gloria-78m2-RS650000",
+    id: "id-29100006",
+    title: "Apartamento com 2 quartos à venda na Rua Marechal Hermes, 220, Glória, Joinville",
+    address: "Rua Marechal Hermes, 220",
+    location: "Glória, Joinville/SC",
+    area: "78m²",
+    beds: "2",
+    baths: "2",
+    parking: "3",
+    price: "R$ 650.000",
+    feeLabel: "Condomínio",
+    fee: "R$ 409",
+    images: [
+      "/images/apartamento-com-2-quartos---ve-e698d3ef94.jpg",
+      "/images/apartamento-com-2-quartos---ve-63cb687b80.jpg",
+    ],
+    description: "Apartamento à venda na Rua Marechal Hermes, bairro Glória, Joinville/SC. 78m², 2 quartos, 2 banheiros e 3 vagas de garagem. Condomínio valorizado, com excelente infraestrutura e segurança.",
+    privativeAmenities: ["Varanda", "Armários Planejados"],
+    commonAmenities: ["Elevador", "Interfone", "Churrasqueira"],
+    zipCode: "89204-000",
+    ref: "1006",
+  },
+  {
+    slug: "sobrado-aluguel-sp-sao-caetano-osvaldo-cruz-120m2-RS3300",
+    id: "id-29100007",
+    title: "Sobrado 120m² no Bairro Osvaldo Cruz – Espaço, Conforto e Excelente Localização",
+    address: "Rua Bom Pastor, 9999",
+    location: "Osvaldo Cruz, São Caetano do Sul/SP",
+    area: "120m²",
+    beds: "3",
+    baths: "2",
+    parking: "2",
+    price: "R$ 3.300",
+    feeLabel: "Iptu:",
+    fee: "R$ 115",
+    images: [
+      "/images/sobrado-120m--no-bairro-osvald-b221f6c911.jpg",
+      "/images/sobrado-120m--no-bairro-osvald-ca181cb7ab.jpg",
+    ],
+    description: "Sobrado para aluguel no Bairro Osvaldo Cruz, São Caetano do Sul. 120m², 3 dormitórios, 2 banheiros e 2 vagas de garagem. Espaço, conforto e excelente localização num dos bairros mais tranquilos de São Caetano do Sul.",
+    privativeAmenities: ["Quintal", "Área de serviço"],
+    commonAmenities: ["Interfone"],
+    zipCode: "09531-000",
+    ref: "1007",
+  },
+  {
+    slug: "lote-condominio-fechado-rj-teresopolis-prata-966m2-RS300000",
+    id: "id-29100008",
+    title: "Lote em Condomínio Fechado para Venda em Teresópolis, Prata",
+    address: "Endereço indisponível",
+    location: "Prata, Teresópolis/RJ",
+    area: "966m²",
+    beds: "",
+    baths: "",
+    parking: "",
+    price: "R$ 300.000",
+    feeLabel: "",
+    fee: "",
+    images: [
+      "/images/lote-em-condom-nio-fechado-par-a86333566e.jpg",
+      "/images/lote-em-condom-nio-fechado-par-04642fe793.jpg",
+    ],
+    description: "Lote de 966m² em condomínio fechado em Teresópolis, bairro Prata. Terreno plano, ideal para construção de casa de campo ou sítio. Condomínio com infraestrutura completa, segurança 24h e área verde preservada.",
+    privativeAmenities: [],
+    commonAmenities: ["Guarita", "Circuito de segurança"],
+    zipCode: "25960-000",
+    ref: "1008",
+  },
+  {
+    slug: "predio-venda-aluguel-sp-santo-andre-vila-marina-469m2-RS12500",
+    id: "id-29100009",
+    title: "Prédio à venda ou alugar no Bairro Vila Marina - Santo André/SP",
+    address: "Rua Coronel Seabra",
+    location: "Vila Marina, Santo André/SP",
+    area: "469m²",
+    beds: "",
+    baths: "5",
+    parking: "6",
+    price: "R$ 12.500",
+    feeLabel: "Venda ou aluguel",
+    fee: "R$ 2.800.000",
+    images: [
+      "/images/pr-dio---venda-ou-alugar-no-ba-08f3d92c6b.jpg",
+      "/images/pr-dio---venda-ou-alugar-no-ba-8b904379db.jpg",
+    ],
+    description: "Prédio comercial à venda ou para alugar no Bairro Vila Marina, Santo André/SP. 469m² de área total, 5 banheiros e 6 vagas de garagem. Excelente oportunidade para investidores ou para quem busca sede própria para empresa.",
+    privativeAmenities: ["Área de serviço", "Elevador"],
+    commonAmenities: ["Portaria", "Interfone", "Circuito de segurança"],
+    zipCode: "09220-000",
+    ref: "1009",
+  },
+];
+
+export function getPropertyBySlugAndId(slug: string, id: string): Property | undefined {
+  return properties.find((p) => p.slug === slug && p.id === id);
+}

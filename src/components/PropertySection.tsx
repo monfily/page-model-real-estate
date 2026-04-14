@@ -1,123 +1,137 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
-const propertyTypes = [
-  { label: "Apartamento", image: "/images/apartamento-f1f0cdb2c1.jpg", href: "/comprar" },
-  { label: "Casas e sobrados", image: "/images/casas-e-sobrados-93c35aad2a.jpg", href: "/comprar" },
-  { label: "Casa em condomínio", image: "/images/casa-em-condom-nio-e05d07b2cf.jpg", href: "/comprar" },
-  { label: "Kitnets e studios", image: "/images/kitnets-e-studios-9d16cbc46a.jpg", href: "/comprar" },
-  { label: "Flat", image: "/images/flat-791bd98e9c.jpg", href: "/comprar" },
-  { label: "Loft", image: "/images/loft-32642ced9f.jpg", href: "/comprar" },
-  { label: "Cobertura", image: "/images/cobertura-3168fbad0e.jpg", href: "/comprar" },
-  { label: "Sítios e chácaras", image: "/images/s-tios-e-ch-caras-d9865d1730.jpg", href: "/comprar" }
-];
-
-const amenities = [
-  { title: "Casas com piscina", desc: "Encontre casas com piscina para comprar e aproveite lazer e conforto no dia a dia.", image: "/images/casas-com-piscina-5b9a4e0f40.jpg", href: "/comprar" },
-  { title: "Mobiliados", desc: "Casas e apartamentos mobiliados para alugar, prontos para morar com praticidade e economia na mudança.", image: "/images/mobiliados-e8bc4929f5.jpg", href: "/comprar" },
-  { title: "Apartamentos na planta", desc: "Garanta seu imóvel novo, moderno e personalizável, aproveitando condições exclusivas de compra.", image: "/images/apartamentos-na-planta-fb4e4beb2c.jpg", href: "/comprar" },
-  { title: "Apartamento com varanda", desc: "Compre casas e apartamentos com varanda aconchegantes para aproveitar luz natural e ar livre.", image: "/images/apartamento-com-varanda-cb094e8e73.jpg", href: "/comprar" },
-  { title: "Casas com quintal", desc: "Casas com quintal para comprar, perfeitas para momentos especiais ao ar livre.", image: "/images/casas-com-quintal-e56da09ea5.jpg", href: "/comprar" },
-  { title: "Direto com o proprietário", desc: "Alugue seu imóvel direto com o proprietário, com negociação simples e sem burocracia.", image: "/images/direto-com-o-propriet-rio-5bf227ad70.jpg", href: "/comprar" }
-];
+import { Bath, BedDouble, Car, Heart, MapPin, MessageCircle, Ruler } from "lucide-react";
+import { properties } from "@/lib/properties";
 
 export function PropertySection() {
-  const [activeTab, setActiveTab] = useState<"Residenciais" | "Comerciais">("Residenciais");
-
   return (
-    <section className="w-full bg-white py-16 px-4 md:px-8">
-      <div className="max-w-[1280px] mx-auto space-y-16">
-        
-        {/* Part A — Header */}
-        <div className="space-y-6">
-          <h2 className="text-2xl md:text-[28px] font-bold text-brand-txt-primary">
-            Encontre seu próximo imóvel com quem lidera o mercado
-          </h2>
-          <p className="text-[17px] text-brand-txt-secondary max-w-3xl leading-relaxed">
-            O Chaves na Mão é o portal imobiliário que conecta você ao imóvel ideal com rapidez, transparência e a maior quantidade de ofertas do Brasil.
-          </p>
-          <Link href="/comprar" className="inline-flex h-12 items-center justify-center rounded-[60px] bg-brand-primary px-7 text-[15px] font-bold text-white hover:bg-[#d60023] transition-colors">
-            Ver imóveis disponíveis
+    <section className="w-full bg-[#f4f5f7] py-12 px-4 md:px-8">
+      <div className="max-w-[1280px] mx-auto space-y-6">
+
+        {/* Header */}
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+          <div>
+            <h2 className="text-2xl md:text-[28px] font-bold text-brand-txt-primary">
+              Imóveis em destaque
+            </h2>
+            <p className="text-[15px] text-brand-txt-secondary mt-1">
+              Explore as melhores oportunidades disponíveis agora
+            </p>
+          </div>
+          <Link
+            href="/comprar"
+            className="inline-flex h-11 items-center justify-center rounded-[60px] border-2 border-brand-primary text-brand-primary px-6 text-[15px] font-bold hover:bg-brand-primary hover:text-white transition-colors"
+          >
+            Ver todos os imóveis
           </Link>
-          
-          <div className="flex space-x-6 border-b border-brand-surface pt-4">
-            {(["Residenciais", "Comerciais"] as const).map(tab => (
-              <button 
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`pb-3 font-bold text-[17px] relative ${
-                  activeTab === tab 
-                    ? "text-brand-primary" 
-                    : "text-brand-txt-secondary hover:text-brand-txt-primary"
-                }`}
+        </div>
+
+        {/* Property cards grid — 4 columns */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+          {properties.slice(0, 4).map((property, index) => {
+            const details = [
+              { value: property.area, icon: Ruler },
+              { value: property.beds, icon: BedDouble },
+              { value: property.baths, icon: Bath },
+              { value: property.parking, icon: Car },
+            ].filter((d) => d.value);
+
+            const propertyUrl = `/imovel/${property.slug}/${property.id}`;
+
+            return (
+              <article
+                key={property.id}
+                className="flex flex-col overflow-hidden rounded-xl border border-[#ddd] bg-white shadow-[0_2px_4px_rgba(0,0,0,0.08)] transition-shadow hover:shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
               >
-                {tab}
-                {activeTab === tab && (
-                  <div className="absolute bottom-0 left-0 w-full h-[3px] bg-brand-primary rounded-t-md" />
-                )}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Part B — Procure por tipo de imóvel */}
-        <div className="space-y-6">
-          <h3 className="text-xl md:text-[22px] font-bold text-brand-txt-primary">
-            Procure por tipo de imóvel
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {propertyTypes.map((item, idx) => (
-              <Link href={item.href} key={idx} className="group block cursor-pointer">
-                <div className="relative w-full aspect-[5/3] rounded-xl overflow-hidden mb-3">
-                  <Image 
-                    src={item.image} 
-                    alt={item.label}
+                {/* Image */}
+                <Link
+                  href={propertyUrl}
+                  className="relative block h-[180px] overflow-hidden bg-[#f4f5f7] shrink-0"
+                >
+                  <Image
+                    src={property.images[0]}
+                    alt={property.title}
                     fill
+                    className="object-cover hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                    priority={index === 0}
                     unoptimized
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
+                  {property.badge && (
+                    <span className="absolute bottom-3 left-3 rounded-full bg-[#872bff] px-3 py-1 text-xs font-bold text-white">
+                      {property.badge}
+                    </span>
+                  )}
+                </Link>
+
+                {/* Content */}
+                <div className="flex flex-col flex-1 p-4">
+                  <div className="flex items-start gap-2">
+                    <Link href={propertyUrl} className="flex-1 min-w-0">
+                      <h3 className="line-clamp-2 text-[14px] font-bold leading-[20px] tracking-[0.1px] text-brand-txt-primary hover:text-brand-primary transition-colors">
+                        {property.title}
+                      </h3>
+                    </Link>
+                    <button className="rounded-full border border-[#ddd] p-1.5 text-[#5e5c5d] shrink-0 hover:border-brand-primary hover:text-brand-primary transition-colors">
+                      <Heart className="h-3.5 w-3.5" />
+                    </button>
+                  </div>
+
+                  <div className="mt-2 space-y-0.5 text-[12px] font-medium text-brand-txt-secondary">
+                    <p className="truncate">{property.address}</p>
+                    <p className="flex items-center gap-1 truncate">
+                      <MapPin className="h-3 w-3 text-brand-primary shrink-0" />
+                      {property.location}
+                    </p>
+                  </div>
+
+                  {details.length > 0 && (
+                    <div className="mt-2.5 flex flex-wrap gap-2 text-[12px] font-bold text-brand-txt-primary">
+                      {details.map((detail, i) => (
+                        <span key={i} className="flex items-center gap-1">
+                          <detail.icon className="h-3 w-3 text-brand-txt-secondary" />
+                          {detail.value}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  <div className="mt-auto pt-3 flex flex-col gap-2.5">
+                    <div>
+                      <p className="text-[18px] font-extrabold leading-6 text-brand-txt-primary">
+                        {property.price}
+                      </p>
+                      {(property.feeLabel || property.fee) && (
+                        <p className="mt-0.5 text-[11px] font-semibold text-brand-txt-secondary">
+                          {property.feeLabel && <span>{property.feeLabel} </span>}
+                          <span className="text-brand-txt-primary">{property.fee}</span>
+                        </p>
+                      )}
+                    </div>
+                    <Link
+                      href={propertyUrl}
+                      className="flex h-9 items-center justify-center gap-1.5 rounded-[60px] bg-brand-primary px-4 text-[13px] font-bold text-white hover:bg-[#d60023] transition-colors"
+                    >
+                      <MessageCircle className="h-3.5 w-3.5" />
+                      Contatar
+                    </Link>
+                  </div>
                 </div>
-                <span className="font-bold text-[15px] text-brand-txt-primary group-hover:text-brand-primary transition-colors">
-                  {item.label}
-                </span>
-              </Link>
-            ))}
-          </div>
+              </article>
+            );
+          })}
         </div>
 
-        {/* Part C — Escolha pela comodidade */}
-        <div className="space-y-6">
-          <h3 className="text-xl md:text-[22px] font-bold text-brand-txt-primary">
-            Escolha pela comodidade que mais importa
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {amenities.map((item, idx) => (
-              <Link href={item.href} key={idx} className="flex bg-white border border-brand-outline rounded-xl overflow-hidden hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-shadow group">
-                <div className="relative w-[120px] md:w-[140px] flex-shrink-0">
-                  <Image 
-                    src={item.image} 
-                    alt={item.title}
-                    fill
-                    unoptimized
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-4 flex flex-col justify-center">
-                  <h4 className="font-bold text-[15px] text-brand-txt-primary group-hover:text-brand-primary transition-colors mb-1">
-                    {item.title}
-                  </h4>
-                  <p className="text-[13px] text-brand-txt-secondary line-clamp-3">
-                    {item.desc}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
+        <div className="flex justify-center pt-2">
+          <Link
+            href="/comprar"
+            className="inline-flex h-12 items-center justify-center rounded-[60px] bg-brand-primary px-8 text-[15px] font-bold text-white hover:bg-[#d60023] transition-colors"
+          >
+            Ver todos os imóveis disponíveis
+          </Link>
         </div>
-
       </div>
     </section>
   );

@@ -1,0 +1,271 @@
+
+> ai-website-clone-template@0.3.1 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 345ms
+[35m[1mAttention[22m[39m: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[36mhttps://nextjs.org/telemetry[39m
+
+
+ GET / [32m200[39m in 3.2s[2m (next.js: 2.8s, application-code: 420ms)[22m
+ GET / [32m200[39m in 3.1s[2m (next.js: 3.0s, application-code: 115ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-BR" className="urbanist_c...">
+                          <body
+                            className="min-h-full flex flex-col font-sans"
+-                           __processed_b73f4598-46d5-4493-9df4-d53f95fe2539__="true"
+-                           bis_status="ok"
+-                           bis_frame_id="2585"
+                          >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /comprar [32m200[39m in 694ms[2m (next.js: 336ms, application-code: 358ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/comprar" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-BR" className="urbanist_c...">
+                          <body
+                            className="min-h-full flex flex-col font-sans"
+-                           __processed_fe3e03b0-3026-41bb-805b-3a97bd6e8c12__="true"
+-                           bis_status="ok"
+-                           bis_frame_id="2594"
+                          >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/images/app-chavesnam-o-ios-862e08884b.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/images/app-chavesnam-o-android-5c9fd3d78a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET / [32m200[39m in 87ms[2m (next.js: 3ms, application-code: 84ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-BR" className="urbanist_c...">
+                          <body
+                            className="min-h-full flex flex-col font-sans"
+-                           __processed_1aef8a1b-f537-42bf-ba93-1f293f9ceb8f__="true"
+-                           bis_status="ok"
+-                           bis_frame_id="2597"
+                          >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/images/app-chavesnam-o-android-5c9fd3d78a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/images/app-chavesnam-o-ios-862e08884b.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /comprar [32m200[39m in 247ms[2m (next.js: 3ms, application-code: 244ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/comprar" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-BR" className="urbanist_c...">
+                          <body
+                            className="min-h-full flex flex-col font-sans"
+-                           __processed_571f63f6-4e67-4064-86e0-fad1b116d1c2__="true"
+-                           bis_status="ok"
+-                           bis_frame_id="2598"
+                          >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[32m[1m✓[22m[39m Compiled in 136ms
+[32m[1m✓[22m[39m Compiled in 44ms
+ GET /comprar [32m200[39m in 118ms[2m (next.js: 7ms, application-code: 112ms)[22m
+ GET /comprar [32m200[39m in 119ms[2m (next.js: 3ms, application-code: 116ms)[22m
+[32m[1m✓[22m[39m Compiled in 684ms
+ GET /comprar [32m200[39m in 699ms[2m (next.js: 552ms, application-code: 147ms)[22m
+ GET /comprar [32m200[39m in 172ms[2m (next.js: 69ms, application-code: 103ms)[22m
+ GET /comprar [32m200[39m in 194ms[2m (next.js: 2ms, application-code: 192ms)[22m
+ GET /comprar [32m200[39m in 124ms[2m (next.js: 4ms, application-code: 120ms)[22m
+ GET /comprar [32m200[39m in 339ms[2m (next.js: 107ms, application-code: 232ms)[22m
+ GET /comprar [32m200[39m in 340ms[2m (next.js: 167ms, application-code: 173ms)[22m
+ GET /comprar [32m200[39m in 340ms[2m (next.js: 25ms, application-code: 315ms)[22m
+ GET /comprar [32m200[39m in 109ms[2m (next.js: 1932µs, application-code: 107ms)[22m
+ GET /comprar [32m200[39m in 513ms[2m (next.js: 2ms, application-code: 511ms)[22m
+ GET /comprar [32m200[39m in 489ms[2m (next.js: 11ms, application-code: 477ms)[22m
+ GET /comprar [32m200[39m in 514ms[2m (next.js: 130ms, application-code: 384ms)[22m
+ GET /comprar [32m200[39m in 492ms[2m (next.js: 370ms, application-code: 122ms)[22m
+ GET /comprar [32m200[39m in 496ms[2m (next.js: 261ms, application-code: 235ms)[22m
+ GET /comprar [32m200[39m in 498ms[2m (next.js: 190ms, application-code: 309ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/comprar" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <HTTPAccessFallbackBoundary notFound={[...]}>
+                        <HTTPAccessFallbackErrorBoundary pathname="/comprar" notFound={[...]} forbidden={undefined} ...>
+                          <link>
+                          <script>
+                          <script>
+                          <RootLayout>
+                            <html lang="pt-BR" className="urbanist_c...">
+                              <body
+                                className="min-h-full flex flex-col font-sans"
+-                               __processed_a90464fd-0ac1-4d91-906d-5b9a90c96ca1__="true"
+-                               bis_status="ok"
+-                               bis_frame_id="2598"
+                              >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/images/app-chavesnam-o-ios-862e08884b.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/images/app-chavesnam-o-android-5c9fd3d78a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /comprar [32m200[39m in 89ms[2m (next.js: 71ms, application-code: 18ms)[22m
+ GET /comprar [32m200[39m in 8ms[2m (next.js: 2ms, application-code: 6ms)[22m
+[32m[1m✓[22m[39m Compiled in 185ms
+ GET /comprar [32m200[39m in 281ms[2m (next.js: 81ms, application-code: 200ms)[22m
+ GET /comprar [32m200[39m in 171ms[2m (next.js: 9ms, application-code: 163ms)[22m
+ GET /comprar [32m200[39m in 515ms[2m (next.js: 87ms, application-code: 428ms)[22m
+ GET /comprar [32m200[39m in 359ms[2m (next.js: 4ms, application-code: 354ms)[22m
+ GET /comprar [32m200[39m in 359ms[2m (next.js: 95ms, application-code: 264ms)[22m
+ GET /comprar [32m200[39m in 519ms[2m (next.js: 3ms, application-code: 517ms)[22m
+ GET /comprar [32m200[39m in 360ms[2m (next.js: 174ms, application-code: 186ms)[22m
+ GET /comprar [32m200[39m in 113ms[2m (next.js: 2ms, application-code: 111ms)[22m
+ GET /comprar [32m200[39m in 168ms[2m (next.js: 2ms, application-code: 166ms)[22m
+ GET /comprar [32m200[39m in 104ms[2m (next.js: 3ms, application-code: 101ms)[22m
+ GET /comprar [32m200[39m in 177ms[2m (next.js: 94ms, application-code: 84ms)[22m
+[32m[1m✓[22m[39m Compiled in 63ms
+ GET /comprar [32m200[39m in 200ms[2m (next.js: 74ms, application-code: 126ms)[22m
+ GET /comprar [32m200[39m in 111ms[2m (next.js: 3ms, application-code: 109ms)[22m
+ GET /comprar [32m200[39m in 134ms[2m (next.js: 3ms, application-code: 131ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 799ms[2m (next.js: 764ms, application-code: 35ms)[22m
+[32m[1m✓[22m[39m Compiled in 147ms
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 456ms[2m (next.js: 124ms, application-code: 332ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 40ms[2m (next.js: 5ms, application-code: 35ms)[22m
+ GET /comprar [32m200[39m in 302ms[2m (next.js: 30ms, application-code: 271ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 177ms[2m (next.js: 150ms, application-code: 28ms)[22m
+ GET /comprar [32m200[39m in 221ms[2m (next.js: 71ms, application-code: 151ms)[22m
+ GET /comprar [32m200[39m in 187ms[2m (next.js: 31ms, application-code: 156ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 310ms[2m (next.js: 269ms, application-code: 41ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 87ms[2m (next.js: 63ms, application-code: 24ms)[22m
+[?25h
+[1G[0K⠙[1G[0K

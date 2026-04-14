@@ -1,0 +1,219 @@
+
+> ai-website-clone-template@0.3.1 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 343ms
+
+ GET / [32m200[39m in 1480ms[2m (next.js: 1135ms, application-code: 345ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <HTTPAccessFallbackBoundary notFound={[...]}>
+                        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={[...]} forbidden={undefined} ...>
+                          <link>
+                          <script>
+                          <script>
+                          <RootLayout>
+                            <html lang="pt-BR" className="urbanist_c...">
+                              <body
+                                className="min-h-full flex flex-col font-sans"
+-                               __processed_918e1e2e-5b28-420b-981a-bdddb4955434__="true"
+-                               bis_status="ok"
+-                               bis_frame_id="2722"
+                              >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/images/app-chavesnam-o-android-5c9fd3d78a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/images/app-chavesnam-o-ios-862e08884b.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /comprar [32m200[39m in 482ms[2m (next.js: 26ms, application-code: 456ms)[22m
+ GET /comprar [32m200[39m in 217ms[2m (next.js: 3ms, application-code: 213ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/comprar" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <HTTPAccessFallbackBoundary notFound={[...]}>
+                        <HTTPAccessFallbackErrorBoundary pathname="/comprar" notFound={[...]} forbidden={undefined} ...>
+                          <link>
+                          <script>
+                          <script>
+                          <RootLayout>
+                            <html lang="pt-BR" className="urbanist_c...">
+                              <body
+                                className="min-h-full flex flex-col font-sans"
+-                               __processed_0f63eccd-7778-480f-a3f9-50f92213fce9__="true"
+-                               bis_status="ok"
+-                               bis_frame_id="2725"
+                              >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/images/app-chavesnam-o-android-5c9fd3d78a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/images/app-chavesnam-o-ios-862e08884b.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 459ms[2m (next.js: 420ms, application-code: 38ms)[22m
+[32m[1m✓[22m[39m Compiled in 160ms
+[32m[1m✓[22m[39m Compiled in 90ms
+[31m[1m⨯[22m[39m ReferenceError: SlidersHorizontal is not defined
+    at ComprarPage (src/app/comprar/page.tsx:289:20)
+  [90m287 |[0m               <div className=[32m"flex gap-2"[0m>
+  [90m288 |[0m                 <button className=[32m"flex h-11 items-center gap-2 round...[0m
+[31m[1m>[0m [90m289 |[0m                   <[33mSlidersHorizontal[0m className=[32m"h-4 w-4"[0m />
+  [90m    |[0m                    [31m[1m^[0m
+  [90m290 |[0m                   [33mFiltros[0m
+  [90m291 |[0m                 </button>
+  [90m292 |[0m                 <button className=[32m"flex h-11 items-center gap-2 round...[0m {
+  digest: [32m'3280279837'[39m
+}
+ GET /comprar [32m200[39m in 170ms[2m (next.js: 91ms, application-code: 79ms)[22m
+[31m[1m⨯[22m[39m ReferenceError: SlidersHorizontal is not defined
+    at ComprarPage (src/app/comprar/page.tsx:289:20)
+  [90m287 |[0m               <div className=[32m"flex gap-2"[0m>
+  [90m288 |[0m                 <button className=[32m"flex h-11 items-center gap-2 round...[0m
+[31m[1m>[0m [90m289 |[0m                   <[33mSlidersHorizontal[0m className=[32m"h-4 w-4"[0m />
+  [90m    |[0m                    [31m[1m^[0m
+  [90m290 |[0m                   [33mFiltros[0m
+  [90m291 |[0m                 </button>
+  [90m292 |[0m                 <button className=[32m"flex h-11 items-center gap-2 round...[0m {
+  digest: [32m'3280279837'[39m
+}
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 231ms[2m (next.js: 153ms, application-code: 78ms)[22m
+ GET /comprar [32m200[39m in 37ms[2m (next.js: 3ms, application-code: 35ms)[22m
+[31m[1m⨯[22m[39m ReferenceError: SlidersHorizontal is not defined
+    at ComprarPage (src/app/comprar/page.tsx:289:20)
+  [90m287 |[0m               <div className=[32m"flex gap-2"[0m>
+  [90m288 |[0m                 <button className=[32m"flex h-11 items-center gap-2 round...[0m
+[31m[1m>[0m [90m289 |[0m                   <[33mSlidersHorizontal[0m className=[32m"h-4 w-4"[0m />
+  [90m    |[0m                    [31m[1m^[0m
+  [90m290 |[0m                   [33mFiltros[0m
+  [90m291 |[0m                 </button>
+  [90m292 |[0m                 <button className=[32m"flex h-11 items-center gap-2 round...[0m {
+  digest: [32m'3280279837'[39m
+}
+ GET /comprar [32m200[39m in 54ms[2m (next.js: 16ms, application-code: 38ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 197ms[2m (next.js: 171ms, application-code: 26ms)[22m
+[36m[browser][39m [31mUncaught ReferenceError: SlidersHorizontal is not defined[39m
+[31m    at ComprarPage (src/app/comprar/page.tsx:289:20)[39m
+  [90m287 |[0m               <div className=[32m"flex gap-2"[0m>
+  [90m288 |[0m                 <button className=[32m"flex h-11 items-center gap-2 round...[0m
+[31m[1m>[0m [90m289 |[0m                   <[33mSlidersHorizontal[0m className=[32m"h-4 w-4"[0m />
+  [90m    |[0m                    [31m[1m^[0m
+  [90m290 |[0m                   [33mFiltros[0m
+  [90m291 |[0m                 </button>
+  [90m292 |[0m                 <button className=[32m"flex h-11 items-center gap-2 round...[0m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 99ms[2m (next.js: 72ms, application-code: 27ms)[22m
+[32m[1m✓[22m[39m Compiled in 133ms
+[33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 965ms[2m (next.js: 549ms, application-code: 416ms)[22m
+[36m[browser][39m [33mImage with src "/images/casa-comercial-com-2-salas---v-01ba2ce67e.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/imovel/ca..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <HTTPAccessFallbackBoundary notFound={[...]}>
+                        <HTTPAccessFallbackErrorBoundary pathname="/imovel/ca..." notFound={[...]} forbidden={undefined} ...>
+                          <link>
+                          <script>
+                          <script>
+                          <RootLayout>
+                            <html lang="pt-BR" className="urbanist_c...">
+                              <body
+                                className="min-h-full flex flex-col font-sans"
+-                               __processed_02bb75e1-4df4-486e-8160-12fca569bdac__="true"
+-                               bis_status="ok"
+-                               bis_frame_id="2725"
+                              >
+                  ...
+ 
+[31m    at Proxy.<anonymous> (https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /comprar [32m200[39m in 100ms[2m (next.js: 20ms, application-code: 80ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 79ms[2m (next.js: 46ms, application-code: 33ms)[22m
+[32m[1m✓[22m[39m Compiled in 160ms
+[32m[1m✓[22m[39m Compiled in 100ms
+[32m[1m✓[22m[39m Compiled in 113ms
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 65ms[2m (next.js: 36ms, application-code: 29ms)[22m
+[32m[1m✓[22m[39m Compiled in 55ms
+[36m[browser][39m [33mImage with src "https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/images/app-chavesnam-o-android-5c9fd3d78a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/images/app-chavesnam-o-ios-862e08884b.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://fda28c7e-0558-4780-b28c-722a8a9ada95-00-3gpgk74xwm5s4.riker.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[32m[1m✓[22m[39m Compiled in 53ms
+[32m[1m✓[22m[39m Compiled in 48ms
+[32m[1m✓[22m[39m Compiled in 122ms
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 70ms[2m (next.js: 38ms, application-code: 32ms)[22m
+[32m[1m✓[22m[39m Compiled in 52ms
+ GET /imovel/loja-comercial-para-locacao-bh-santo-agostinho-154m2-RS11000/id-29100001 [32m200[39m in 58ms[2m (next.js: 30ms, application-code: 27ms)[22m
+[32m[1m✓[22m[39m Compiled in 121ms
+[32m[1m✓[22m[39m Compiled in 152ms
+[32m[1m✓[22m[39m Compiled in 95ms
+[32m[1m✓[22m[39m Compiled in 91ms
+[32m[1m✓[22m[39m Compiled in 61ms
+[32m[1m✓[22m[39m Compiled in 53ms
+[32m[1m✓[22m[39m Compiled in 136ms
+[?25h
+[1G[0K⠙[1G[0K
