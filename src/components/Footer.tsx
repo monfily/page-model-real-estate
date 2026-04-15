@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Logo } from "./Logo";
 
 function IconFacebook() {
@@ -42,23 +41,20 @@ export function Footer() {
   return (
     <footer className="w-full bg-[#191B27] text-white pt-16 pb-8 px-4 md:px-8">
       <div className="max-w-[1280px] mx-auto space-y-12">
-        
+
         {/* Main Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-[14px]">
-          
-          {/* Column 1 */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-[14px]">
+
+          {/* Column 1 – Institucional */}
           <div className="space-y-4">
             <h4 className="font-bold text-white/50 uppercase tracking-wider text-[11px]">Institucional</h4>
             <ul className="space-y-3 font-medium">
               <li><Link href="#" className="hover:text-white/70 transition-colors">Quem somos</Link></li>
               <li><Link href="#" className="hover:text-white/70 transition-colors">Fale conosco</Link></li>
-              <li><Link href="#" className="hover:text-white/70 transition-colors">Integradores parceiros</Link></li>
-              <li><Link href="#" className="hover:text-white/70 transition-colors">Trabalhe conosco</Link></li>
-              <li><Link href="#" className="hover:text-white/70 transition-colors">Cod. defesa do consumidor</Link></li>
             </ul>
           </div>
 
-          {/* Column 2 */}
+          {/* Column 2 – Imóveis */}
           <div className="space-y-4">
             <h4 className="font-bold text-white/50 uppercase tracking-wider text-[11px]">Imóveis</h4>
             <ul className="space-y-3 font-medium">
@@ -69,18 +65,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 3 */}
-          <div className="space-y-4">
-            <h4 className="font-bold text-white/50 uppercase tracking-wider text-[11px]">Veículos</h4>
-            <ul className="space-y-3 font-medium">
-              <li><Link href="#" className="hover:text-white/70 transition-colors">Comprar carros</Link></li>
-              <li><Link href="#" className="hover:text-white/70 transition-colors">Comprar motos</Link></li>
-              <li><Link href="#" className="hover:text-white/70 transition-colors">Anunciar veículos</Link></li>
-              <li><Link href="#" className="hover:text-white/70 transition-colors">Tabela FIPE</Link></li>
-            </ul>
-          </div>
-
-          {/* Column 4 */}
+          {/* Column 3 – Blog de Imóveis */}
           <div className="space-y-4">
             <h4 className="font-bold text-white/50 uppercase tracking-wider text-[11px]">Blog de Imóveis</h4>
             <ul className="space-y-3 font-medium">
@@ -92,35 +77,12 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 5 */}
-          <div className="space-y-4">
-            <h4 className="font-bold text-white/50 uppercase tracking-wider text-[11px]">Blog de Veículos</h4>
-            <ul className="space-y-3 font-medium">
-              <li><Link href="#" className="hover:text-white/70 transition-colors">Guia de Carros</Link></li>
-              <li><Link href="#" className="hover:text-white/70 transition-colors">Guia de Motos</Link></li>
-              <li><Link href="#" className="hover:text-white/70 transition-colors">Avaliações</Link></li>
-              <li><Link href="#" className="hover:text-white/70 transition-colors">Notícias</Link></li>
-            </ul>
-          </div>
-
-          {/* Column 6 */}
+          {/* Column 4 – Ajuda */}
           <div className="space-y-4">
             <h4 className="font-bold text-white/50 uppercase tracking-wider text-[11px]">Precisa de ajuda?</h4>
             <ul className="space-y-3 font-medium">
               <li><Link href="#" className="hover:text-white/70 transition-colors">Central de ajuda</Link></li>
             </ul>
-            
-            <div className="pt-6 space-y-3">
-              <h4 className="font-bold text-white/50 uppercase tracking-wider text-[11px]">Aplicativo disponível em:</h4>
-              <div className="flex flex-col gap-2">
-                <Link href="#" className="opacity-80 hover:opacity-100 transition-opacity">
-                  <Image src="/images/app-chavesnam-o-android-5c9fd3d78a.png" alt="Google Play" width={120} height={36} unoptimized />
-                </Link>
-                <Link href="#" className="opacity-80 hover:opacity-100 transition-opacity">
-                  <Image src="/images/app-chavesnam-o-ios-862e08884b.png" alt="App Store" width={120} height={36} unoptimized />
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -129,7 +91,6 @@ export function Footer() {
 
         {/* Bottom Area */}
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
-          
           <div className="flex flex-col items-center md:items-start space-y-4 max-w-sm text-center md:text-left">
             <div className="opacity-100 brightness-0 invert">
               <Logo className="h-8 w-auto" />
@@ -159,7 +120,6 @@ export function Footer() {
               <IconLinkedin />
             </Link>
           </div>
-
         </div>
 
         {/* Copyright */}

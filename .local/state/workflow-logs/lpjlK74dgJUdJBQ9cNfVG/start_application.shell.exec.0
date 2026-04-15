@@ -14,3 +14,82 @@
  GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 464ms[2m (next.js: 431ms, application-code: 33ms)[22m
  GET /imovel/lancamento-100m-do-mar-sp-praia-grande-aviacao-74m2-RS589193/id-29100002 [32m200[39m in 74ms[2m (next.js: 39ms, application-code: 34ms)[22m
  GET /imovel/sala-comercial-para-locacao-sp-republica-93m2-RS4000/id-29100003 [32m200[39m in 63ms[2m (next.js: 34ms, application-code: 29ms)[22m
+ GET / [32m200[39m in 39ms[2m (next.js: 2ms, application-code: 36ms)[22m
+ GET / [32m200[39m in 14ms[2m (next.js: 4ms, application-code: 10ms)[22m
+ GET /comprar [32m200[39m in 893ms[2m (next.js: 638ms, application-code: 255ms)[22m
+ GET /comprar [32m200[39m in 13ms[2m (next.js: 4ms, application-code: 10ms)[22m
+[32m[1m✓[22m[39m Compiled in 2.2s
+ GET /comprar [32m200[39m in 256ms[2m (next.js: 140ms, application-code: 117ms)[22m
+ GET /comprar [32m200[39m in 57ms[2m (next.js: 51ms, application-code: 6ms)[22m
+ GET /comprar [32m200[39m in 119ms[2m (next.js: 2ms, application-code: 117ms)[22m
+ GET /comprar [32m200[39m in 626ms[2m (next.js: 408ms, application-code: 219ms)[22m
+[32m[1m✓[22m[39m Compiled in 827ms
+ GET /comprar [32m200[39m in 245ms[2m (next.js: 83ms, application-code: 162ms)[22m
+ GET /comprar [32m200[39m in 538ms[2m (next.js: 3ms, application-code: 535ms)[22m
+ GET /comprar [32m200[39m in 169ms[2m (next.js: 68ms, application-code: 101ms)[22m
+ GET /imovel/sobrado-aluguel-pr-sao-jose-pinhais-jardim-cruzeiro-134m2-RS4300/id-29100005 [32m200[39m in 102ms[2m (next.js: 61ms, application-code: 41ms)[22m
+ GET /imovel/sobrado-aluguel-pr-sao-jose-pinhais-jardim-cruzeiro-134m2-RS4300/id-29100005 [32m200[39m in 2.9s[2m (next.js: 2.7s, application-code: 201ms)[22m
+ GET /comprar [32m200[39m in 246ms[2m (next.js: 3ms, application-code: 243ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 154ms[2m (next.js: 36ms, application-code: 119ms)[22m
+[36m[browser][39m [33mImage with src "/images/casa-comercial-com-2-salas---v-01ba2ce67e.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading[39m [2m(https://6d5424d2-eab3-4b2b-886f-1c6f396ad510-00-1bxiex7li7hm3.kirk.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /comprar [32m200[39m in 76ms[2m (next.js: 3ms, application-code: 72ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 76ms[2m (next.js: 49ms, application-code: 27ms)[22m
+ GET /imovel/loja-comercial-para-locacao-bh-santo-agostinho-154m2-RS11000/id-29100001 [32m200[39m in 96ms[2m (next.js: 36ms, application-code: 59ms)[22m
+ GET /imovel/lancamento-100m-do-mar-sp-praia-grande-aviacao-74m2-RS589193/id-29100002 [32m200[39m in 75ms[2m (next.js: 44ms, application-code: 31ms)[22m
+[32m[1m✓[22m[39m Compiled in 76ms
+ GET /imovel/lancamento-100m-do-mar-sp-praia-grande-aviacao-74m2-RS589193/id-29100002 [32m200[39m in 145ms[2m (next.js: 51ms, application-code: 94ms)[22m
+ GET /comprar [32m200[39m in 99ms[2m (next.js: 75ms, application-code: 24ms)[22m
+ GET /comprar [32m200[39m in 356ms[2m (next.js: 6ms, application-code: 350ms)[22m
+[32m[1m✓[22m[39m Compiled in 191ms
+[31m[1m⨯[22m[39m ReferenceError: Footer is not defined
+    at ComprarPage (src/app/comprar/page.tsx:165:8)
+  [90m163 |[0m
+  [90m164 |[0m       {[90m/* Footer lives outside the constrained flex row → spans full ...[0m
+[31m[1m>[0m [90m165 |[0m       <[33mFooter[0m />
+  [90m    |[0m        [31m[1m^[0m
+  [90m166 |[0m     </div>
+  [90m167 |[0m   );
+  [90m168 |[0m } {
+  digest: [32m'2733578431'[39m
+}
+ GET /comprar [32m200[39m in 221ms[2m (next.js: 123ms, application-code: 99ms)[22m
+[36m[browser][39m [31mUncaught ReferenceError: Footer is not defined[39m
+[31m    at ComprarPage (src/app/comprar/page.tsx:165:8)[39m
+  [90m163 |[0m
+  [90m164 |[0m       {[90m/* Footer lives outside the constrained flex row → spans full ...[0m
+[31m[1m>[0m [90m165 |[0m       <[33mFooter[0m />
+  [90m    |[0m        [31m[1m^[0m
+  [90m166 |[0m     </div>
+  [90m167 |[0m   );
+  [90m168 |[0m }
+[32m[1m✓[22m[39m Compiled in 86ms
+ GET /comprar [32m200[39m in 354ms[2m (next.js: 5ms, application-code: 348ms)[22m
+[32m[1m✓[22m[39m Compiled in 149ms
+[31m[1m⨯[22m[39m ReferenceError: Footer is not defined
+    at PropertyPage (src/app/imovel/[slug]/[id]/page.tsx:228:8)
+  [90m226 |[0m         </div>
+  [90m227 |[0m       </div>
+[31m[1m>[0m [90m228 |[0m       <[33mFooter[0m />
+  [90m    |[0m        [31m[1m^[0m
+  [90m229 |[0m     </div>
+  [90m230 |[0m   );
+  [90m231 |[0m } {
+  digest: [32m'97501388'[39m
+}
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [31m500[39m in 210ms[2m (next.js: 53ms, application-code: 157ms)[22m
+[36m[browser][39m [31mUncaught ReferenceError: Footer is not defined[39m
+[31m    at PropertyPage (src/app/imovel/[slug]/[id]/page.tsx:228:8)[39m
+  [90m226 |[0m         </div>
+  [90m227 |[0m       </div>
+[31m[1m>[0m [90m228 |[0m       <[33mFooter[0m />
+  [90m    |[0m        [31m[1m^[0m
+  [90m229 |[0m     </div>
+  [90m230 |[0m   );
+  [90m231 |[0m }
+[32m[1m✓[22m[39m Compiled in 63ms
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 223ms[2m (next.js: 51ms, application-code: 172ms)[22m
+ GET /comprar [32m200[39m in 238ms[2m (next.js: 3ms, application-code: 234ms)[22m
+ GET /imovel/sobrado-aluguel-sp-sao-caetano-osvaldo-cruz-120m2-RS3300/id-29100007 [32m200[39m in 74ms[2m (next.js: 43ms, application-code: 32ms)[22m
+[?25h
+[1G[0K⠙[1G[0K

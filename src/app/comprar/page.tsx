@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { FilterButton, FilterSidebar, SortDropdown, PropertyTypeChips } from "@/components/ComprarClient";
 import { properties } from "@/lib/properties";
 import type { Property } from "@/lib/properties";
@@ -162,8 +161,6 @@ export default function ComprarPage() {
         </main>
       </div>
 
-      {/* Footer lives outside the constrained flex row → spans full width */}
-      <Footer />
     </div>
   );
 }

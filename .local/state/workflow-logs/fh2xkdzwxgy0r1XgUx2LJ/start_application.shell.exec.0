@@ -1,0 +1,17 @@
+
+> ai-website-clone-template@0.3.1 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 516ms
+
+ GET / [32m200[39m in 2.7s[2m (next.js: 2.3s, application-code: 387ms)[22m
+ GET / [32m200[39m in 2.7s[2m (next.js: 2.2s, application-code: 491ms)[22m
+ GET / [32m200[39m in 151ms[2m (next.js: 5ms, application-code: 146ms)[22m
+ GET /comprar [32m200[39m in 413ms[2m (next.js: 27ms, application-code: 386ms)[22m
+ GET /comprar [32m200[39m in 94ms[2m (next.js: 6ms, application-code: 88ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 511ms[2m (next.js: 467ms, application-code: 44ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 74ms[2m (next.js: 36ms, application-code: 38ms)[22m
+ GET /imovel/lote-condominio-fechado-rj-teresopolis-prata-966m2-RS300000/id-29100008 [32m200[39m in 66ms[2m (next.js: 36ms, application-code: 30ms)[22m

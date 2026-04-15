@@ -2,7 +2,6 @@ import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { PropertySection } from "@/components/PropertySection";
 import { AdsSection } from "@/components/AdsSection";
-import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
         <PropertySection />
         <AdsSection />
       </main>
-      <Footer />
     </div>
   );
 }

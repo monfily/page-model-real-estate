@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import { getPropertyBySlugAndId } from "@/lib/properties";
 import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -226,7 +225,6 @@ export default async function PropertyPage({
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
