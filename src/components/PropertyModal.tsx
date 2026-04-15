@@ -112,8 +112,16 @@ export function PropertyModal({ property }: { property: Property }) {
   const images = property.images;
   const totalImages = images.length;
 
-  const TABS = ["Anúncio", `${totalImages} Fotos`, "Mapa", "Street View", "Nas proximidades"];
-  const [activeTab, setActiveTab] = useState(TABS[0]);
+  const hasCoords = !!(property.lat && property.lon);
+
+  const TABS = [
+    "Anúncio",
+    `${totalImages} Fotos`,
+    "Mapa",
+    ...(hasCoords ? ["Street View"] : []),
+    "Nas proximidades",
+  ];
+  const [activeTab, setActiveTab] = useState("Anúncio");
 
   const isFirstProperty = property.id === "id-23890098";
   const description = isFirstProperty ? FULL_DESCRIPTION : GENERIC_DESCRIPTION(property.title);
@@ -207,7 +215,7 @@ export function PropertyModal({ property }: { property: Property }) {
           {activeTab === "Mapa" && (
             <div className="h-[calc(100vh-56px)]">
               <Suspense fallback={<div className="w-full h-full flex items-center justify-center bg-[#f0f4f8]"><p className="text-[14px] text-[#717169]">Carregando mapa...</p></div>}>
-                <LeafletMap lat={propLat} lon={propLon} zoom={16} />
+                <LeafletMap lat={propLat} lon={propLon} zoom={16} scrollWheelZoom={true} />
               </Suspense>
             </div>
           )}
@@ -217,7 +225,7 @@ export function PropertyModal({ property }: { property: Property }) {
             <div className="h-[calc(100vh-56px)]">
               <iframe
                 title="Street View"
-                src={`https://maps.google.com/maps?q=${propLat},${propLon}&layer=c&cbll=${propLat},${propLon}&output=svembed`}
+                src={`https://maps.google.com/maps?layer=c&cbll=${propLat},${propLon}&cbp=12,0,,0,0&output=svembed`}
                 className="w-full h-full border-0"
                 allowFullScreen
                 loading="lazy"

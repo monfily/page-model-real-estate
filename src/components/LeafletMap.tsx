@@ -11,6 +11,7 @@ interface LeafletMapProps {
   markers?: Marker[];
   markerColor?: string;
   markerIconSvg?: string;
+  scrollWheelZoom?: boolean;
 }
 
 export function LeafletMap({
@@ -20,6 +21,7 @@ export function LeafletMap({
   markers = [],
   markerColor = "#eb0027",
   markerIconSvg,
+  scrollWheelZoom = false,
 }: LeafletMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<unknown>(null);
@@ -45,7 +47,15 @@ export function LeafletMap({
         shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
       });
 
-      const map = L.map(container, { zoomControl: true, scrollWheelZoom: false }).setView([lat, lon], zoom);
+      const map = L.map(container, {
+        zoomControl: true,
+        scrollWheelZoom,
+        dragging: true,
+        touchZoom: true,
+        doubleClickZoom: true,
+        boxZoom: true,
+        keyboard: true,
+      }).setView([lat, lon], zoom);
       mapRef.current = map;
 
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -53,7 +63,6 @@ export function LeafletMap({
         maxZoom: 19,
       }).addTo(map);
 
-      // ── Home pin (property location) ──
       const homeIcon = L.divIcon({
         html: `<div style="
             background:#7c3aed;width:34px;height:34px;
@@ -72,7 +81,6 @@ export function LeafletMap({
       });
       L.marker([lat, lon], { icon: homeIcon }).addTo(map).bindPopup("<b>Imóvel</b>");
 
-      // ── Category markers ──
       const iconBody = markerIconSvg ?? `<svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" width="14" height="14"><circle cx="12" cy="12" r="5"/></svg>`;
 
       markers.forEach((m) => {
@@ -106,7 +114,7 @@ export function LeafletMap({
         mapRef.current = null;
       }
     };
-  }, [lat, lon, zoom, markers, markerColor, markerIconSvg]);
+  }, [lat, lon, zoom, markers, markerColor, markerIconSvg, scrollWheelZoom]);
 
   return (
     <>

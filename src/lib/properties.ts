@@ -75,6 +75,8 @@ export const properties: Property[] = [
     privativeAmenities: ["Área de serviço"],
     commonAmenities: ["Interfone"],
     zipCode: "30180-000",
+    lat: -19.93155,
+    lon: -43.93814,
     ref: "1001",
   },
   {
@@ -99,6 +101,8 @@ export const properties: Property[] = [
     privativeAmenities: ["Varanda", "Área de serviço"],
     commonAmenities: ["Piscina", "Churrasqueira", "Salão de festas", "Playground"],
     zipCode: "11701-000",
+    lat: -24.0065,
+    lon: -46.3928,
     ref: "1002",
   },
   {
@@ -122,6 +126,8 @@ export const properties: Property[] = [
     privativeAmenities: ["Ar-condicionado"],
     commonAmenities: ["Elevador", "Interfone", "Portaria"],
     zipCode: "01102-020",
+    lat: -23.5420,
+    lon: -46.6407,
     ref: "1003",
   },
   {
@@ -146,6 +152,8 @@ export const properties: Property[] = [
     privativeAmenities: ["Varanda", "Armários Planejados", "Closet"],
     commonAmenities: ["Piscina", "Churrasqueira", "Salão de festas", "Playground", "Elevador"],
     zipCode: "14051-000",
+    lat: -21.1777,
+    lon: -47.8278,
     ref: "1004",
   },
   {
@@ -170,6 +178,8 @@ export const properties: Property[] = [
     privativeAmenities: ["Quintal", "Área de serviço", "Jardim"],
     commonAmenities: ["Interfone"],
     zipCode: "83040-000",
+    lat: -25.5467,
+    lon: -49.2069,
     ref: "1005",
   },
   {
@@ -193,6 +203,8 @@ export const properties: Property[] = [
     privativeAmenities: ["Varanda", "Armários Planejados"],
     commonAmenities: ["Elevador", "Interfone", "Churrasqueira"],
     zipCode: "89204-000",
+    lat: -26.2997,
+    lon: -48.8490,
     ref: "1006",
   },
   {
@@ -216,6 +228,8 @@ export const properties: Property[] = [
     privativeAmenities: ["Quintal", "Área de serviço"],
     commonAmenities: ["Interfone"],
     zipCode: "09531-000",
+    lat: -23.6165,
+    lon: -46.5476,
     ref: "1007",
   },
   {
@@ -262,6 +276,8 @@ export const properties: Property[] = [
     privativeAmenities: ["Área de serviço", "Elevador"],
     commonAmenities: ["Portaria", "Interfone", "Circuito de segurança"],
     zipCode: "09220-000",
+    lat: -23.6650,
+    lon: -46.5382,
     ref: "1009",
   },
 ];

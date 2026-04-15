@@ -1,0 +1,16 @@
+
+> ai-website-clone-template@0.3.1 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 354ms
+
+ GET / [32m200[39m in 1589ms[2m (next.js: 1245ms, application-code: 343ms)[22m
+[36m[browser][39m [33mImage with src "https://6d5424d2-eab3-4b2b-886f-1c6f396ad510-00-1bxiex7li7hm3.kirk.replit.dev/images/app-chavesnam-o-android-5c9fd3d78a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://6d5424d2-eab3-4b2b-886f-1c6f396ad510-00-1bxiex7li7hm3.kirk.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [33mImage with src "https://6d5424d2-eab3-4b2b-886f-1c6f396ad510-00-1bxiex7li7hm3.kirk.replit.dev/images/app-chavesnam-o-ios-862e08884b.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://6d5424d2-eab3-4b2b-886f-1c6f396ad510-00-1bxiex7li7hm3.kirk.replit.dev/__replco/static/devtools/injected.js:37:27)[22m
+ GET /comprar [32m200[39m in 122ms[2m (next.js: 23ms, application-code: 99ms)[22m
+ GET /imovel/casa-comercial-a-venda-2-salas-com-garagem-sc-florianopolis-agronomica-281m2-RS2350000/id-23890098 [32m200[39m in 464ms[2m (next.js: 431ms, application-code: 33ms)[22m
+ GET /imovel/lancamento-100m-do-mar-sp-praia-grande-aviacao-74m2-RS589193/id-29100002 [32m200[39m in 74ms[2m (next.js: 39ms, application-code: 34ms)[22m
+ GET /imovel/sala-comercial-para-locacao-sp-republica-93m2-RS4000/id-29100003 [32m200[39m in 63ms[2m (next.js: 34ms, application-code: 29ms)[22m

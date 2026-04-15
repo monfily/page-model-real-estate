@@ -314,193 +314,332 @@ const propertyTypes = [
   },
 ];
 
+const allPropertyTypeGroups = [
+  {
+    group: "Residenciais",
+    items: [
+      {
+        label: "Apartamento",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><rect x="3" y="3" width="22" height="22" rx="2" stroke="#717169" strokeWidth="1.5"/><rect x="7" y="7" width="4" height="4" rx="0.5" fill="#717169"/><rect x="13" y="7" width="4" height="4" rx="0.5" fill="#717169"/><rect x="7" y="13" width="4" height="4" rx="0.5" fill="#717169"/><rect x="13" y="13" width="4" height="4" rx="0.5" fill="#717169"/><rect x="10" y="19" width="8" height="6" rx="0.5" fill="#717169"/></svg>,
+      },
+      {
+        label: "Casas & Sobrados",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><path d="M4 14L14 5L24 14" stroke="#717169" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M7 11.5V23H21V11.5" stroke="#717169" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><rect x="11" y="17" width="6" height="6" rx="0.5" fill="#717169"/></svg>,
+      },
+      {
+        label: "Casa em condomínio",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><path d="M5 14L14 6L23 14" stroke="#717169" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M8 12V23H20V12" stroke="#717169" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><rect x="11.5" y="17" width="5" height="6" rx="0.5" fill="#717169"/><path d="M2 23H26" stroke="#717169" strokeWidth="1.5" strokeLinecap="round"/><path d="M2 20.5V23" stroke="#717169" strokeWidth="1.3" strokeLinecap="round"/><path d="M26 20.5V23" stroke="#717169" strokeWidth="1.3" strokeLinecap="round"/></svg>,
+      },
+      {
+        label: "Kitnets & Stúdios",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><rect x="3" y="3" width="22" height="22" rx="2" stroke="#717169" strokeWidth="1.5"/><rect x="7" y="7" width="6" height="14" rx="0.5" fill="#717169" opacity="0.3"/><rect x="15" y="7" width="6" height="6" rx="0.5" fill="#717169"/><rect x="15" y="15" width="6" height="6" rx="0.5" fill="#717169" opacity="0.5"/></svg>,
+      },
+      {
+        label: "Flat",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><rect x="3" y="5" width="22" height="18" rx="2" stroke="#717169" strokeWidth="1.5"/><path d="M3 11H25" stroke="#717169" strokeWidth="1.3"/><rect x="7" y="14" width="4" height="5" rx="0.5" fill="#717169"/><rect x="13" y="14" width="4" height="5" rx="0.5" fill="#717169"/><rect x="19" y="14" width="3" height="5" rx="0.5" fill="#717169" opacity="0.5"/></svg>,
+      },
+      {
+        label: "Loft",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><rect x="3" y="3" width="22" height="22" rx="2" stroke="#717169" strokeWidth="1.5"/><path d="M3 15H25" stroke="#717169" strokeWidth="1.3"/><rect x="7" y="7" width="14" height="5" rx="0.5" fill="#717169" opacity="0.3"/><rect x="7" y="17" width="6" height="5" rx="0.5" fill="#717169"/><rect x="15" y="17" width="6" height="5" rx="0.5" fill="#717169" opacity="0.5"/></svg>,
+      },
+      {
+        label: "Cobertura",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><path d="M3 10L14 3L25 10" stroke="#717169" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><rect x="3" y="10" width="22" height="15" rx="1" stroke="#717169" strokeWidth="1.5"/><rect x="7" y="14" width="4" height="4" rx="0.5" fill="#717169"/><rect x="13" y="14" width="4" height="4" rx="0.5" fill="#717169"/><rect x="11" y="19" width="6" height="6" rx="0.5" fill="#717169"/></svg>,
+      },
+      {
+        label: "Sítios & Chácaras",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><path d="M4 18L10 10L16 15L20 9L24 14" stroke="#717169" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M2 22H26" stroke="#717169" strokeWidth="1.5" strokeLinecap="round"/><path d="M6 22V18" stroke="#717169" strokeWidth="1.3" strokeLinecap="round"/><path d="M22 22V14" stroke="#717169" strokeWidth="1.3" strokeLinecap="round"/><circle cx="20" cy="8" r="2" fill="#717169" opacity="0.5"/></svg>,
+      },
+      {
+        label: "Terreno/Lote",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><rect x="3" y="5" width="22" height="18" rx="1.5" stroke="#717169" strokeWidth="1.5"/><path d="M3 10H25" stroke="#717169" strokeWidth="1.3"/><path d="M3 15H25" stroke="#717169" strokeWidth="1.3" strokeDasharray="2 2"/><path d="M11 5V23" stroke="#717169" strokeWidth="1.3" strokeDasharray="2 2"/><path d="M18 5V23" stroke="#717169" strokeWidth="1.3" strokeDasharray="2 2"/></svg>,
+      },
+      {
+        label: "Terreno em condomínio",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><rect x="3" y="5" width="22" height="18" rx="1.5" stroke="#717169" strokeWidth="1.5"/><path d="M3 10H25" stroke="#717169" strokeWidth="1.3" strokeDasharray="2 2"/><path d="M3 15H25" stroke="#717169" strokeWidth="1.3" strokeDasharray="2 2"/><path d="M11 5V23" stroke="#717169" strokeWidth="1.3" strokeDasharray="2 2"/><path d="M18 5V23" stroke="#717169" strokeWidth="1.3" strokeDasharray="2 2"/><rect x="1" y="3" width="26" height="22" rx="2" stroke="#717169" strokeWidth="1.3" strokeDasharray="3 2"/></svg>,
+      },
+    ],
+  },
+  {
+    group: "Comerciais",
+    items: [
+      {
+        label: "Sala Comercial",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><rect x="3" y="10" width="22" height="14" rx="1.5" stroke="#717169" strokeWidth="1.5"/><path d="M8 10V8C8 6.34 9.34 5 11 5H17C18.66 5 20 6.34 20 8V10" stroke="#717169" strokeWidth="1.5" strokeLinecap="round"/><rect x="11" y="14" width="6" height="5" rx="0.5" fill="#717169"/><path d="M3 16H25" stroke="#717169" strokeWidth="1.3"/></svg>,
+      },
+      {
+        label: "Casa Comercial",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><path d="M4 14L14 5L24 14" stroke="#717169" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M7 11.5V23H21V11.5" stroke="#717169" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><rect x="9" y="14" width="4" height="4" rx="0.5" fill="#717169"/><rect x="15" y="14" width="4" height="4" rx="0.5" fill="#717169"/><path d="M11 23V19H17V23" stroke="#717169" strokeWidth="1.3"/></svg>,
+      },
+      {
+        label: "Ponto Comercial",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><path d="M4 13H24V23H4V13Z" stroke="#717169" strokeWidth="1.5" strokeLinejoin="round"/><path d="M2 8H26L24 13H4L2 8Z" stroke="#717169" strokeWidth="1.5" strokeLinejoin="round"/><path d="M11 5H17V8H11V5Z" stroke="#717169" strokeWidth="1.3"/><rect x="11" y="16" width="6" height="7" rx="0.5" fill="#717169"/></svg>,
+      },
+      {
+        label: "Galpão/Depósito",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><path d="M3 13L14 5L25 13V25H3V13Z" stroke="#717169" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M3 13H25" stroke="#717169" strokeWidth="1.3"/><rect x="9" y="17" width="10" height="8" rx="0.5" fill="#717169" opacity="0.3"/><path d="M12 17V25" stroke="#717169" strokeWidth="1.2"/><path d="M16 17V25" stroke="#717169" strokeWidth="1.2"/></svg>,
+      },
+      {
+        label: "Terreno Comercial",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><rect x="3" y="5" width="22" height="18" rx="1.5" stroke="#717169" strokeWidth="1.5"/><path d="M3 10H25" stroke="#717169" strokeWidth="1.3"/><path d="M3 15H25" stroke="#717169" strokeWidth="1.3" strokeDasharray="2 2"/><path d="M14 5V23" stroke="#717169" strokeWidth="1.3" strokeDasharray="2 2"/></svg>,
+      },
+      {
+        label: "Prédio",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><rect x="5" y="3" width="18" height="22" rx="1.5" stroke="#717169" strokeWidth="1.5"/><rect x="8" y="6" width="3" height="3" rx="0.5" fill="#717169"/><rect x="13" y="6" width="3" height="3" rx="0.5" fill="#717169"/><rect x="8" y="11" width="3" height="3" rx="0.5" fill="#717169"/><rect x="13" y="11" width="3" height="3" rx="0.5" fill="#717169"/><rect x="8" y="16" width="3" height="3" rx="0.5" fill="#717169"/><rect x="13" y="16" width="3" height="3" rx="0.5" fill="#717169"/><rect x="10" y="21" width="8" height="4" rx="0.5" fill="#717169"/></svg>,
+      },
+      {
+        label: "Garagem",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><path d="M4 14L14 5L24 14" stroke="#717169" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M7 11.5V25H21V11.5" stroke="#717169" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><rect x="9" y="17" width="10" height="8" rx="0.5" stroke="#717169" strokeWidth="1.3"/><path d="M9 20H19" stroke="#717169" strokeWidth="1.2"/></svg>,
+      },
+      {
+        label: "Fazenda",
+        icon: <svg viewBox="0 0 28 28" className="h-7 w-7" fill="none"><rect x="2" y="8" width="24" height="17" rx="1.5" stroke="#717169" strokeWidth="1.5"/><path d="M2 13H26" stroke="#717169" strokeWidth="1.3"/><path d="M9 8V5" stroke="#717169" strokeWidth="1.3" strokeLinecap="round"/><path d="M14 8V4" stroke="#717169" strokeWidth="1.3" strokeLinecap="round"/><path d="M19 8V5" stroke="#717169" strokeWidth="1.3" strokeLinecap="round"/><rect x="6" y="16" width="4" height="4" rx="0.5" fill="#717169" opacity="0.5"/><rect x="12" y="16" width="4" height="4" rx="0.5" fill="#717169" opacity="0.5"/><rect x="18" y="16" width="4" height="4" rx="0.5" fill="#717169" opacity="0.5"/></svg>,
+      },
+    ],
+  },
+];
+
 export function FilterSidebar() {
   const [activeTab, setActiveTab] = useState<"Comprar" | "Alugar" | "Lançamentos">("Comprar");
   const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
+  const [showMoreTypes, setShowMoreTypes] = useState(false);
 
   const toggle = (title: string) =>
     setCollapsed((prev) => ({ ...prev, [title]: !prev[title] }));
 
   return (
-    <aside className="hidden xl:block w-[360px] shrink-0 sticky top-[74px] max-h-[calc(100vh-74px)] overflow-y-auto py-5 scrollbar-hide">
-      <div className="rounded-2xl bg-white border border-[#e7e6e6]">
+    <aside className="hidden xl:flex xl:flex-col w-[360px] shrink-0 sticky top-[74px] max-h-[calc(100vh-74px)] py-5">
+      <div className="relative flex flex-col rounded-2xl bg-white border border-[#e7e6e6] overflow-hidden min-h-0 flex-1">
 
-        {/* Header */}
-        <div className="flex items-center justify-between px-5 py-4">
-          <div className="flex items-center gap-2">
-            <SlidersHorizontal className="h-[18px] w-[18px] text-[#323131]" />
-            <h2 className="text-[18px] font-bold text-[#323131]">Filtros</h2>
-          </div>
-          <button className="flex items-center gap-1.5 text-[13px] font-semibold text-[#eb0027] hover:opacity-80 transition-opacity">
-            <Trash2 className="h-3.5 w-3.5" />
-            Limpar tudo
-          </button>
-        </div>
-
-        {/* Seleção atual */}
-        <div className="mx-4 mb-1">
-          <div className="flex items-center justify-between rounded-xl bg-[#fff0f2] border border-[#f4c8d0] px-4 py-3">
-            <p className="text-[13px] font-bold text-[#323131]">Seleção atual</p>
-            <button className="flex items-center gap-1">
-              <span className="text-[13px] font-bold text-[#eb0027]">Nenhum filtro</span>
-              <ChevronDown className="h-4 w-4 text-[#eb0027]" />
-            </button>
-          </div>
-        </div>
-
-        {/* Mode tabs */}
-        <div className="mx-4 mt-4 mb-1 grid grid-cols-3 rounded-xl overflow-hidden border border-[#e7e6e6] bg-[#f6f5f5]">
-          {(["Comprar", "Alugar", "Lançamentos"] as const).map((tab, i) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`relative py-2.5 text-[13px] font-semibold transition-colors
-                ${i === 0 ? "" : "border-l border-[#e7e6e6]"}
-                ${activeTab === tab ? "bg-white text-[#323131]" : "text-[#717169]"}`}
-            >
-              {tab}
-              {activeTab === tab && (
-                <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#eb0027] rounded-t-full" />
-              )}
-            </button>
-          ))}
-        </div>
-
-        <div className="px-5 pb-2">
-
-          {/* Localização */}
-          <div className="pt-4 pb-4">
-            <div className="flex items-center justify-between mb-3">
-              <p className="text-[15px] font-bold text-[#323131]">Localização</p>
-              <button className="flex items-center gap-1 text-[13px] font-semibold text-[#eb0027] hover:opacity-80 transition-opacity">
-                <LocateFixed className="h-3.5 w-3.5" />
-                Perto de mim
+        {/* Tipo de imóvel overlay */}
+        {showMoreTypes && (
+          <div className="absolute inset-0 z-20 flex flex-col bg-white rounded-2xl">
+            {/* Header */}
+            <div className="relative flex items-center justify-center shrink-0 px-5 py-4 border-b border-[#e7e6e6]">
+              <button
+                onClick={() => setShowMoreTypes(false)}
+                className="absolute left-5 text-[#eb0027] hover:opacity-70 transition-opacity"
+              >
+                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
               </button>
+              <h2 className="text-[16px] font-bold text-[#323131]">Tipo de imóvel</h2>
             </div>
-            <div className="flex h-11 items-center gap-2 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3">
-              <MapPin className="h-4 w-4 text-[#aaa] shrink-0" />
-              <input
-                type="text"
-                placeholder="Digite bairro, rua ou cidade"
-                className="flex-1 bg-transparent text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
-              />
-            </div>
-          </div>
 
-          {/* Tipos de imóveis — always visible, no chevron */}
-          <div className="border-t border-[#e7e6e6] pt-4 pb-4">
-            <p className="text-[15px] font-bold text-[#323131] mb-3">Tipos de imóveis</p>
-            <div className="grid grid-cols-3 gap-2">
-              {propertyTypes.map((type) => (
-                <button
-                  key={type.label}
-                  className="flex flex-col items-center justify-center gap-2 rounded-xl border border-[#ddd] px-2 py-4 text-[12px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors"
-                >
-                  {type.icon}
-                  {type.label}
-                </button>
-              ))}
-            </div>
-            <button className="mt-3 text-[13px] font-bold text-[#eb0027] hover:opacity-80 transition-opacity">
-              + Mais tipos de imóveis
-            </button>
-          </div>
-
-          {/* Preço — always visible, no chevron */}
-          <div className="border-t border-[#e7e6e6] pt-4 pb-4">
-            <div className="flex gap-2 mb-2">
-              <p className="flex-1 text-[14px] font-bold text-[#323131]">Preço à partir de</p>
-              <p className="flex-1 text-[14px] font-bold text-[#323131]">Até</p>
-            </div>
-            <div className="flex gap-2">
-              <input
-                placeholder="R$ 0"
-                className="h-11 flex-1 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3 text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
-              />
-              <input
-                placeholder="R$ 0"
-                className="h-11 flex-1 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3 text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
-              />
-            </div>
-          </div>
-
-          {/* Quartos — always visible, no chevron */}
-          <div className="border-t border-[#e7e6e6] pt-4 pb-4">
-            <p className="text-[15px] font-bold text-[#323131] mb-3">Quantidade de quartos</p>
-            <div className="grid grid-cols-4 gap-2">
-              {["+ 1", "+ 2", "+ 3", "+ 4"].map((p) => (
-                <button key={p} className="h-9 rounded-xl border border-[#ddd] text-[13px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors">{p}</button>
-              ))}
-            </div>
-          </div>
-
-          {/* Banheiros — always visible, no chevron */}
-          <div className="border-t border-[#e7e6e6] pt-4 pb-4">
-            <p className="text-[15px] font-bold text-[#323131] mb-3">Banheiros</p>
-            <div className="grid grid-cols-4 gap-2">
-              {["+ 1", "+ 2", "+ 3", "+ 4"].map((p) => (
-                <button key={p} className="h-9 rounded-xl border border-[#ddd] text-[13px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors">{p}</button>
-              ))}
-            </div>
-          </div>
-
-          {/* Garagens — always visible, no chevron */}
-          <div className="border-t border-[#e7e6e6] pt-4 pb-4">
-            <p className="text-[15px] font-bold text-[#323131] mb-3">Garagens</p>
-            <div className="grid grid-cols-4 gap-2">
-              {["+ 1", "+ 2", "+ 3", "+ 4"].map((p) => (
-                <button key={p} className="h-9 rounded-xl border border-[#ddd] text-[13px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors">{p}</button>
-              ))}
-            </div>
-          </div>
-
-          {/* Área útil — always visible, no chevron */}
-          <div className="border-t border-[#e7e6e6] pt-4 pb-4">
-            <div className="flex gap-2 mb-2">
-              <p className="flex-1 text-[14px] font-bold text-[#323131]">Área útil (m²) de</p>
-              <p className="flex-1 text-[14px] font-bold text-[#323131]">Até</p>
-            </div>
-            <div className="flex gap-2">
-              <input
-                placeholder="0 m²"
-                className="h-11 flex-1 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3 text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
-              />
-              <input
-                placeholder="0 m²"
-                className="h-11 flex-1 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3 text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
-              />
-            </div>
-          </div>
-
-          {/* Collapsible sections — functional toggle */}
-          {collapsibleSections.map((section) => {
-            const isOpen = !collapsed[section.title];
-            return (
-              <div key={section.title} className="border-t border-[#e7e6e6] pt-4 pb-4">
-                <button
-                  onClick={() => toggle(section.title)}
-                  className="flex w-full items-center justify-between text-left"
-                >
-                  <span className="text-[15px] font-bold text-[#323131]">{section.title}</span>
-                  <ChevronDown
-                    className={`h-4 w-4 text-[#717169] transition-transform duration-200 ${isOpen ? "rotate-0" : "-rotate-90"}`}
-                  />
-                </button>
-                {isOpen && (
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {section.checks.map((check) => (
+            {/* Scrollable content */}
+            <div className="overflow-y-auto scrollbar-hide flex-1 px-4 py-4 space-y-6" style={{ scrollbarWidth: "none" }}>
+              {allPropertyTypeGroups.map((group) => (
+                <div key={group.group}>
+                  <p className="text-[15px] font-bold text-[#323131] mb-3">{group.group}</p>
+                  <div className="grid grid-cols-3 gap-2">
+                    {group.items.map((item) => (
                       <button
-                        key={check}
-                        className="rounded-xl border border-[#ddd] px-3 py-2 text-[13px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors"
+                        key={item.label}
+                        className="flex flex-col items-center justify-center gap-2 rounded-xl bg-[#f6f5f5] px-2 py-4 text-[12px] font-semibold text-[#717169] hover:bg-[#fff0f2] hover:text-[#eb0027] transition-colors text-center leading-tight"
                       >
-                        {check}
+                        {item.icon}
+                        <span>{item.label}</span>
                       </button>
                     ))}
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Sticky top: Header + Seleção atual */}
+        <div className="shrink-0 bg-white rounded-t-2xl">
+          {/* Header */}
+          <div className="flex items-center justify-between px-5 py-4">
+            <div className="flex items-center gap-2">
+              <SlidersHorizontal className="h-[18px] w-[18px] text-[#323131]" />
+              <h2 className="text-[18px] font-bold text-[#323131]">Filtros</h2>
+            </div>
+            <button className="flex items-center gap-1.5 text-[13px] font-semibold text-[#eb0027] hover:opacity-80 transition-opacity">
+              <Trash2 className="h-3.5 w-3.5" />
+              Limpar tudo
+            </button>
+          </div>
+
+          {/* Seleção atual */}
+          <div className="mx-4 mb-4">
+            <div className="flex items-center justify-between rounded-xl bg-[#fff0f2] border border-[#f4c8d0] px-4 py-3">
+              <p className="text-[13px] font-bold text-[#323131]">Seleção atual</p>
+              <button className="flex items-center gap-1">
+                <span className="text-[13px] font-bold text-[#eb0027]">Nenhum filtro</span>
+                <ChevronDown className="h-4 w-4 text-[#eb0027]" />
+              </button>
+            </div>
+          </div>
+
+          <div className="h-px bg-[#e7e6e6]" />
+        </div>
+
+        {/* Scrollable content */}
+        <div className="overflow-y-auto scrollbar-hide flex-1" style={{ scrollbarWidth: "none" }}>
+          {/* Mode tabs */}
+          <div className="mx-4 mt-4 mb-1 grid grid-cols-3 rounded-xl overflow-hidden border border-[#e7e6e6] bg-[#f6f5f5]">
+            {(["Comprar", "Alugar", "Lançamentos"] as const).map((tab, i) => (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`relative py-2.5 text-[13px] font-semibold transition-colors
+                  ${i === 0 ? "" : "border-l border-[#e7e6e6]"}
+                  ${activeTab === tab ? "bg-white text-[#323131]" : "text-[#717169]"}`}
+              >
+                {tab}
+                {activeTab === tab && (
+                  <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#eb0027] rounded-t-full" />
                 )}
+              </button>
+            ))}
+          </div>
+
+          <div className="px-5 pb-4">
+
+            {/* Localização */}
+            <div className="pt-4 pb-4">
+              <div className="flex items-center justify-between mb-3">
+                <p className="text-[15px] font-bold text-[#323131]">Localização</p>
+                <button className="flex items-center gap-1 text-[13px] font-semibold text-[#eb0027] hover:opacity-80 transition-opacity">
+                  <LocateFixed className="h-3.5 w-3.5" />
+                  Perto de mim
+                </button>
               </div>
-            );
-          })}
+              <div className="flex h-11 items-center gap-2 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3">
+                <MapPin className="h-4 w-4 text-[#aaa] shrink-0" />
+                <input
+                  type="text"
+                  placeholder="Digite bairro, rua ou cidade"
+                  className="flex-1 min-w-0 bg-transparent text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
+                />
+              </div>
+            </div>
+
+            {/* Tipos de imóveis */}
+            <div className="border-t border-[#e7e6e6] pt-4 pb-4">
+              <p className="text-[15px] font-bold text-[#323131] mb-3">Tipos de imóveis</p>
+              <div className="grid grid-cols-3 gap-2">
+                {propertyTypes.map((type) => (
+                  <button
+                    key={type.label}
+                    className="flex flex-col items-center justify-center gap-2 rounded-xl border border-[#ddd] px-2 py-4 text-[12px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors"
+                  >
+                    {type.icon}
+                    {type.label}
+                  </button>
+                ))}
+              </div>
+              <button
+                onClick={() => setShowMoreTypes(true)}
+                className="mt-3 text-[13px] font-bold text-[#eb0027] hover:opacity-80 transition-opacity"
+              >
+                + Mais tipos de imóveis
+              </button>
+            </div>
+
+            {/* Preço */}
+            <div className="border-t border-[#e7e6e6] pt-4 pb-4">
+              <p className="text-[15px] font-bold text-[#323131] mb-3">Preço</p>
+              <div className="grid grid-cols-2 gap-2">
+                <div className="flex flex-col gap-1">
+                  <p className="text-[12px] font-semibold text-[#717169]">À partir de</p>
+                  <input
+                    placeholder="R$ 0"
+                    className="h-11 w-full min-w-0 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3 text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
+                  />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <p className="text-[12px] font-semibold text-[#717169]">Até</p>
+                  <input
+                    placeholder="R$ 0"
+                    className="h-11 w-full min-w-0 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3 text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Quartos */}
+            <div className="border-t border-[#e7e6e6] pt-4 pb-4">
+              <p className="text-[15px] font-bold text-[#323131] mb-3">Quantidade de quartos</p>
+              <div className="grid grid-cols-4 gap-2">
+                {["+ 1", "+ 2", "+ 3", "+ 4"].map((p) => (
+                  <button key={p} className="h-9 rounded-xl border border-[#ddd] text-[13px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors">{p}</button>
+                ))}
+              </div>
+            </div>
+
+            {/* Banheiros */}
+            <div className="border-t border-[#e7e6e6] pt-4 pb-4">
+              <p className="text-[15px] font-bold text-[#323131] mb-3">Banheiros</p>
+              <div className="grid grid-cols-4 gap-2">
+                {["+ 1", "+ 2", "+ 3", "+ 4"].map((p) => (
+                  <button key={p} className="h-9 rounded-xl border border-[#ddd] text-[13px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors">{p}</button>
+                ))}
+              </div>
+            </div>
+
+            {/* Garagens */}
+            <div className="border-t border-[#e7e6e6] pt-4 pb-4">
+              <p className="text-[15px] font-bold text-[#323131] mb-3">Garagens</p>
+              <div className="grid grid-cols-4 gap-2">
+                {["+ 1", "+ 2", "+ 3", "+ 4"].map((p) => (
+                  <button key={p} className="h-9 rounded-xl border border-[#ddd] text-[13px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors">{p}</button>
+                ))}
+              </div>
+            </div>
+
+            {/* Área útil */}
+            <div className="border-t border-[#e7e6e6] pt-4 pb-4">
+              <p className="text-[15px] font-bold text-[#323131] mb-3">Área útil (m²)</p>
+              <div className="grid grid-cols-2 gap-2">
+                <div className="flex flex-col gap-1">
+                  <p className="text-[12px] font-semibold text-[#717169]">De</p>
+                  <input
+                    placeholder="0 m²"
+                    className="h-11 w-full min-w-0 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3 text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
+                  />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <p className="text-[12px] font-semibold text-[#717169]">Até</p>
+                  <input
+                    placeholder="0 m²"
+                    className="h-11 w-full min-w-0 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3 text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Collapsible sections */}
+            {collapsibleSections.map((section) => {
+              const isOpen = !collapsed[section.title];
+              return (
+                <div key={section.title} className="border-t border-[#e7e6e6] pt-4 pb-4">
+                  <button
+                    onClick={() => toggle(section.title)}
+                    className="flex w-full items-center justify-between text-left"
+                  >
+                    <span className="text-[15px] font-bold text-[#323131]">{section.title}</span>
+                    <ChevronDown
+                      className={`h-4 w-4 text-[#717169] transition-transform duration-200 ${isOpen ? "rotate-0" : "-rotate-90"}`}
+                    />
+                  </button>
+                  {isOpen && (
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {section.checks.map((check) => (
+                        <button
+                          key={check}
+                          className="rounded-xl border border-[#ddd] px-3 py-2 text-[13px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors"
+                        >
+                          {check}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </aside>
