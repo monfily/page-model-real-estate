@@ -2,72 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FilterButton, SortDropdown, PropertyTypeChips } from "@/components/ComprarClient";
+import { FilterButton, FilterSidebar, SortDropdown, PropertyTypeChips } from "@/components/ComprarClient";
 import { properties } from "@/lib/properties";
 import type { Property } from "@/lib/properties";
 import {
   Bath,
   BedDouble,
-  Building2,
   Camera,
   Car,
-  ChevronDown,
-  Grid3X3,
   Heart,
-  Home,
-  LocateFixed,
   MapPin,
   MessageCircle,
   Ruler,
 } from "lucide-react";
-
-const filters = [
-  {
-    title: "Tipos de imóveis",
-    options: ["Apartamento", "Casas & Sobrados", "Kitnets & Stúdios"],
-    action: "Mais tipos de imóveis",
-  },
-  {
-    title: "Preço à partir de",
-    range: ["Até"],
-  },
-  {
-    title: "Quantidade de quartos",
-    pills: ["+ 1", "+ 2", "+ 3", "+ 4"],
-  },
-  {
-    title: "Banheiros",
-    pills: ["+ 1", "+ 2", "+ 3", "+ 4"],
-  },
-  {
-    title: "Garagens",
-    pills: ["+ 1", "+ 2", "+ 3", "+ 4"],
-  },
-  {
-    title: "Área útil (m²) de",
-    range: ["Até"],
-  },
-  {
-    title: "Área de Lazer",
-    checks: ["Brinquedoteca", "Churrasqueira", "Espaço gourmet", "Piscina", "Playground", "Salão de festas", "Salão de jogos"],
-  },
-  {
-    title: "Conveniências",
-    checks: ["Ar-condicionado", "Armários Planejados", "Elevador", "Hidromassagem", "Jardim", "Lareira", "Mobiliado", "Quintal", "Sauna", "Varanda"],
-  },
-  {
-    title: "Funcional",
-    checks: ["Área de serviço", "Ático", "Closet", "Dependência de Empregada", "Edícula", "Escritório", "Lavabo", "Lavanderia"],
-  },
-  {
-    title: "Segurança",
-    checks: ["Circuito de segurança", "Guarita", "Interfone", "Portaria"],
-  },
-  {
-    title: "Tipo de Vendedor",
-    checks: ["Direto com proprietário", "Somente Imobiliárias"],
-  },
-];
 
 const agencyCards = [
   { image: "/images/casa-com-3-quartos-para-alugar-add6057170.jpg", title: "Casa com 3 quartos para alugar na Rua Inglês de Souza, 260", price: "R$ 6.900" },
@@ -79,19 +26,20 @@ const agencyCards = [
 
 function FilterSidebar() {
   return (
-    <aside className="hidden xl:flex xl:flex-col w-[360px] shrink-0 overflow-y-auto py-5 gap-3">
-      {/* "Seleção atual" — sticks to the top of the sidebar's own scroll */}
-      <div className="sticky top-0 z-10 shrink-0">
-        <div className="rounded-xl border border-[#f4c8d0] bg-[#fff0f2] p-4">
+    <aside
+      className="hidden xl:block w-[360px] shrink-0 sticky top-[74px] max-h-[calc(100vh-74px)] overflow-y-auto py-5 scrollbar-hide"
+    >
+      <div className="rounded-xl border border-[#ddd] bg-white">
+        {/* "Seleção atual" — sticks to top of the sidebar's own scroll area */}
+        <div className="sticky top-0 z-10 rounded-t-xl border-b border-[#f4c8d0] bg-[#fff0f2] px-4 py-3">
           <div className="flex items-center justify-between gap-3">
             <p className="text-[13px] font-bold text-[#323131]">Seleção atual</p>
             <p className="text-[13px] font-bold text-[#eb0027]">Nenhum filtro</p>
           </div>
         </div>
-      </div>
 
-      {/* Filter card — scrolls naturally inside the sidebar column */}
-      <div className="rounded-xl border border-[#ddd] bg-white p-5 space-y-5">
+        {/* Filter content — scrolls inside the sidebar without a visible scrollbar */}
+        <div className="p-5 space-y-5">
         <div className="flex items-center justify-between">
           <h2 className="text-[21px] leading-[30px] font-bold text-[#323131]">Filtros</h2>
           <button className="text-[13px] font-semibold text-[#eb0027]">Limpar tudo</button>
@@ -155,6 +103,7 @@ function FilterSidebar() {
             )}
           </section>
         ))}
+        </div>
       </div>
     </aside>
   );
@@ -254,50 +203,52 @@ function AgencySection() {
 
 export default function ComprarPage() {
   return (
-    <div className="h-screen flex flex-col bg-[#f4f5f7] font-sans text-[#323131] overflow-hidden">
+    <div className="flex flex-col bg-[#f4f5f7] font-sans text-[#323131]">
       <Header />
-      {/* Fixed-height row — each column scrolls independently */}
-      <div className="flex flex-1 overflow-hidden max-w-[1440px] mx-auto w-full px-4 gap-6">
+
+      {/* Sidebar + main content share the same constrained row */}
+      <div className="flex max-w-[1440px] mx-auto w-full px-4 gap-6">
         <FilterSidebar />
-        <main className="min-w-0 flex-1 overflow-y-auto">
-          <div className="py-5 pb-16">
-            {/* Mobile: filter + sort buttons ABOVE the title */}
-            <div className="flex gap-2 items-center mb-3 lg:hidden">
+
+        <main className="min-w-0 flex-1 py-5 pb-16">
+          {/* Mobile: filter + sort buttons ABOVE the title */}
+          <div className="flex gap-2 items-center mb-3 lg:hidden">
+            <FilterButton />
+            <SortDropdown />
+          </div>
+
+          <div className="mb-3 flex lg:items-end lg:justify-between">
+            <div>
+              <nav className="hidden md:flex mb-2 items-center gap-2 text-[13px] font-semibold text-[#717169]">
+                <Link href="#" className="text-[#475cff]">Imóveis</Link>
+                <span>/</span>
+                <span>Em todo Brasil</span>
+              </nav>
+              <h1 className="text-[20px] font-extrabold leading-7 tracking-[0.2px] text-[#323131] md:text-[28px] md:leading-9 lg:text-[38px] lg:leading-[46px]">4.530.289 Imóveis em todo Brasil</h1>
+            </div>
+            {/* Desktop: sort button beside the title */}
+            <div className="hidden lg:flex gap-2 items-center">
               <FilterButton />
               <SortDropdown />
             </div>
+          </div>
 
-            <div className="mb-3 flex lg:items-end lg:justify-between">
-              <div>
-                <nav className="hidden md:flex mb-2 items-center gap-2 text-[13px] font-semibold text-[#717169]">
-                  <Link href="#" className="text-[#475cff]">Imóveis</Link>
-                  <span>/</span>
-                  <span>Em todo Brasil</span>
-                </nav>
-                <h1 className="text-[20px] font-extrabold leading-7 tracking-[0.2px] text-[#323131] md:text-[28px] md:leading-9 lg:text-[38px] lg:leading-[46px]">4.530.289 Imóveis em todo Brasil</h1>
-              </div>
-              {/* Desktop: filter + sort buttons beside the title */}
-              <div className="hidden lg:flex gap-2 items-center">
-                <FilterButton />
-                <SortDropdown />
-              </div>
-            </div>
+          <PropertyTypeChips />
 
-            <PropertyTypeChips />
-
-            <div className="mt-6 space-y-4">
-              {properties.slice(0, 5).map((property, index) => (
-                <PropertyCard key={property.id} property={property} priority={index === 0} />
-              ))}
-              <AgencySection />
-              {properties.slice(5).map((property) => (
-                <PropertyCard key={property.id} property={property} />
-              ))}
-            </div>
-            <Footer />
+          <div className="mt-6 space-y-4">
+            {properties.slice(0, 5).map((property, index) => (
+              <PropertyCard key={property.id} property={property} priority={index === 0} />
+            ))}
+            <AgencySection />
+            {properties.slice(5).map((property) => (
+              <PropertyCard key={property.id} property={property} />
+            ))}
           </div>
         </main>
       </div>
+
+      {/* Footer lives outside the constrained flex row → spans full width */}
+      <Footer />
     </div>
   );
 }

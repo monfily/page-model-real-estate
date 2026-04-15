@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { ArrowUpDown, ChevronLeft, ChevronRight, SlidersHorizontal } from "lucide-react";
+import { ArrowUpDown, ChevronDown, ChevronLeft, ChevronRight, LocateFixed, MapPin, SlidersHorizontal, Trash2 } from "lucide-react";
 import { MobileFilterDrawer } from "./MobileFilterDrawer";
 
 export function FilterButton() {
@@ -180,7 +180,7 @@ const propertyTypeChips = [
 export function PropertyTypeChips() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
+  const [canScrollRight, setCanScrollRight] = useState(false);
 
   const updateScrollState = () => {
     const el = scrollRef.current;
@@ -251,5 +251,258 @@ export function PropertyTypeChips() {
         </>
       )}
     </div>
+  );
+}
+
+const collapsibleSections = [
+  {
+    title: "Área de Lazer",
+    checks: ["Brinquedoteca", "Churrasqueira", "Espaço gourmet", "Piscina", "Playground", "Salão de festas", "Salão de jogos"],
+  },
+  {
+    title: "Conveniências",
+    checks: ["Ar-condicionado", "Armários Planejados", "Elevador", "Hidromassagem", "Jardim", "Lareira", "Mobiliado", "Quintal", "Sauna", "Varanda"],
+  },
+  {
+    title: "Funcional",
+    checks: ["Área de serviço", "Ático", "Closet", "Dependência de Empregada", "Edícula", "Escritório", "Lavabo", "Lavanderia"],
+  },
+  {
+    title: "Segurança",
+    checks: ["Circuito de segurança", "Guarita", "Interfone", "Portaria"],
+  },
+  {
+    title: "Tipo de Vendedor",
+    checks: ["Direto com proprietário", "Somente Imobiliárias"],
+  },
+];
+
+const propertyTypes = [
+  {
+    label: "Apartamento",
+    icon: (
+      <svg viewBox="0 0 28 28" className="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="3" width="22" height="22" rx="2" stroke="#717169" strokeWidth="1.6"/>
+        <rect x="7" y="7" width="4" height="4" rx="0.5" fill="#717169"/>
+        <rect x="13" y="7" width="4" height="4" rx="0.5" fill="#717169"/>
+        <rect x="7" y="13" width="4" height="4" rx="0.5" fill="#717169"/>
+        <rect x="13" y="13" width="4" height="4" rx="0.5" fill="#717169"/>
+        <rect x="10" y="19" width="8" height="6" rx="0.5" fill="#717169"/>
+      </svg>
+    ),
+  },
+  {
+    label: "Casas & Sobrados",
+    icon: (
+      <svg viewBox="0 0 28 28" className="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 14L14 5L24 14" stroke="#717169" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M7 11.5V23H21V11.5" stroke="#717169" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+        <rect x="11" y="17" width="6" height="6" rx="0.5" fill="#717169"/>
+      </svg>
+    ),
+  },
+  {
+    label: "Kitnets & Stúdios",
+    icon: (
+      <svg viewBox="0 0 28 28" className="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="3" width="22" height="22" rx="2" stroke="#717169" strokeWidth="1.6"/>
+        <rect x="7" y="7" width="6" height="14" rx="0.5" fill="#717169" opacity="0.3"/>
+        <rect x="15" y="7" width="6" height="6" rx="0.5" fill="#717169"/>
+        <rect x="15" y="15" width="6" height="6" rx="0.5" fill="#717169" opacity="0.5"/>
+      </svg>
+    ),
+  },
+];
+
+export function FilterSidebar() {
+  const [activeTab, setActiveTab] = useState<"Comprar" | "Alugar" | "Lançamentos">("Comprar");
+  const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
+
+  const toggle = (title: string) =>
+    setCollapsed((prev) => ({ ...prev, [title]: !prev[title] }));
+
+  return (
+    <aside className="hidden xl:block w-[360px] shrink-0 sticky top-[74px] max-h-[calc(100vh-74px)] overflow-y-auto py-5 scrollbar-hide">
+      <div className="rounded-2xl bg-white border border-[#e7e6e6]">
+
+        {/* Header */}
+        <div className="flex items-center justify-between px-5 py-4">
+          <div className="flex items-center gap-2">
+            <SlidersHorizontal className="h-[18px] w-[18px] text-[#323131]" />
+            <h2 className="text-[18px] font-bold text-[#323131]">Filtros</h2>
+          </div>
+          <button className="flex items-center gap-1.5 text-[13px] font-semibold text-[#eb0027] hover:opacity-80 transition-opacity">
+            <Trash2 className="h-3.5 w-3.5" />
+            Limpar tudo
+          </button>
+        </div>
+
+        {/* Seleção atual */}
+        <div className="mx-4 mb-1">
+          <div className="flex items-center justify-between rounded-xl bg-[#fff0f2] border border-[#f4c8d0] px-4 py-3">
+            <p className="text-[13px] font-bold text-[#323131]">Seleção atual</p>
+            <button className="flex items-center gap-1">
+              <span className="text-[13px] font-bold text-[#eb0027]">Nenhum filtro</span>
+              <ChevronDown className="h-4 w-4 text-[#eb0027]" />
+            </button>
+          </div>
+        </div>
+
+        {/* Mode tabs */}
+        <div className="mx-4 mt-4 mb-1 grid grid-cols-3 rounded-xl overflow-hidden border border-[#e7e6e6] bg-[#f6f5f5]">
+          {(["Comprar", "Alugar", "Lançamentos"] as const).map((tab, i) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`relative py-2.5 text-[13px] font-semibold transition-colors
+                ${i === 0 ? "" : "border-l border-[#e7e6e6]"}
+                ${activeTab === tab ? "bg-white text-[#323131]" : "text-[#717169]"}`}
+            >
+              {tab}
+              {activeTab === tab && (
+                <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#eb0027] rounded-t-full" />
+              )}
+            </button>
+          ))}
+        </div>
+
+        <div className="px-5 pb-2">
+
+          {/* Localização */}
+          <div className="pt-4 pb-4">
+            <div className="flex items-center justify-between mb-3">
+              <p className="text-[15px] font-bold text-[#323131]">Localização</p>
+              <button className="flex items-center gap-1 text-[13px] font-semibold text-[#eb0027] hover:opacity-80 transition-opacity">
+                <LocateFixed className="h-3.5 w-3.5" />
+                Perto de mim
+              </button>
+            </div>
+            <div className="flex h-11 items-center gap-2 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3">
+              <MapPin className="h-4 w-4 text-[#aaa] shrink-0" />
+              <input
+                type="text"
+                placeholder="Digite bairro, rua ou cidade"
+                className="flex-1 bg-transparent text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
+              />
+            </div>
+          </div>
+
+          {/* Tipos de imóveis — always visible, no chevron */}
+          <div className="border-t border-[#e7e6e6] pt-4 pb-4">
+            <p className="text-[15px] font-bold text-[#323131] mb-3">Tipos de imóveis</p>
+            <div className="grid grid-cols-3 gap-2">
+              {propertyTypes.map((type) => (
+                <button
+                  key={type.label}
+                  className="flex flex-col items-center justify-center gap-2 rounded-xl border border-[#ddd] px-2 py-4 text-[12px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors"
+                >
+                  {type.icon}
+                  {type.label}
+                </button>
+              ))}
+            </div>
+            <button className="mt-3 text-[13px] font-bold text-[#eb0027] hover:opacity-80 transition-opacity">
+              + Mais tipos de imóveis
+            </button>
+          </div>
+
+          {/* Preço — always visible, no chevron */}
+          <div className="border-t border-[#e7e6e6] pt-4 pb-4">
+            <div className="flex gap-2 mb-2">
+              <p className="flex-1 text-[14px] font-bold text-[#323131]">Preço à partir de</p>
+              <p className="flex-1 text-[14px] font-bold text-[#323131]">Até</p>
+            </div>
+            <div className="flex gap-2">
+              <input
+                placeholder="R$ 0"
+                className="h-11 flex-1 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3 text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
+              />
+              <input
+                placeholder="R$ 0"
+                className="h-11 flex-1 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3 text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
+              />
+            </div>
+          </div>
+
+          {/* Quartos — always visible, no chevron */}
+          <div className="border-t border-[#e7e6e6] pt-4 pb-4">
+            <p className="text-[15px] font-bold text-[#323131] mb-3">Quantidade de quartos</p>
+            <div className="grid grid-cols-4 gap-2">
+              {["+ 1", "+ 2", "+ 3", "+ 4"].map((p) => (
+                <button key={p} className="h-9 rounded-xl border border-[#ddd] text-[13px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors">{p}</button>
+              ))}
+            </div>
+          </div>
+
+          {/* Banheiros — always visible, no chevron */}
+          <div className="border-t border-[#e7e6e6] pt-4 pb-4">
+            <p className="text-[15px] font-bold text-[#323131] mb-3">Banheiros</p>
+            <div className="grid grid-cols-4 gap-2">
+              {["+ 1", "+ 2", "+ 3", "+ 4"].map((p) => (
+                <button key={p} className="h-9 rounded-xl border border-[#ddd] text-[13px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors">{p}</button>
+              ))}
+            </div>
+          </div>
+
+          {/* Garagens — always visible, no chevron */}
+          <div className="border-t border-[#e7e6e6] pt-4 pb-4">
+            <p className="text-[15px] font-bold text-[#323131] mb-3">Garagens</p>
+            <div className="grid grid-cols-4 gap-2">
+              {["+ 1", "+ 2", "+ 3", "+ 4"].map((p) => (
+                <button key={p} className="h-9 rounded-xl border border-[#ddd] text-[13px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors">{p}</button>
+              ))}
+            </div>
+          </div>
+
+          {/* Área útil — always visible, no chevron */}
+          <div className="border-t border-[#e7e6e6] pt-4 pb-4">
+            <div className="flex gap-2 mb-2">
+              <p className="flex-1 text-[14px] font-bold text-[#323131]">Área útil (m²) de</p>
+              <p className="flex-1 text-[14px] font-bold text-[#323131]">Até</p>
+            </div>
+            <div className="flex gap-2">
+              <input
+                placeholder="0 m²"
+                className="h-11 flex-1 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3 text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
+              />
+              <input
+                placeholder="0 m²"
+                className="h-11 flex-1 rounded-xl border border-[#ddd] bg-[#f6f5f5] px-3 text-[13px] text-[#323131] outline-none placeholder:text-[#aaa]"
+              />
+            </div>
+          </div>
+
+          {/* Collapsible sections — functional toggle */}
+          {collapsibleSections.map((section) => {
+            const isOpen = !collapsed[section.title];
+            return (
+              <div key={section.title} className="border-t border-[#e7e6e6] pt-4 pb-4">
+                <button
+                  onClick={() => toggle(section.title)}
+                  className="flex w-full items-center justify-between text-left"
+                >
+                  <span className="text-[15px] font-bold text-[#323131]">{section.title}</span>
+                  <ChevronDown
+                    className={`h-4 w-4 text-[#717169] transition-transform duration-200 ${isOpen ? "rotate-0" : "-rotate-90"}`}
+                  />
+                </button>
+                {isOpen && (
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {section.checks.map((check) => (
+                      <button
+                        key={check}
+                        className="rounded-xl border border-[#ddd] px-3 py-2 text-[13px] font-semibold text-[#323131] hover:border-[#eb0027] hover:text-[#eb0027] transition-colors"
+                      >
+                        {check}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </aside>
   );
 }

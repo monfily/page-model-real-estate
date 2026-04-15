@@ -24,7 +24,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${urbanist.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">
+      <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
         {children}
         {modal}
       </body>

@@ -1,0 +1,15 @@
+
+> ai-website-clone-template@0.3.1 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 748ms
+
+ GET / [32m200[39m in 3.6s[2m (next.js: 3.2s, application-code: 451ms)[22m
+ GET /comprar [32m200[39m in 466ms[2m (next.js: 31ms, application-code: 435ms)[22m
+ GET /comprar [32m200[39m in 332ms[2m (next.js: 9ms, application-code: 323ms)[22m
+ GET / [32m200[39m in 131ms[2m (next.js: 4ms, application-code: 127ms)[22m
+[?25h
+[1G[0K⠙[1G[0K
