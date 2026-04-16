@@ -28,6 +28,12 @@ src/
     AppSection.tsx   # App download section with badges + QR code
     AdsSection.tsx   # Red "Anuncie" banner with benefits
     Footer.tsx       # Dark footer with links + social icons
+    admin/AdminDashboard.tsx # Frontend-only navigable admin panel for /admin
+  config/admin/ # Country, locale and UI dictionary configuration for admin mockup
+  mocks/        # Local mock data for admin modules
+  services/     # Mock service layer prepared for future backend integration
+  utils/        # Admin formatting helpers
+  types/        # Shared admin TypeScript interfaces
 public/images/  # Real site images downloaded locally, including homepage and /comprar assets
 clone-data/     # Extracted site data (tokens, content, assets, behaviors); clone-data/comprar stores the /imoveis/brasil/ extraction
 scripts/        # Recon scripts (recon.py, extract-extra.py)
@@ -44,6 +50,7 @@ scripts/        # Recon scripts (recon.py, extract-extra.py)
 
 ## Running on Replit
 
+- **Runtime**: Node.js 24 via the Replit module configuration
 - **Dev server**: `npm run dev` — starts on port 5000, bound to 0.0.0.0
 - **Production**: `npm run start` — same port/host config
 - The workflow "Start application" runs `npm run dev` automatically
@@ -60,7 +67,7 @@ The clone was built using:
 
 - `next.config.ts`: allows Replit preview development origins including `*.replit.dev`, `*.worf.replit.dev`, `*.spock.replit.dev`, and the current `REPLIT_DEV_DOMAIN`; `images.unoptimized: true`
 - `package.json`: dev/start scripts use `-p 5000 -H 0.0.0.0`
-- `.replit`: workflow `Start application` runs `npm run dev` and waits for port 5000
+- `.replit`: uses Node.js 24, workflow `Start application` runs `npm run dev` and waits for port 5000
 
 ## Property Detail Modal
 
@@ -83,6 +90,16 @@ The clone was built using:
 - Same filter sections as the desktop sidebar: type tabs, location, price, rooms, baths, parking, area, amenities
 - Sticky footer with "Limpar tudo" + "Aplicar filtros" buttons
 - `ComprarClient.tsx`: client component that owns drawer open/close state and renders the button + drawer
+
+## Admin Mockup
+
+- `/admin` renders a frontend-only, navigable administrative panel for a real estate portal.
+- Includes dashboard, properties, property editor, property types, filters/taxonomies, currencies, CMS, leads, CRM, reports, ERP, users/permissions, general settings, and country/locale settings.
+- Admin visual direction is intentionally pure minimalism: light sidebar, neutral stone palette, subtle borders, no futuristic effects, no color-heavy gradients, and restrained typography across all admin pages.
+- Data is local and mock-only via `src/mocks/adminData.ts` and `src/services/mockAdminService.ts`; there is no real backend, database, upload, authentication, API, or external integration.
+- Country selector supports Brazil, Portugal, and United States with visible changes to locale, currency, labels, postal-code terminology, phone mask examples, tax terms, and conditional fields such as FGTS/permuta.
+- Role selector visually simulates Super Admin, Admin, Editor de Conteúdo, Corretor / Operador Comercial, and Financeiro permissions by hiding/locking modules in the UI.
+- The global footer is hidden on `/admin` through `FooterVisibility` so the admin shell can occupy the full viewport.
 
 ## Migration Status
 

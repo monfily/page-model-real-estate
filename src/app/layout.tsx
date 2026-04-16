@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
-import { Footer } from "@/components/Footer";
+import { FooterVisibility } from "@/components/FooterVisibility";
 
 const urbanist = Urbanist({
   variable: "--font-urbanist",
@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
         {children}
         {modal}
-        <Footer />
+        <FooterVisibility />
       </body>
     </html>
   );

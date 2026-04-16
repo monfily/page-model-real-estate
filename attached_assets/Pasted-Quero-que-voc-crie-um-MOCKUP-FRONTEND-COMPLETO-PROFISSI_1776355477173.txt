@@ -1,0 +1,781 @@
+Quero que você crie um MOCKUP FRONTEND COMPLETO, PROFISSIONAL E NAVEGÁVEL de um painel administrativo para um portal imobiliário moderno, inspirado na lógica funcional de grandes portais imobiliários, como Chaves na Mão, Viva Real e Zap, mas SEM copiar identidade visual, layout, textos, marca ou elementos proprietários.
+
+ATENÇÃO:
+Nesta fase eu NÃO quero backend real, NÃO quero banco de dados real e NÃO quero integrações reais.
+Quero SOMENTE o frontend/mockup, com navegação funcional entre telas, dados fictícios realistas, componentes reutilizáveis e aparência de produto pronto para apresentação e validação.
+
+O resultado deve parecer um sistema real em funcionamento, porém alimentado apenas por dados mockados locais.
+
+==================================================
+1. OBJETIVO DESTA ENTREGA
+==================================================
+
+Criar um painel administrativo frontend-only, com foco em:
+
+- UX/UI profissional
+- navegação completa
+- telas realistas
+- tabelas, formulários, filtros e dashboards bem construídos
+- dados simulados consistentes
+- estrutura pronta para no futuro conectar backend e banco
+- arquitetura frontend organizada para evolução posterior
+
+Eu quero um mockup navegável e convincente, não apenas telas soltas.
+
+==================================================
+2. O QUE DEVE SER ENTREGUE NESTA FASE
+==================================================
+
+Entregar uma aplicação frontend funcional com:
+
+- layout administrativo completo
+- sidebar
+- header
+- breadcrumbs
+- cards
+- tabelas
+- formulários
+- modais
+- drawers
+- abas
+- accordions
+- gráficos mockados
+- filtros avançados
+- páginas navegáveis
+- dados fake locais
+- troca de idioma e país funcionando no frontend
+- troca visual de moeda, labels, máscaras e campos conforme país/locale
+- componentes reutilizáveis
+- estrutura de projeto organizada
+
+==================================================
+3. O QUE NÃO DEVE SER FEITO AGORA
+==================================================
+
+NÃO implementar nesta etapa:
+- backend real
+- banco de dados real
+- autenticação real com servidor
+- API real
+- upload real para storage
+- integrações externas reais
+- persistência real em banco
+
+Tudo isso deve ser simulado localmente no frontend, com mocks.
+
+==================================================
+4. STACK RECOMENDADA
+==================================================
+
+Use uma stack moderna e adequada para mockup no Replit, priorizando:
+
+- React ou Next.js
+- TypeScript
+- Tailwind CSS
+- shadcn/ui ou biblioteca equivalente
+- ícones modernos
+- dados mockados em arquivos locais
+- gráficos com biblioteca leve
+- roteamento funcional
+- gerenciamento simples de estado local
+
+Se optar por outra stack equivalente, deve continuar:
+- rápida para prototipação
+- limpa
+- modular
+- fácil de evoluir depois para backend real
+
+==================================================
+5. REQUISITOS IMPORTANTES DE ARQUITETURA FRONTEND
+==================================================
+
+A estrutura deve ser pensada para futura integração com backend.
+
+Por isso, organize o frontend com:
+- pasta de páginas
+- pasta de componentes
+- pasta de mocks
+- pasta de tipos/interfaces
+- pasta de config
+- pasta de i18n/locales
+- pasta de services mockados
+- pasta de utils/formatters
+
+Mesmo sem backend, quero que a aplicação já tenha:
+- tipos bem definidos
+- interfaces de dados
+- serviços simulados
+- dados mockados separados da UI
+- componentes reaproveitáveis
+- configuração por locale/mercado
+
+==================================================
+6. LÓGICA DE MOCKS
+==================================================
+
+Todos os dados devem vir de mocks locais bem estruturados.
+
+Criar arquivos mockados para:
+- usuários
+- imóveis
+- tipos de imóveis
+- grupos de filtros
+- filtros
+- leads
+- tarefas CRM
+- conteúdos CMS
+- banners
+- relatórios
+- métricas
+- lançamentos financeiros
+- comissões
+- moedas
+- idiomas
+- configurações por país
+
+Simular operações como:
+- criar
+- editar
+- excluir
+- publicar
+- arquivar
+- filtrar
+- buscar
+- ordenar
+- paginar
+- trocar status
+
+Essas ações podem funcionar apenas em memória/local state, sem persistência real.
+
+==================================================
+7. PERFIS DE USUÁRIO – APENAS VISUAL/MOCKADO
+==================================================
+
+Criar no frontend perfis simulados para exibir comportamentos de interface diferentes:
+
+- Super Admin
+- Admin
+- Editor de Conteúdo
+- Corretor / Operador Comercial
+- Financeiro
+
+Não precisa implementar autorização real no backend.
+Mas a interface deve reagir ao perfil selecionado, por exemplo:
+- ocultar menus
+- desabilitar botões
+- exibir áreas diferentes
+- mostrar estados de permissão
+
+Criar um seletor mockado de perfil para demonstração.
+
+==================================================
+8. MÓDULOS QUE DEVEM EXISTIR NO MOCKUP
+==================================================
+
+O painel deve conter, no mínimo, os seguintes módulos navegáveis:
+
+1. Dashboard Geral
+2. Imóveis
+3. Tipos de Imóveis
+4. Filtros e Taxonomias
+5. Moedas
+6. CMS / Conteúdo
+7. Leads e Contatos
+8. Relatórios
+9. CRM
+10. ERP
+11. Usuários e Permissões
+12. Configurações Gerais
+13. Configurações de País / Idioma / Locale
+
+==================================================
+9. DASHBOARD GERAL
+==================================================
+
+Criar um dashboard visualmente forte e convincente, com:
+
+- cards com indicadores
+- gráficos de linha, barra e pizza
+- listas resumidas
+- alertas operacionais
+- ações rápidas
+
+Dados que devem aparecer mockados:
+- total de imóveis
+- imóveis ativos
+- imóveis vendidos
+- imóveis alugados
+- imóveis expirando
+- leads novos
+- contatos pendentes
+- imóveis mais vistos
+- páginas mais acessadas
+- contas a receber
+- contas a pagar
+- comissões pendentes
+- desempenho comercial
+- alertas de cadastro incompleto
+
+Também incluir:
+- atalhos para cadastrar imóvel
+- cadastrar lead
+- editar página
+- registrar conta
+- exportar relatório
+
+==================================================
+10. MÓDULO DE IMÓVEIS
+==================================================
+
+Este módulo deve parecer extremamente completo.
+
+Criar:
+
+10.1 Tela de listagem
+- tabela avançada
+- cards alternativos se quiser
+- busca por código, título, cidade, bairro, corretor
+- filtros laterais ou superiores
+- ordenação
+- paginação
+- ações em lote
+- badges de status
+- botão novo imóvel
+- botão exportar
+- botão duplicar
+- botão arquivar
+- botão excluir
+
+10.2 Tela de cadastro/edição de imóvel
+Organizar em abas ou seções:
+
+- Dados básicos
+- Localização
+- Comercial
+- Características
+- Comodidades
+- Mídia
+- SEO
+- Relacionamentos
+- Publicação
+
+Campos obrigatórios simulados:
+- código
+- título
+- subtítulo
+- slug
+- descrição curta
+- descrição completa
+- tipo de anúncio
+- status
+- tipo de imóvel
+- categoria
+- tags
+- país
+- estado/região
+- cidade
+- bairro
+- endereço
+- número
+- complemento
+- CEP/código postal/ZIP
+- latitude
+- longitude
+- ocultar endereço
+- moeda
+- preço
+- aluguel
+- condomínio
+- IPTU ou equivalente
+- outras taxas
+- financiamento
+- FGTS quando aplicável
+- permuta quando aplicável
+- comissão
+- corretor
+- proprietário
+- área útil
+- área total
+- dormitórios
+- suítes
+- banheiros
+- lavabos
+- vagas
+- andar
+- ano de construção
+- mobiliado
+- reformado
+- padrão de acabamento
+- imagem de capa
+- galeria
+- vídeo
+- tour virtual
+- PDF
+- meta title
+- meta description
+- destaque
+- premium
+- agendamento
+- expiração
+
+==================================================
+11. TIPOS DE IMÓVEIS
+==================================================
+
+Criar uma tela administrativa específica para os tipos de imóveis.
+
+Os tipos iniciais obrigatórios devem estar cadastrados e exibidos no mockup:
+
+Residenciais:
+- Apartamento
+- Casas & Sobrados
+- Casa em condomínio
+- Kitnets & Stúdios
+- Flat
+- Loft
+- Cobertura
+- Sítios & Chácaras
+- Terreno/Lote
+- Terreno em condomínio
+
+Comerciais:
+- Sala Comercial
+- Casa Comercial
+- Ponto Comercial
+- Galpão/Depósito
+- Terreno Comercial
+- Prédio
+- Garagem
+- Fazenda
+
+A tela deve permitir visualmente:
+- listar
+- buscar
+- filtrar por grupo
+- ativar/desativar
+- ordenar
+- editar
+- criar novo tipo
+- associar países
+- traduzir nome
+- definir visibilidade no portal
+
+Tudo isso pode ser mockado, mas a interface deve estar pronta.
+
+==================================================
+12. FILTROS E TAXONOMIAS
+==================================================
+
+Criar um módulo administrativo completo para filtros.
+
+Esses filtros devem existir no mockup:
+
+Filtros principais:
+- Comprar
+- Alugar
+- Lançamentos
+
+Localização:
+- Perto de mim
+- bairro, rua ou cidade
+
+Tipos de imóveis:
+- Apartamento
+- Casas & Sobrados
+- Kitnets & Stúdios
+- + Mais tipos de imóveis
+
+Preço:
+- mínimo
+- máximo
+
+Quartos:
+- +1
+- +2
+- +3
+- +4
+
+Banheiros:
+- +1
+- +2
+- +3
+- +4
+
+Garagens:
+- +1
+- +2
+- +3
+- +4
+
+Área útil:
+- mínima
+- máxima
+
+Área de Lazer:
+- Brinquedoteca
+- Churrasqueira
+- Espaço gourmet
+- Piscina
+- Playground
+- Salão de festas
+- Salão de jogos
+
+Conveniências:
+- Ar-condicionado
+- Armários Planejados
+- Elevador
+- Hidromassagem
+- Jardim
+- Lareira
+- Mobiliado
+- Quintal
+- Sauna
+- Varanda
+
+Funcional:
+- Área de serviço
+- Ático
+- Closet
+- Dependência de Empregada
+- Edícula
+- Escritório
+- Lavabo
+- Lavanderia
+
+Segurança:
+- Circuito de segurança
+- Guarita
+- Interfone
+- Portaria
+
+Criar telas para:
+- listar grupos de filtros
+- listar filtros
+- editar filtro
+- criar filtro
+- ordenar filtros
+- ativar/desativar
+- definir tipo do filtro
+- associar tipo de imóvel
+- associar país
+- configurar labels traduzidas
+
+==================================================
+13. SUPORTE A BRASIL, PORTUGAL E ESTADOS UNIDOS
+==================================================
+
+O mockup deve demonstrar claramente suporte a:
+- Brasil
+- Portugal
+- Estados Unidos
+
+Idiomas:
+- pt-BR
+- pt-PT
+- en-US
+
+IMPORTANTE:
+A mudança de país/locale deve alterar visualmente e funcionalmente no frontend:
+
+- idioma dos textos principais
+- moeda padrão
+- símbolo monetário
+- formatação de preços
+- formato de data
+- formato de telefone
+- formato de CEP/código postal/ZIP
+- labels dos campos
+- placeholders
+- alguns campos visíveis ou ocultos
+
+Exemplos obrigatórios:
+- Brasil: mostrar FGTS, permuta, IPTU, CEP, telefone brasileiro, BRL
+- Portugal: ocultar FGTS, adaptar termos locais, mostrar EUR, código postal português, telefone português
+- Estados Unidos: ocultar FGTS, adaptar labels, mostrar USD, ZIP code, telefone americano, regras visuais do mercado americano
+
+Não precisa implementar regra real de negócio no backend. Quero a mudança visual/funcional no mockup frontend.
+
+==================================================
+14. MÓDULO DE MOEDAS
+==================================================
+
+Criar tela mockada de moedas com:
+- BRL
+- EUR
+- USD
+
+Mostrar:
+- nome
+- código
+- símbolo
+- posição do símbolo
+- casas decimais
+- separadores
+- ativo/inativo
+- moeda padrão por país
+
+==================================================
+15. CMS / CONTEÚDO
+==================================================
+
+Criar mockups navegáveis para:
+- Home
+- Sobre
+- Contato
+- Comprar
+- Alugar
+- Lançamentos
+- Anunciar imóvel
+- Política de privacidade
+- Termos
+- FAQ
+- Cabeçalho
+- Rodapé
+- SEO
+- Banners
+- Popups
+- Cards
+- Depoimentos
+- Parceiros
+
+Cada tela deve parecer um editor real, com:
+- formulário
+- rich text simulado
+- preview
+- upload fake
+- ordenar seções
+- ativar/desativar blocos
+- versão por idioma
+
+==================================================
+16. LEADS E CONTATOS
+==================================================
+
+Criar módulo visual completo com:
+- listagem
+- busca
+- filtros
+- cards
+- tabela
+- drawer de detalhes
+- histórico
+- notas
+- status
+- prioridade
+- atribuição de corretor
+
+Tipos de lead:
+- contato geral
+- lead de imóvel
+- pedido de visita
+- pedido de simulação
+- pedido de retorno
+- captação de proprietário
+- lead manual
+
+==================================================
+17. CRM
+==================================================
+
+Criar CRM mockado com:
+- funil em kanban
+- lista de leads
+- perfil do lead
+- preferências do cliente
+- timeline de interações
+- tarefas
+- lembretes
+- visitas
+- propostas
+- motivo de perda
+
+Quero aparência de CRM real, mesmo que os dados sejam locais.
+
+==================================================
+18. ERP BÁSICO
+==================================================
+
+Criar módulo mockado com:
+- contas a pagar
+- contas a receber
+- categorias
+- comissões
+- receitas
+- despesas
+- fluxo de caixa
+- detalhes de lançamento
+- filtros por período
+- status de pagamento
+
+==================================================
+19. RELATÓRIOS
+==================================================
+
+Criar telas de relatórios com dados fictícios e gráficos para:
+- desempenho do portal
+- desempenho de imóveis
+- leads e CRM
+- financeiro / ERP
+
+Os gráficos devem parecer reais e coerentes com os dados exibidos.
+
+==================================================
+20. USUÁRIOS E PERMISSÕES
+==================================================
+
+Criar telas mockadas para:
+- listagem de usuários
+- perfil
+- roles
+- permissões por módulo
+- permissões por ação
+- ativar/desativar usuário
+- redefinir senha (somente visual)
+- logs de auditoria (mock)
+
+==================================================
+21. CONFIGURAÇÕES GERAIS
+==================================================
+
+Criar telas para:
+- nome da empresa
+- logo
+- favicon
+- cores
+- telefone
+- e-mail
+- WhatsApp
+- endereço
+- redes sociais
+- SEO global
+- idioma padrão
+- país padrão
+- moedas
+- paginação
+- notificações
+- parâmetros do portal
+
+==================================================
+22. EXPERIÊNCIA DE USO E QUALIDADE VISUAL
+==================================================
+
+O painel deve ter aparência premium.
+
+Quero:
+- design moderno
+- bom espaçamento
+- hierarquia visual clara
+- navegação intuitiva
+- estados vazios bem feitos
+- loading skeleton
+- mensagens de sucesso/erro simuladas
+- badges
+- filtros elegantes
+- formulários organizados
+- tabelas profissionais
+- visual consistente em todas as páginas
+
+Evitar:
+- layout genérico demais
+- páginas vazias
+- CRUDs simplórios
+- componentes sem consistência
+- excesso de placeholders pobres
+
+==================================================
+23. DADOS MOCKADOS
+==================================================
+
+Criar dados fake realistas e coerentes entre si, incluindo:
+- usuários de teste
+- vários imóveis residenciais e comerciais
+- tipos de imóveis
+- grupos de filtros
+- leads
+- tarefas CRM
+- relatórios
+- métricas do dashboard
+- contas financeiras
+- moedas
+- páginas institucionais
+- configurações por país e idioma
+
+==================================================
+24. O PROJETO DEVE ESTAR PRONTO PARA FUTURA INTEGRAÇÃO
+==================================================
+
+Mesmo sendo mockup, quero que a estrutura já fique preparada para conectar backend depois.
+
+Por isso:
+- separar dados mockados da UI
+- criar interfaces/types
+- simular services
+- manter componentes desacoplados
+- organizar formulários para futura validação real
+- deixar clara a camada onde no futuro entrará API/backend
+
+==================================================
+25. ENTREGA FINAL
+==================================================
+
+Ao final, entregar:
+- projeto frontend funcional
+- estrutura de pastas
+- README explicando como rodar no Replit
+- explicação da arquitetura frontend
+- lista de módulos criados
+- lista de componentes reutilizáveis
+- explicação de como os mocks estão organizados
+- explicação de como o locale muda a interface
+- indicação clara de quais partes estão mockadas
+
+==================================================
+26. CRITÉRIOS DE ACEITE
+==================================================
+
+A entrega só estará correta se:
+- o painel abrir e navegar entre módulos
+- houver sidebar, header e layout consistente
+- o dashboard parecer real
+- a listagem e edição de imóveis parecerem reais
+- existir módulo de tipos de imóveis
+- existir módulo de filtros
+- houver troca de idioma/país
+- a troca de país alterar moeda, labels e máscaras no frontend
+- CRM, ERP, CMS, relatórios e usuários tenham telas convincentes
+- o sistema pareça pronto para apresentação comercial ou validação interna
+- tudo seja frontend-only, sem backend real
+
+==================================================
+27. ORDEM DE CONSTRUÇÃO
+==================================================
+
+Implemente nesta ordem:
+
+1. estrutura base do frontend
+2. layout administrativo global
+3. sistema de navegação
+4. mocks e tipos
+5. locale / idioma / país
+6. dashboard
+7. imóveis
+8. tipos de imóveis
+9. filtros e taxonomias
+10. leads e CRM
+11. CMS
+12. relatórios
+13. ERP
+14. usuários e permissões
+15. configurações
+16. refinamento visual final
+
+==================================================
+28. IMPORTANTE
+==================================================
+
+Não entregue apenas explicação.
+Não entregue só wireframes.
+Não entregue só imagens estáticas.
+Crie um frontend navegável, funcional e convincente.
+Tudo deve ser mockado localmente.
+O foco principal é qualidade visual, organização, navegabilidade e preparação para futura integração com backend.

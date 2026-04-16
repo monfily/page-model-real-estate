@@ -1,0 +1,29 @@
+
+> ai-website-clone-template@0.3.1 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1m[38;2;173;127;168m▲ Next.js 16.2.4[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 352ms
+[35m[1mAttention[22m[39m: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[36mhttps://nextjs.org/telemetry[39m
+
+
+[37m[1m○[22m[39m Compiling / ...
+ GET / [32m200[39m in 4.1s[2m (next.js: 4.0s, application-code: 134ms)[22m
+ GET / [32m200[39m in 4.2s[2m (next.js: 3.7s, application-code: 563ms)[22m
+ GET /comprar [32m200[39m in 719ms[2m (next.js: 637ms, application-code: 81ms)[22m
+Error: Turbopack build failed with 1 errors:
+./src/app
+Error: Next.js inferred your workspace root, but it may not be correct.
+    We couldn't find the Next.js package ([1m[31mnext/package.json[39m[22m) from the project directory: [1m[31m/home/runner/workspace/src/app[39m[22m
+     To fix this, set [32mturbopack.root[39m in your Next.js config, or ensure the Next.js package is resolvable from this directory.
+    Note: For security and performance reasons, files outside of the project directory will not be compiled.
+    See [1m[31mhttps://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory[39m[22m for more information.
+
+    at [3mignore-listed frames[23m
+[?25h
+⠙[1G[0K

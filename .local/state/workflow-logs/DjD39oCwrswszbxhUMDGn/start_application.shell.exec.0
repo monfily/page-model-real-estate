@@ -1,0 +1,369 @@
+
+> ai-website-clone-template@0.3.1 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 368ms
+
+ GET / [32m200[39m in 1631ms[2m (next.js: 1278ms, application-code: 352ms)[22m
+ GET /admin [32m200[39m in 635ms[2m (next.js: 553ms, application-code: 82ms)[22m
+ GET /admin [32m200[39m in 47ms[2m (next.js: 2ms, application-code: 44ms)[22m
+ GET /admin [32m200[39m in 76ms[2m (next.js: 3ms, application-code: 72ms)[22m
+ GET / [32m200[39m in 119ms[2m (next.js: 58ms, application-code: 61ms)[22m
+ GET /comprar [32m200[39m in 361ms[2m (next.js: 93ms, application-code: 267ms)[22m
+ GET /admin [32m200[39m in 112ms[2m (next.js: 53ms, application-code: 59ms)[22m
+ GET /admin [32m200[39m in 89ms[2m (next.js: 4ms, application-code: 85ms)[22m
+[36m[browser][39m A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{rsc:{...}, ...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                    ...
+                  ...
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/admin" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+                        <SegmentViewNode type="page" pagePath="admin/page...">
+                          <SegmentTrieNode>
+                          <AdminPage>
+                            <AdminDashboard>
+                              <main className="min-h-scre...">
+                                <div
+                                  className="flex min-h-screen"
+-                                 bis_skin_checked="1"
+                                >
+                                  <aside className="fixed inse...">
+                                    <div
+                                      className="flex h-full flex-col"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className="flex h-20 items-center justify-between border-b border-white/10 px-6"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+-                                         bis_skin_checked="1"
+                                        >
+                                        ...
+                                      <div
+                                        className="space-y-3 border-b border-white/10 p-4"
+-                                       bis_skin_checked="1"
+                                      >
+                                      <nav>
+                                      <div
+                                        className="m-4 rounded-3xl bg-white/10 p-4"
+-                                       bis_skin_checked="1"
+                                      >
+                                  <div
+                                    className="flex min-w-0 flex-1 flex-col"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <header className="sticky top...">
+                                      <div
+                                        className="flex h-20 items-center gap-4 px-4 lg:px-8"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <button>
+                                        <div
+                                          className="relative hidden flex-1 md:block"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <select>
+                                        <button>
+                                        <div
+                                          className="hidden items-center gap-3 rounded-2xl border border-slate-200 bg-..."
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="grid h-9 w-9 place-items-center rounded-xl bg-slate-950 text-sm..."
+-                                           bis_skin_checked="1"
+                                          >
++                                           AD
+                                          <div
+-                                           bis_skin_checked="1"
+                                          >
+                                    <div
+                                      className="border-b border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-bold..."
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className="flex items-center gap-2"
+-                                       bis_skin_checked="1"
+                                      >
+                                    <div
+                                      className="flex-1 p-4 lg:p-8"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <DashboardView config={{country:"BR", ...}} data={{series:[...], ...}} ...>
+                                        <SectionHeader title="Dashboard ..." subtitle="Visão exec...">
+                                          <div
+                                            className="mb-5 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify..."
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+-                                             bis_skin_checked="1"
+                                            >
+                                              <div
+                                                className="mb-2 flex items-center gap-2 text-sm font-bold text-slate-500"
+-                                               bis_skin_checked="1"
+                                              >
+                                              ...
+                                            <div
+                                              className="flex flex-wrap gap-2"
+-                                             bis_skin_checked="1"
+                                            >
+                                        <div
+                                          className="grid gap-4 md:grid-cols-2 xl:grid-cols-4"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <Card>
+                                            <section className="rounded-3x...">
+                                              <div
+                                                className="flex items-start justify-between"
+-                                               bis_skin_checked="1"
+                                              >
+                                                <div
+-                                                 bis_skin_checked="1"
+                                                >
+                                                <div
+                                                  className="grid h-12 w-12 place-items-center rounded-2xl bg-slate-10..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                              <div
+                                                className="mt-4"
+-                                               bis_skin_checked="1"
+                                              >
+                                          <Card>
+                                            <section className="rounded-3x...">
+                                              <div
+                                                className="flex items-start justify-between"
+-                                               bis_skin_checked="1"
+                                              >
+                                                <div
+-                                                 bis_skin_checked="1"
+                                                >
+                                                <div
+                                                  className="grid h-12 w-12 place-items-center rounded-2xl bg-slate-10..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                              <div
+                                                className="mt-4"
+-                                               bis_skin_checked="1"
+                                              >
+                                          <Card>
+                                            <section className="rounded-3x...">
+                                              <div
+                                                className="flex items-start justify-between"
+-                                               bis_skin_checked="1"
+                                              >
+                                                <div
+-                                                 bis_skin_checked="1"
+                                                >
+                                                <div
+                                                  className="grid h-12 w-12 place-items-center rounded-2xl bg-slate-10..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                              <div
+                                                className="mt-4"
+-                                               bis_skin_checked="1"
+                                              >
+                                          <Card>
+                                            <section className="rounded-3x...">
+                                              <div
+                                                className="flex items-start justify-between"
+-                                               bis_skin_checked="1"
+                                              >
+                                                <div
+-                                                 bis_skin_checked="1"
+                                                >
+                                                <div
+                                                  className="grid h-12 w-12 place-items-center rounded-2xl bg-slate-10..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                              <div
+                                                className="mt-4"
+-                                               bis_skin_checked="1"
+                                              >
+                                        <div
+                                          className="mt-4 grid gap-4 xl:grid-cols-[1.5fr_1fr]"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <Card>
+                                            <section className="rounded-3x...">
+                                              <div
+                                                className="mb-5 flex items-center justify-between"
+-                                               bis_skin_checked="1"
+                                              >
+                                                <div
+-                                                 bis_skin_checked="1"
+                                                >
+                                                ...
+                                              <SparkLine data={[...]}>
+                                                <div
+                                                  className="flex h-24 items-end gap-2"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <div
+                                                    className="flex-1 rounded-t-xl bg-gradient-to-t from-red-500 to-or..."
+                                                    style={{height:"38.0952380..."}}
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                  <div
+                                                    className="flex-1 rounded-t-xl bg-gradient-to-t from-red-500 to-or..."
+                                                    style={{height:"42.0634920..."}}
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                  <div
+                                                    className="flex-1 rounded-t-xl bg-gradient-to-t from-red-500 to-or..."
+                                                    style={{height:"56.3492063..."}}
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                  <div
+                                                    className="flex-1 rounded-t-xl bg-gradient-to-t from-red-500 to-or..."
+                                                    style={{height:"71.8253968..."}}
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                  <div
+                                                    className="flex-1 rounded-t-xl bg-gradient-to-t from-red-500 to-or..."
+                                                    style={{height:"88.8888888..."}}
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                  <div
+                                                    className="flex-1 rounded-t-xl bg-gradient-to-t from-red-500 to-or..."
+                                                    style={{height:"100%"}}
+-                                                   bis_skin_checked="1"
+                                                  >
+                                              <div
+                                                className="mt-5 grid gap-3 md:grid-cols-3"
+-                                               bis_skin_checked="1"
+                                              >
+                                                <div
+                                                  className="rounded-2xl bg-slate-50 p-4"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                <div
+                                                  className="rounded-2xl bg-slate-50 p-4"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                <div
+                                                  className="rounded-2xl bg-slate-50 p-4"
+-                                                 bis_skin_checked="1"
+                                                >
+                                          <Card>
+                                            <section className="rounded-3x...">
+                                              <h2>
+                                              <div
+                                                className="mt-5 space-y-5"
+-                                               bis_skin_checked="1"
+                                              >
+                                                <Donut label="Cadastro c..." value={86}>
+                                                  <div
+                                                    className="flex items-center gap-4"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="grid h-24 w-24 place-items-center rounded-full"
+                                                      style={{background:"conic-grad..."}}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+                                                        className="grid h-16 w-16 place-items-center rounded-full bg-w..."
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                    <div
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                <Donut label="Conversão ..." value={64}>
+                                                  <div
+                                                    className="flex items-center gap-4"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="grid h-24 w-24 place-items-center rounded-full"
+                                                      style={{background:"conic-grad..."}}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+                                                        className="grid h-16 w-16 place-items-center rounded-full bg-w..."
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                    <div
+-                                                     bis_skin_checked="1"
+                                                    >
+                                        <div
+                                          className="mt-4 grid gap-4 xl:grid-cols-3"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <Card className="xl:col-span-2">
+                                            <section className="rounded-3x...">
+                                              <h2>
+                                              <div
+                                                className="mt-4 overflow-x-auto"
+-                                               bis_skin_checked="1"
+                                              >
+                                          <Card>
+                                            <section className="rounded-3x...">
+                                              <h2>
+                                              <div
+                                                className="mt-4 space-y-3"
+-                                               bis_skin_checked="1"
+                                              >
+                                                <div
+                                                  className="flex gap-3 rounded-2xl bg-amber-50 p-3 text-sm font-bold ..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                                <div
+                                                  className="flex gap-3 rounded-2xl bg-amber-50 p-3 text-sm font-bold ..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                                <div
+                                                  className="flex gap-3 rounded-2xl bg-amber-50 p-3 text-sm font-bold ..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                                <div
+                                                  className="flex gap-3 rounded-2xl bg-amber-50 p-3 text-sm font-bold ..."
+-                                                 bis_skin_checked="1"
+                                                >
+                        ...
+                      ...
+                  ...
+ 
+ GET / [32m200[39m in 85ms[2m (next.js: 2ms, application-code: 83ms)[22m
+ GET /comprar [32m200[39m in 67ms[2m (next.js: 3ms, application-code: 64ms)[22m
+ GET /admin [32m200[39m in 58ms[2m (next.js: 3ms, application-code: 55ms)[22m
+[32m[1m✓[22m[39m Compiled in 162ms
+ GET /admin [32m200[39m in 150ms[2m (next.js: 2ms, application-code: 148ms)[22m
+ GET /admin [32m200[39m in 276ms[2m (next.js: 73ms, application-code: 203ms)[22m
+ GET /admin [32m200[39m in 93ms[2m (next.js: 67ms, application-code: 26ms)[22m
+[32m[1m✓[22m[39m Compiled in 193ms
+ GET /admin [32m200[39m in 28ms[2m (next.js: 3ms, application-code: 25ms)[22m
+ GET /admin [32m200[39m in 178ms[2m (next.js: 84ms, application-code: 94ms)[22m
+[32m[1m✓[22m[39m Compiled in 334ms
+[32m[1m✓[22m[39m Compiled in 403ms
+[32m[1m✓[22m[39m Compiled in 263ms
+[?25h
+⠙[1G[0K
